@@ -1,0 +1,209 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/*
+	Gravity by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+$color-border: #ddd;
+
+/* Basic */
+
+	hr {
+		border-bottom: solid 1px $color-border;
+	}
+
+	blockquote {
+		border-left: solid 4px $color-border;
+	}
+
+	code {
+		border: solid 1px $color-border;
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		border: solid 1px $color-border;
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] {
+		line-height: _size(element-height);
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		font-size: 3em;
+
+		& + label {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+/* Box */
+
+	.box {
+		border: solid 1px $color-border;
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+	}
+
+/* Image */
+
+	.image {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		img {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+/* List */
+
+	ul {
+		&.alt {
+			li {
+				border-top: solid 1px $color-border;
+
+				&:first-child {
+					border-top: 0;
+				}
+			}
+		}
+	}
+
+/* Table */
+
+	table {
+		tbody {
+			tr {
+				border: solid 1px $color-border;
+			}
+		}
+
+		thead {
+			border-bottom: solid 2px $color-border;
+		}
+
+		tfoot {
+			border-top: solid 2px $color-border;
+		}
+
+		&.alt {
+			tbody {
+				tr {
+					td {
+						border: solid 1px $color-border;
+					}
+				}
+			}
+		}
+	}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		position: relative;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		&.alt {
+			border: solid 2px $color-border;
+		}
+	}
+
+/* Feature */
+
+	.feature {
+		border-top: solid 1px $color-border;
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		&.style1 {
+			& + & {
+				border-top: 1px solid $color-border;
+			}
+		}
+	}
+
+/* Header */
+
+	#header {
+		border-bottom: solid 1px $color-border;
+	}
+
+	.dropotron {
+		border: solid 1px $color-border;
+		box-shadow: none !important;
+		margin-top: 0 !important;
+		-ms-behavior: url('assets/js/ie/PIE.htc');
+
+		&.level-0 {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		background-image: url('../../images/banner.jpg');
+		background-size: cover;
+		position: relative;
+		-ms-behavior: url('assets/js/ie/backgroundsize.min.htc');
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url('images/overlay.png');
+		}
+
+		> * {
+			position: relative;
+			z-index: 1;
+		}
+	}
+
+/* Footer */
+
+	#footer {
+		.button {
+			&.alt {
+				border-color: #777;
+			}
+		}
+
+		.copyright {
+			li {
+				border-left: solid 1px $color-border;
+			}
+		}
+	}

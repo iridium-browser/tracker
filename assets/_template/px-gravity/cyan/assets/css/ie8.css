@@ -1,0 +1,178 @@
+/*
+	Gravity by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	hr {
+		border-bottom: solid 1px #ddd;
+	}
+
+	blockquote {
+		border-left: solid 4px #ddd;
+	}
+
+	code {
+		border: solid 1px #ddd;
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+/* Form */
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select,
+	textarea {
+		border: solid 1px #ddd;
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"] {
+		line-height: 2.75em;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		font-size: 3em;
+	}
+
+		input[type="checkbox"] + label:before,
+		input[type="radio"] + label:before {
+			display: none;
+		}
+
+/* Box */
+
+	.box {
+		border: solid 1px #ddd;
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+/* Image */
+
+	.image {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+		.image img {
+			position: relative;
+			-ms-behavior: url("assets/js/ie/PIE.htc");
+		}
+
+/* List */
+
+	ul.alt li {
+		border-top: solid 1px #ddd;
+	}
+
+		ul.alt li:first-child {
+			border-top: 0;
+		}
+
+/* Table */
+
+	table tbody tr {
+		border: solid 1px #ddd;
+	}
+
+	table thead {
+		border-bottom: solid 2px #ddd;
+	}
+
+	table tfoot {
+		border-top: solid 2px #ddd;
+	}
+
+	table.alt tbody tr td {
+		border: solid 1px #ddd;
+	}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	.button {
+		position: relative;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+		input[type="submit"].alt,
+		input[type="reset"].alt,
+		input[type="button"].alt,
+		.button.alt {
+			border: solid 2px #ddd;
+		}
+
+/* Feature */
+
+	.feature {
+		border-top: solid 1px #ddd;
+	}
+
+/* Wrapper */
+
+	.wrapper.style1 + .wrapper.style1 {
+		border-top: 1px solid #ddd;
+	}
+
+/* Header */
+
+	#header {
+		border-bottom: solid 1px #ddd;
+	}
+
+	.dropotron {
+		border: solid 1px #ddd;
+		box-shadow: none !important;
+		margin-top: 0 !important;
+		-ms-behavior: url("assets/js/ie/PIE.htc");
+	}
+
+		.dropotron.level-0:before {
+			display: none;
+		}
+
+/* Banner */
+
+	#banner {
+		background-image: url("../../images/banner.jpg");
+		background-size: cover;
+		position: relative;
+		-ms-behavior: url("assets/js/ie/backgroundsize.min.htc");
+	}
+
+		#banner:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url("images/overlay.png");
+		}
+
+		#banner > * {
+			position: relative;
+			z-index: 1;
+		}
+
+/* Footer */
+
+	#footer .button.alt {
+		border-color: #777;
+	}
+
+	#footer .copyright li {
+		border-left: solid 1px #ddd;
+	}
