@@ -16,5 +16,14 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://iridium-browser.de" # the base hostname & protocol for your site
 
+collections:
+  - home
+  - features
+  - about
+  - logos
+  - contribute
+  - footer
+  
+
 # Build settings
 markdown: kramdown
