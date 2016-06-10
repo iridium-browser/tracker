@@ -2,14 +2,14 @@
       <div id="footer">
         <div class="container">
             <section class="special">
-            <h3>Available resources to step in</h3>
-<p><a href="http://lists.inai.de/iridium" target="_blank">Mailing list</a><br />
-<a href="https://github.com/iridium-browser/iridium-browser/issues" target="_blank">Bug tracker @ GitHub</a><br />
-For more development information, please <a href="development.html">check here</a></p>
+			{% for footer in site.footer %}
+		  <h3>{{ footer.title }}</h3>
+			</header>
+			<p>{{ footer.content }}</p>
+			{% endfor %}
             </section>
         </div>
-        <div class="copyright">&copy; <a href="http://osb-alliance.de/" target="_blank">Open Source Business Alliance</a>. All rights reserved.</div>
-      </div>
+        </div>
 
     <!-- Scripts -->
       <script src="assets/js/jquery.min.js"></script>

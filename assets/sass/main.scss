@@ -68,20 +68,21 @@
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(family);
-		font-size: 13pt;
+		font-size: 16pt;
 		font-weight: _font(weight);
 		line-height: 2em;
 	}
 
 	a {
-		color: _palette(accent1, bg);
+		color: _palette(fg);
 		text-decoration: underline;
 
 		&:hover {
+			color: _palette(accent1, bg);
 			text-decoration: none;
 		}
 	}
-
+	
 	strong, b {
 		color: _palette(fg-bold);
 		font-weight: _font(weight-bold);
@@ -469,6 +470,11 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
+		color: _palette(accent1, bg) !important;
+		font-size: 5em;
+		margin: 1.5em 0 .5em 0;
+		display: block;
+		
 
 		> .label {
 			display: none;
@@ -900,14 +906,13 @@
 /* Icon Grid */
 
 	.icon-grid {
-		@include padding(4em, 3em, (1em, 0, 0, 0));
+		@include padding(1em, 3em, (1em, 0, 0, 0));
 		margin: 0 0 _size(element-margin) 0;
 		text-align: center;
 
 		.icon {
 			color: _palette(fg-bold);
 			display: block;
-			font-size: 4em;
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
 		}
 	}
@@ -1032,7 +1037,7 @@
 		text-transform: uppercase;
 		top: 0;
 		width: 100%;
-		z-index: 10000;
+		z-index: 100000;
 
 		h1 {
 			color: _palette(fg-bold);
@@ -1054,12 +1059,15 @@
 		}
 
 		nav {
+			background-color: _palette(bg);
 			height: inherit;
 			line-height: inherit;
-			position: absolute;
+			position: fixed;
 			right: 1.25em;
 			top: 0;
 			vertical-align: middle;
+			font-weight: _font(weight-bold);
+			z-index: 1000000;
 
 			> ul {
 				list-style: none;
@@ -1074,9 +1082,8 @@
 
 					a {
 						@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
-						color: _palette(fg-bold);
 						text-decoration: none;
-					}
+					}	
 
 					&:first-child {
 						margin-left: 0;
@@ -1101,7 +1108,7 @@
 
 		.container {
 			position: relative;
-
+						
 			h1 {
 				left: 0;
 			}
@@ -1220,166 +1227,281 @@
 		}
 	}
 
-/* LOGOS */
+/* IRIDIUM LOGOS */
 
 /* Iridium Logo */
 	.logo {
-		width: 800px;
-		height: 41px;
-		background-size: 800px 41px; 
-		background-image: url(../logos/iridium-logo_800x41.png);
+		width: 582px;
+		height: 350px;
+		background-size: 582px 350px; 
+		background-image: url(../logos/iridium-logo_582x350.png);
 		background-position: center center;
 		background-repeat: no-repeat;
+		display:block;
 		margin: 0 auto;
-}
+	}
 	/* XLarge */
 	@include breakpoint(xlarge) {
 	.logo {
-		width: 800px;
-		height: 41px;
-		background-size: 800px 41px;
-		background-image: url(../logos/iridium-logo_800x41.png);
-		background-position: center center; 
-		background-repeat: no-repeat;
-		margin: 0 auto;
-		}
-}	
+		width: 582px;
+		height: 350px;
+		background-size: 582px 350px; 
+	}
+}
 	/* Large */
 	@include breakpoint(large) {
 	.logo {
-		width: 650px;
-		height: 33px;
-		background-size: 650px 33px; 
-		background-image: url(../logos/iridium-logo_800x41.png);
-		background-position: center center; 
-		background-repeat: no-repeat;
-		margin: 0 auto;
-		}
+		width: 499px;
+		height: 300px;
+		background-size: 499px 300px; 
+	}
 }
 	/* Medium */
 	@include breakpoint(medium) {
 	.logo {
-		width: 500px;
-		height: 26px;
-		background-size: 500px 26px;
-		background-image: url(../logos/iridium-logo_800x41.png);
-		background-position: center center; 
-		background-repeat: no-repeat;
-		margin: 0 auto;
-		}
+		width: 416px;
+		height: 250px;
+		background-size: 416px 250px;
+	}
 }
 	/* Small */
 	@include breakpoint(small) {
 	.logo {
-		width: 350px;
-		height: 18px;
-		background-size: 350px 18px;
-		background-image: url(../logos/iridium-logo_800x41.png);
+		display: none;
+	}
+	.logo-small {
+		width: 250px;
+		height: 29px;
+		background-size: 250px 29px;
+		background-image: url(../logos/iridium-logo-small_500x58.png);
 		background-position: center center; 
 		background-repeat: no-repeat;
-		margin: 13px auto;
-		}
+		display:block;
+		margin: 7px auto;
+	}	
 }
-
 	/* XSmall */
 	@include breakpoint(xsmall) {
-	.logo {
-		width: 250px;
-		height: 13px;
-		background-size: 250px 13px; 
-		background-image: url(../logos/iridium-logo_800x41.png);
-		background-position: center right; 
-		background-repeat: no-repeat;
-		margin: 15px 10px auto auto;
+	.logo-small {
+		margin: 7px 7px;
 		float: right;
-		}
+	}	
 }
+/* DEVELOPER LOGOS */
+	/* Text */
+	.logo-text {
+		font-size: 10pt;
+	}
 	/* OSBA */
 	.logo-osba {
-		width: 250px;
-		height: 105px;
-		background-size: 250px 101px;
+		width: 200px;
+		height: 81px;
+		background-size: 200px 81px;
 		background-image:  url(../logos/logo-osba_250x101.png);
 		background-position: center center; 
 		background-repeat: no-repeat;
+		display:block;
 		margin: 0 auto;
-}
+	}
 	/* NetItWork */
 	.logo-netitwork {
-		width: 250px;
-		height: 105px;
-		background-size: 250px 48px;
+		width: 200px;
+		height: 81px;
+		background-size: 200px 38px;
 		background-image: url(../logos/logo-netitwork_250x48.png);
 		background-position: center center; 
 		background-repeat: no-repeat;
+		display:block;
 		margin: 0 auto;
-}
+	}
 	/* Zarafa */
 	.logo-zarafa {
-		width: 250px;
-		height: 105px;
-		background-size: 230px 64px;
+		width: 200px;
+		height: 81px;
+		background-size: 170px 47px;
 		background-image: url(../logos/logo-zarafa_250x69.png);
 		background-position: center center; 
 		background-repeat: no-repeat;
+		display:block;
 		margin: 0 auto;
-}
+	}
+	/* Neuberger &amp; Hughes */	
+	.logo-nh {	
+		width: 200px;
+		height: 81px;
+		background-size: 200px 47px;
+		background-image: url(../logos/logo-nh_250x59.png);
+		background-position: center center; 
+		background-repeat: no-repeat;
+		display:block;
+		margin: 0 auto;
+	}
 	/* Struktur */
 	.logo-struktur {
-		width: 250px;
-		height: 105px;
-		background-size: 250px 34px;
+		width: 200px;
+		height: 81px;
+		background-size: 200px 27px;
 		background-image: url(../logos/logo-struktur_250x34.png);
 		background-position: center center; 
 		background-repeat: no-repeat;
-		margin: 0 auto;
-}
-	/* DG-i */
-	.logo-dgi {
-		width: 250px;
-		height: 105px;
-		background-size: 175px 71px;
-		background-image: url(../logos/logo-dg-i_250x101.png);
-		background-position: center center; 
-		background-repeat: no-repeat;
+		display:block;
 		margin: 0 auto;
 }
 	/* Bytemine */
 	.logo-bytemine {
-		width: 250px;
-		height: 105px;
-		background-size: 250px 68px;
+		width: 200px;
+		height: 81px;
+		background-size: 200px 54px;
 		background-image: url(../logos/logo-bytemine_250x68.png);
 		background-position: center center; 
 		background-repeat: no-repeat;
+		display:block;
 		margin: 0 auto;
-}
-	/* Neuberger &amp; Hughes */	
-	.logo-nh {	
-		width: 250px;
-		height: 105px;
-		background-size: 250px 60px;
-		background-image: url(../logos/logo-nh_250x60.png);
+	}
+	/* DG-i */
+	.logo-dgi {
+		width: 200px;
+		height: 81px;
+		background-size: 125px 51px;
+		background-image: url(../logos/logo-dg-i_250x101.png);
 		background-position: center center; 
 		background-repeat: no-repeat;
+		display:block;
 		margin: 0 auto;
+	}
+	/* SUPPORTER */
+	.logo-supporter {
+		width: 200px;
+		height: 81px;
+		background-size: 200px 41px;
+		background-image: url(../logos/logo-iridium_supporter_250x51.png);
+		background-position: center center; 
+		background-repeat: no-repeat;
+		display:block;
+		margin: 0 auto;
+	}
+
+	/* Small */
+	@include breakpoint(small) {
+	/* Text */
+	.logo-text {
+		font-size: 8pt;
+	}
+	/* OSBA */
+	.logo-osba {
+		width: 150px;
+		height: 61px;
+		background-size: 150px 61px;
+	}
+	/* NetItWork */
+	.logo-netitwork {
+		width: 150px;
+		height: 61px;
+		background-size: 150px 29px;
+	}
+	/* Zarafa */
+	.logo-zarafa {
+		width: 125px;
+		height: 61px;
+		background-size: 120px 33px;
+	}
+	/* Neuberger &amp; Hughes */	
+	.logo-nh {	
+		width: 150px;
+		height: 61px;
+		background-size: 150px 35px;
+	}
+	/* Struktur */
+	.logo-struktur {
+		width: 150px;
+		height: 61px;
+		background-size: 150px 20px;
+	}
+	/* Bytemine */
+	.logo-bytemine {
+		width: 150px;
+		height: 61px;
+		background-size: 150px 41px;
+	}
+	/* DG-i */
+	.logo-dgi {
+		width: 150px;
+		height: 61px;
+		background-size: 70px 28px;
+	}
+	/* SUPPORTER */
+	.logo-supporter {
+		width: 200px;
+		height: 81px;
+		background-size: 150px 30px;
+	}
 }
-	/* Springer */	
-	.logo-springer { 
-		width: 250px;
-		height: 105px;
-		background-size: 250px 50px;
+
+	/* XSmall */
+	@include breakpoint(xsmall) {
+	/* Text */
+	.logo-text {
+		font-size: 7pt;
+	}
+	/* OSBA */
+	.logo-osba {
+		width: 125px;
+		height: 51px;
+		background-size: 125px 51px;
+	}
+	/* NetItWork */
+	.logo-netitwork {
+		width: 125px;
+		height: 51px;
+		background-size: 125px 24px;
+	}
+	/* Zarafa */
+	.logo-zarafa {
+		width: 125px;
+		height: 51px;
+		background-size: 95px 26px;
+	}
+	/* Neuberger &amp; Hughes */	
+	.logo-nh {	
+		width: 125px;
+		height: 51px;
+		background-size: 125px 29px;
+	}
+	/* Struktur */
+	.logo-struktur {
+		width: 125px;
+		height: 51px;
+		background-size: 125px 17px;
+	}
+	/* Bytemine */
+	.logo-bytemine {
+		width: 125px;
+		height: 51px;
+		background-size: 125px 34px;
+	}
+	/* DG-i */
+	.logo-dgi {
+		width: 125px;
+		height: 51px;
+		background-size: 55px 22px;
+	}
+	/* SUPPORTER */
+	.logo-supporter {
+		width: 125px;
+		height: 51px;
+		background-size: 123px 25px;
+	}
 }
 
 /* Banner */
 
 	#banner {
-		@include padding(4em, 3em, (1em, 0, 0, 0));
+		@include padding(0, 3em, (.5em, 0, 0, 0));
 		background-attachment: scroll, fixed;
 		background-image: url('images/overlay.png'), url('../../images/banner.jpg');
 		background-position: center center;
 		background-size: cover;
-		line-height: 2;
+		line-height: 1.5;
 		text-align: center;
 
 		h1 {
@@ -1410,7 +1532,6 @@
 			font-size: 1.25em;
 			letter-spacing: _font(letter-spacing);
 			margin-bottom: 1.75em;
-			text-transform: uppercase;
 		}
 	}
 
@@ -1436,7 +1557,7 @@
 /* Footer */
 
 	#footer {
-		@include padding(8em, 0);
+		@include padding(3em, 0);
 		background-color: _palette(accent2, bg);
 		color: _palette(fg-light);
 
@@ -1468,7 +1589,7 @@
 
 		.copyright {
 			color: _palette(accent2, border);
-			font-size: 0.9em;
+			font-size: 0.75em;
 			margin: (_size(element-margin) * 2.5) 0 0 0;
 			padding: 0;
 			text-align: center;
@@ -1689,11 +1810,17 @@
 					}
 				}
 			}
+		/* Icon */
 
+			.icon {
+				font-size: 6em;
+			}
+			
+			
 		/* Banner */
 
 			#banner {
-				@include padding(4em, 3em, (1em, 0, 0, 0));
+				@include padding(0, 3em, (.5em, 0, 0, 0));
 			
 			h1 {
 				color: #ffffff;
@@ -1706,7 +1833,7 @@
 	@include breakpoint(large) {
 
 			#banner {
-				@include padding(4em, 3em, (1em, 0, 0, 0));
+				@include padding(0, 3em, (.5em, 0, 0, 0));
 			
 			h1 {
 				color: #ffffff;
@@ -1810,7 +1937,7 @@
 		/* Banner */
 
 			#banner {
-				@include padding(4em, 3em, (1em, 0, 0, 0));
+				@include padding(0, 3em, (.5em, 0, 0, 0));
 
 				h1 {
 					color: #ffffff;
@@ -1834,7 +1961,7 @@
 		/* Footer */
 
 			#footer {
-				@include padding(6em, 0);
+				@include padding(3em, 0);
 			}
 
 	}
@@ -1854,13 +1981,35 @@
 					width: 22em;
 				}
 			}
+		/* Icon */
+
+			.icon {
+				font-size: 4.75em;
+			}
+		
+		/* Banner */
+
+			#banner {
+				@include padding(0, 2em, (.5em, 0, 0, 0));
+
+				h1 {
+					color: #ffffff;
+				}
+
+				h2 {
+					font-size: 2em;
+				}
+
+				p {
+					font-size: 1em;
+				}
+			}
 
 		/* Main */
 
 			#main {
 				@include padding(6em, 0, (-2em, 0, 0, 0));
-			}
-
+			}		
 	}
 
 /* Small */
@@ -1900,6 +2049,12 @@
 				}
 			}
 
+			/* Icon */
+
+			.icon {
+				font-size: 4em;
+			}
+
 		/* Carousel */
 
 			.carousel-wrapper {
@@ -1935,7 +2090,7 @@
 		/* Banner */
 
 			#banner {
-				@include padding(4em, 3em, (1em, 0, 0, 0));
+				@include padding(1em, 1em, (.5em, 0, 0, 0));
 				background-attachment: scroll;
 
 				h1 {
@@ -2176,7 +2331,7 @@
 			input[type="reset"],
 			input[type="button"],
 			.button {
-				padding: 0;
+				padding: 0 1em;
 			}
 
 		/* Feature */

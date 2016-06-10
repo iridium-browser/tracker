@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Iridium Browser
 ---
 
 
@@ -13,115 +12,63 @@ title: Iridium Browser
 <html>
 	<body class="landing">
 
-		<!-- Banner -->
-			<section id="banner">
-				<h1>A Browser securing your privacy. <br> That's it.</h1>
-				<ul class="actions">
-					<li><a href="download.html" class="button special">DOWNLOAD</a></li>
-				</ul>
-				<p>The iridiumbrowser is based on the Chromium code base. All modifications enhance the privacy of the user and make sure that the latest and best secure technologies are used.<br />
-				Automatic transmission of partial queries, keywords, metrics to central services is prevented and only occurs with the approval of the user. In addition, all our builds are reproducible and modifications are auditable, setting the project ahead of other secure browser providers.</p>
-</section>
-<br>
-<div class="icon-grid">
-<div class="row uniform 150%">
-<section class="4u 6u(large) 12u$(small) special">
-<i class="icon fa-tachometer"></i>
-<h3>Speed</h3>
-<p>Iridium is just fast in any way. It starts very fast and loads and renders also very complex web sites really fast.</p>
+<!-- Banner / HOME -->
+<section id="banner">
+{% for home in site.home %}
+{{ home.content }}
+{% endfor %}
 </section>
 
-<section class="4u 6u$(large) 12u$(small) special">
-<i class="icon fa-check-circle"></i>
-<h3>Ease of Use</h3>
-<p>Just anybody can use iridium right away. It is simple and easy to handle, it does not require any special knowledge at all.</p>
+<section id="features">
+<div class="container" style="margin-top: 5em;">
+<div class="row uniform">
+{% for features in site.features %}
+<section class="4u 12u(small) special">
+<div class="icon {{ features.icon-class }}"></div>
+{{ features.content }}
+</section>
+{% endfor %}
+</div>
+</div>
 </section>
 
-<section class="4u 6u(large) 12u$(small)">
-<i class="icon fa-lock"></i>
-<h3>Privacy</h3>
-<p>Chromium (which Iridium is based on) is a very secure browser, yes. But it does call home to Google. And we did even more to enhance security to the maximum extent possible.</p>
-</section>
-</div></div>
 <hr/>
-
 
 
 <!-- ABOUT -->
 <section id="about" class="wrapper style1 special">
 <div class="container">
 <header class="major">
-<h1>ABOUT</h1>
+{% for about in site.about %}
+  <h1>{{ about.title }}</h1>
 </header>
+<p>{{ about.content }}</p>
+{% endfor %}
 
-<h4>Motivation</h4>
-<p>There are many browsers out there.  Chrome is fast, stable, and user-friendly but does not meet many organizations’ demands for privacy. Since the tight integration with its inventor (Google) makes many things easier it does not comply to restrictive data environments. Iridium is not another new browser from scratch. It takes the Chromium code base, which is also used for the official Chrome browser, and enhances its security and sets certain policies by default. There are many forks of Chromium-based browsers, yet in our opinion they failed in many other key areas important for adoption:</p>
 
-<h4>Transparency</h4>
-<p>With Iridium the whole process is entirely transparent. The public Git repository allows a direct view on all changes made. The complete source code is therefore available.</p>
-
-<h4>Privacy</h4>
-<p>Iridium has various enhancements where it forces strict security to provide the maximum level of security without compromising compatibility.</p>
-
-<h4>Deployability</h4>
-<p>We try to distribute it in ways where it allows easy installation and yet allows administrators to deploy it easily. An example is an MSI-based installation mechanism for easy deployments throughout an entire organization.</p>
-
-<hr/>
-
-<h2>Backed by Serious People</h2>
-<p>The iridiumbrowser project is backed by the Open Source Buisiness Alliance. Today around 190 members are part of the http://osb-alliance.de/<br>
-These most active companies are the core of the development team:</p>
-<div class="icon-grid">
-<div class="row uniform 150%">
-<section class="4u 6u(large) 12u$(small)">
-<a href="http://osb-alliance.de/" target="_blank"><div class="logo-osba"></div></a>
+<!-- Developer Logos -->
+<div class="row uniform">
+{% for logos in site.logos %}
+<section class="3u 4u(xlarge) 6u(medium) special">
+<a href="{{ logos.link }}" title="{{ logos.title }}" target="{{ logos.target }}" class="{{ logos.logo-class }}"></a>
+<div class="logo-text">{{ logos.content }}</div>
 </section>
-
-<section class="4u 6u(large) 12u$(small)">
-<a href="https://netitwork.net/" target="_blank"><div class="logo-netitwork"></div></a>
-</section>
-
-<section class="4u 6u(large) 12u$(small)">
-<a href="https://www.zarafa.com/" target="_blank"><div class="logo-zarafa"></div></a>
-</section>
-
-<section class="4u 6u$(large) 12u$(small)">
-<a href="http://www.n-h.com/" target="_blank"><div class="logo-nh"></div></a>
-</section>
-
-<section class="4u 6u(large) 12u$(small)">
-<a href="http://www.struktur.de/" target="_blank"><div class="logo-struktur"></div></a>
-</section>
-
-<section class="4u 6u(large) 12u$(small)">
-<a href="https://www.bytemine.net/" target="_blank"><div class="logo-bytemine"></div></a>
-</section>
-
-<section class="4u 6u(large) 12u$(small)">
-<a href="https://www.dg-i.net/" target="_blank"><div class="logo-dgi"></div></a>
-</section>
-
-</div>
+{% endfor %}
 </div>
 </div>
 </section>
+
 
 
 <!-- CONTRIBUTE -->
 <section id="contribute" class="wrapper style1 special">
 <div class="container">
 <header class="major">
-<h1>Contribute</h1>
+{% for contribute in site.contribute %}
+  <h1>{{ contribute.title }}</h1>
 </header>
-<p>Help to make people's privacy not an option but normal</p>
-<h4>Sponsoring</h4>
-<p>As you can imagine, developing, provision of infrastructure, and testing is very intense work. This results in costs to maintain easy imaginable things such as bandwidth, but also infrastructure such as maintaining build systems. For ongoing success and providing builds for multiple platforms, it is key to have dedicated developers focused on this browser project. If you see a value in the Iridium browser for you personally, for your organization, please consider a donation.</p>
-
-<h4>Development</h4>
-<p>If you are a security developer which knows Chromium or is security focused in general, feel free writing us through our mailing list. Patches are very welcome and will get reviewed in short order!</p>
-
-<h4>Spread the word</h4>
-<p>We think that privacy is more important than ever. We do not feel that your translations should be transparently sent to a central service which can potentially be misused. We think sending out literally anything you type is not an option. By using and recommending Iridium, you help evolve a serious alternative come true.</p>
+<p>{{ contribute.content }}</p>
+{% endfor %}
 </div>
 </section>
 

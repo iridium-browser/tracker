@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagecentered
 title: "Development"
 ---
 
@@ -7,8 +7,7 @@ How to take part in development
 -------------------------------
 
 #### Dive In ####
-
-Sources may be obtained <a href="index.html#three">as a tarball or via Git transport</a>. When working with the plain tarball and without git, using a utility like quilt to track file changes and produce patches is recommended. (See below for submission.)
+Sources may be obtained [as a tarball or via Git transport](download.html "download") as a tarball or via Git transport. When working with the plain tarball and without git, using a utility like quilt to track file changes and produce patches is recommended. (See below for submission.)
 
 The Git repository features a <code>master</code> branch which points to the current patch stack, and a crbase convenience branch pointer with which we have marked the base at which we started deviating from the Chromium source code. Our tags are named <code>iridium-browser-39.0</code>, and can be used to locate older variants of our creations by release number. To find the Chromium version tag such a release is based on, use, with appropriate number substitution
 
@@ -50,7 +49,7 @@ Or, to produce one file per change:
 
 > git format-patch ir/crbase..ir/master
 
-The so-produced diff files are then used together with a pristine source tarball to produce our per-platform builds. To that end, the <a href="http://openbuildservice.org/" target="_blank">Open Build Service</a>, more precisely, a local instance thereof in our data centers, is used, at least for Linux builds. That code repository, too, is public, at <a href="https://build.netitwork.net/package/show/iridium/iridium-browser" target="_blank">https://build.netitwork.net/</a>.
+The so-produced diff files are then used together with a pristine source tarball to produce our per-platform builds. To that end, the [Open Build Service](http://openbuildservice.org/ "Open Build Service"), more precisely, a local instance thereof in our data centers, is used, at least for Linux builds. That code repository too, is public, at [https://build.netitwork.net/](https://build.netitwork.net/package/show/iridium/iridium-browser "code repository").
 
 This currently features *an import* of the openSUSE chromium source RPM, which has been edited minimally to change Google API keys, build the browser suite with our patches, and of course a package rename to avoid inadvertent overlap with the existing <code>chromium</code>.
 
