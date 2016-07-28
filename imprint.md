@@ -3,6 +3,10 @@ layout: pagecentered
 title: "Imprint"
 ---
 
+#### Bug Tracker ####
+Please report any  issues to our [Bug tracker @ GitHub](https://github.com/iridium-browser/iridium-browser/issues)     
+   
+   
 Betreiber der Webseite
 ----------------------
 

@@ -9,6 +9,10 @@ title: "Download"
 
 ### Windows ###
 Download at [https://downloads.iridiumbrowser.de/windows/](https://downloads.iridiumbrowser.de/windows/)
+
+*Release notes:*     
+Standard release *[i.e. iridiumbrowser-48.2.0-x64.msi]* includes free media codecs only.    
+Extra release *[i.e. iridiumbrowser-48.2.0-extra-x64.msi]* also includes non-free media codecs.
   
 ---  
   
