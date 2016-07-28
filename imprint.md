@@ -4,7 +4,9 @@ title: "Imprint"
 ---
 
 #### Bug Tracker ####
-Please report any  issues to our [Bug tracker @ GitHub](https://github.com/iridium-browser/iridium-browser/issues)     
+Please report any  issues and address any questions to our [Bug tracker @ GitHub](https://github.com/iridium-browser/iridium-browser/issues)     
+Stay up to date and sign up to our [Mailing List](http://lists.inai.de/mailman/listinfo/iridium)
+
    
    
 Betreiber der Webseite
