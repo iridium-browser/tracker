@@ -10,13 +10,13 @@ title: "Download"
 ### Windows ###
 Download at [https://downloads.iridiumbrowser.de/windows/](https://downloads.iridiumbrowser.de/windows/)
 
-<ul>Release notes    
-<li>Standard release [i.e. iridiumbrowser-51.1.0-x64.msi] includes free media codecs only.</li>    
-<li>Extra release [i.e. iridiumbrowser-51.1.0-extra-x64.msi] also includes non-free media codecs.</li></ul>
+Release notes    
+&#8227; Standard release [i.e. iridiumbrowser-51.1.0-x64.msi] includes free media codecs only.    
+&#8227; Extra release [i.e. iridiumbrowser-51.1.0-extra-x64.msi] also includes non-free media codecs.     
      
-<ul>System Requirements     
-<li>Windows 7, Windows 8, Windows 8.1, Windows 10 or later</li>     
-<li>An Intel Pentium 4 processor or later that's SSE2 capable</li></ul>
+System Requirements     
+&#8226; Windows 7, Windows 8, Windows 8.1, Windows 10 or later     
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
   
 ---  
   
@@ -26,12 +26,12 @@ Download at [https://downloads.iridiumbrowser.de/windows/](https://downloads.iri
 Download at [https://downloads.iridiumbrowser.de/macosx/](https://downloads.iridiumbrowser.de/macosx/)
   
 
-<ul>Release notes    
-<li>Standard release [i.e. iridium_browser_51.1.0_osx_x64.dmg] includes free media codecs only.</li>    
-<li>Extra release [i.e. iridium_browser_extra_51.1.0_osx_x64.dmg] also includes non-free media codecs.</li></ul>
+Release notes    
+&#8227; Standard release [i.e. iridium_browser_51.1.0_osx_x64.dmg] includes free media codecs only.     
+&#8227; Extra release [i.e. iridium_browser_extra_51.1.0_osx_x64.dmg] also includes non-free media codecs.     
      
-<ul>System Requirements     
-<li>OS X Mavericks 10.9 or later</li></ul>     
+System Requirements     
+&#8226; OS X Mavericks 10.9 or later     
    
 ---  
   
@@ -59,9 +59,9 @@ Download at [https://downloads.iridiumbrowser.de/macosx/](https://downloads.irid
     sudo apt-get update
     sudo apt-get install iridium-browser
      
-<ul>System Requirements     
-<li>64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.1+, or Fedora Linux 21+</li>     
-<li>An Intel Pentium 4 processor or later that's SSE2 capable</li></ul>     
+System Requirements     
+&#8226; 64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.1+, or Fedora Linux 21+     
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
      
 ---  
   
