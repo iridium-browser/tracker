@@ -40,7 +40,10 @@ System Requirements
 ### Repository for openSUSE 13.1 ###
 	zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.1/ iridium  
 	zypper in iridium-browser
-  
+     
+System Requirements     
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
+     
 ---  
   
  <div class="icon fa-database"></div>
@@ -48,7 +51,10 @@ System Requirements
 ### Repository for openSUSE 13.2 ###
 	zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.2/ iridium  
 	zypper in iridium-browser
-  
+     
+System Requirements     
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
+     
 ---  
   
 <div class="icon fa-linux"></div> 
@@ -60,7 +66,7 @@ System Requirements
     sudo apt-get install iridium-browser
      
 System Requirements     
-&#8226; 64-bit Ubuntu 14.04+, Debian 8+, openSUSE 13.1+, or Fedora Linux 21+     
+&#8226; 64-bit Ubuntu 14.04+
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
      
 ---  
