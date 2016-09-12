@@ -11,6 +11,7 @@ title: "Download"
 Download at [https://downloads.iridiumbrowser.de/windows/](https://downloads.iridiumbrowser.de/windows/)
 
 Release notes    
+&#8227; x86 = 32-bit | x64 = 64-bit     
 &#8227; Standard release [i.e. iridiumbrowser-51.1.0-x64.msi] includes free media codecs only.    
 &#8227; Extra release [i.e. iridiumbrowser-51.1.0-extra-x64.msi] also includes non-free media codecs.     
      
