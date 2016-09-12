@@ -66,7 +66,7 @@ System Requirements
     sudo apt-get install iridium-browser
      
 System Requirements     
-&#8226; 64-bit Ubuntu 14.04+
+&#8226; 64-bit Ubuntu 14.04+     
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
      
 ---  
