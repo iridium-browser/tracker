@@ -2338,6 +2338,61 @@ body.landing .dropotron.level-0 {
     width: 125px;
     height: 51px;
     background-size: 123px 25px; } }
+/* MARQUEE */
+.marquee {
+  width: 64em;
+  height: 2.5em;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 1em; }
+  @media screen and (max-width: 736px) {
+    .marquee .marquee {
+      width: 100%;
+      margin-top: .25em;
+      margin-bottom: .25em; } }
+
+.marquee p {
+  position: absolute;
+  text-transform: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 100%;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: example1 15s linear infinite;
+  -webkit-animation: example1 15s linear infinite;
+  animation: example1 15s linear infinite; }
+
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+  0% {
+    -moz-transform: translateX(100%); }
+  100% {
+    -moz-transform: translateX(-100%); } }
+@-webkit-keyframes example1 {
+  0% {
+    -webkit-transform: translateX(100%); }
+  100% {
+    -webkit-transform: translateX(-100%); } }
+@keyframes example1 {
+  0% {
+    -moz-transform: translateX(100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(100%);
+    /* Firefox bug fix */
+    transform: translateX(100%); }
+  100% {
+    -moz-transform: translateX(-100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateX(-100%);
+    /* Firefox bug fix */
+    transform: translateX(-100%); } }
 /* Banner */
 #banner {
   padding: 0.5em 3em 0.1em 3em ;
