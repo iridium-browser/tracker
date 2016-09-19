@@ -2348,7 +2348,7 @@ body.landing .dropotron.level-0 {
   @media screen and (max-width: 736px) {
     .marquee {
       width: 90%;
-      margin-bottom: .25em; } }
+      margin-bottom: .5em; } }
 
 .marquee span {
   font-size: 1.75em;
