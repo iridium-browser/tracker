@@ -11,6 +11,14 @@ layout: default
 -->
 <html>
 	<body class="landing">
+<!-- MARQUEE -->
+<section id="marquee" class="marquee"><span>
+
+{% for marquee in site.marquee %}
+{{ marquee.content }}
+{% endfor %}
+</span>
+</section>
 
 <!-- Banner / HOME -->
 <section id="banner">
