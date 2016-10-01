@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-layout
 title: "Speed"
 icon-class: fa-tachometer
 ---

@@ -1,6 +1,7 @@
 ---
 layout: pagecentered
 title: "Imprint"
+description: Imprint | Legal Information
 ---
 
 #### Bug Tracker ####
