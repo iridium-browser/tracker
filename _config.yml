@@ -14,11 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
   latest and best secure technologies are used.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.iridium-browser.de" # the base hostname & protocol for your site
-
-teaser: "Iridium-hotpic.png"
-image: "/images/Iridium-hotpic.png"
-og_image: "Iridium-hotpic.png"
+url: "http://iridium-browser.de" # the base hostname & protocol for your site
 
 gems:
   - jekyll-sitemap
