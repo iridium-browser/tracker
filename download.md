@@ -40,7 +40,7 @@ System Requirements
  <div class="icon fa-database"></div>
  
 ### Repository for openSUSE 13.1 ###
-	zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.1/ iridium  
+	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium  
 	zypper in iridium-browser
      
 System Requirements     
