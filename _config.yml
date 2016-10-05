@@ -12,9 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   The iridiumbrowser is based on the Chromium code base. 
   All modifications enhance the privacy of the user and make sure that the 
   latest and best secure technologies are used.
-
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://iridium-browser.de" # the base hostname & protocol for your site
+url: "https://iridiumbrowser.de" # the base hostname & protocol for your site
 
 collections:
   - marquee

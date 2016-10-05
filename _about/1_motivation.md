@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: start-layout
 title: "About"
 id: about
 ---
