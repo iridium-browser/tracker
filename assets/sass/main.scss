@@ -2087,8 +2087,6 @@
 	
 	
 /* IRIDIUM LOGOS */
-
-/* Iridium Logo */
 	.logo {
 		width: 582px;
 		height: 350px;
@@ -2147,6 +2145,66 @@
 		float: right;
 	}	
 }
+
+	.logo2 {
+		width: 582px;
+		height: 126px;
+		background-size: 582px 126px; 
+		background-image: url(../logos/iridium-logo2_582x126.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		display:block;
+		margin: 0 auto;
+		outline: none;
+	}
+	/* XLarge */
+	@include breakpoint(xlarge) {
+	.logo2 {
+		width: 582px;
+		height: 126px;
+		background-size: 582px 126px; 
+	}
+}
+	/* Large */
+	@include breakpoint(large) {
+	.logo2 {
+		width: 500px;
+		height: 108px;
+		background-size: 500px 108px; 
+	}
+}
+	/* Medium */
+	@include breakpoint(medium) {
+	.logo2 {
+		width: 416px;
+		height: 90px;
+		background-size: 416px 90px;
+	}
+}
+	/* Small */
+	@include breakpoint(small) {
+	.logo2 {
+		display: none;
+	}
+	.logo-small {
+		width: 250px;
+		height: 29px;
+		background-size: 250px 29px;
+		background-image: url(../logos/iridium-logo-small_500x58.png);
+		background-position: center center; 
+		background-repeat: no-repeat;
+		display:block;
+		margin: 7px auto;
+	}	
+}
+	/* XSmall */
+	@include breakpoint(xsmall) {
+	.logo-small {
+		margin: 7px 7px;
+		float: right;
+	}	
+}
+
 /* DEVELOPER LOGOS */
 	/* Text */
 	.logo-text {
