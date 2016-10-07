@@ -3,4 +3,4 @@ layout: default-layout
 title: "Marquee"
 ---
 
-</> **IridiumBrowser Development Team** to meet at the **[Kopano Conference](https://kopano.com/conference/ "Kopano Conference"){:target="_blank"}** on **6 October** - feel free to join **</>**
+</> **our Development Team** has met at Kopano Conference and will focus on Ubuntu build and faster releases  **</>**

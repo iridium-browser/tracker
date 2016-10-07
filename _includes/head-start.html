@@ -10,7 +10,7 @@
 		<!-- Facebook -->
 		<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 		<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-		<meta property="og:image" content="{{ "/images/Iridium-hotpic.png" | prepend: site.baseurl | prepend: site.url }}">
+		<meta property="og:image" content="{{ "/images/Iridium-hotpic_FB.png" | prepend: site.baseurl | prepend: site.url }}">
 		<meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 		<meta property="og:site_name" content="{{ site.title }}">
 		<!-- Twitter -->
@@ -18,11 +18,11 @@
 		<meta name="twitter:site" content="@iridiumbrowser">
 		<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 		<meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-		<meta property="twitter:image:src" content="{{ "/images/Iridium-hotpic.png" | prepend: site.baseurl | prepend: site.url }}">
+		<meta property="twitter:image:src" content="{{ "/images/Iridium-hotpic_TW.png" | prepend: site.baseurl | prepend: site.url }}">
 		<!-- GooglePlus -->
 		<meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
 		<meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-		<meta itemprop="image" content="{{ "/images/Iridium-hotpic.png" | prepend: site.baseurl | prepend: site.url }}"/>
+		<meta itemprop="image" content="{{ "/images/Iridium-hotpic_Goo.png" | prepend: site.baseurl | prepend: site.url }}"/>
 		
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
