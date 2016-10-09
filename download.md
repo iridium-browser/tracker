@@ -1,6 +1,7 @@
 ---
 layout: pagecentered
 title: "Download"
+menu: main
 description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
 ---
 

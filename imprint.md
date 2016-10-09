@@ -1,6 +1,7 @@
 ---
 layout: pagecentered
 title: "Imprint"
+menu: no
 description: Imprint | Legal Information
 ---
 
@@ -8,6 +9,7 @@ description: Imprint | Legal Information
 Please report any  issues and address any questions to our [Bug tracker @ GitHub](https://github.com/iridium-browser/iridium-browser/issues)     
 Stay up to date and sign up to our [Mailing List](http://lists.inai.de/mailman/listinfo/iridium)
 
+----
    
    
 Betreiber der Webseite
