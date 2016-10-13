@@ -1,6 +1,7 @@
 ---
 layout: pagecentered
 title: "Development"
+menu: main
 description: "Take part in developing IridiumBrowser"
 ---
 

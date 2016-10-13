@@ -1,6 +1,7 @@
 ---
 layout: pagecentered
 title: "Download"
+menu: main
 description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
 ---
 
@@ -17,7 +18,7 @@ Release notes
 &#8227; Extra release [i.e. iridiumbrowser-51.1.0-extra-x64.msi] also includes non-free media codecs.     
      
 System Requirements     
-&#8226; Windows 7, Windows 8, Windows 8.1, Windows 10 or later     
+&#8226; Windows 7, 8, 8.1, 10 or later     
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
   
 ---  

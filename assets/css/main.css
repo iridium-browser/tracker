@@ -1976,6 +1976,7 @@ body {
     top: 0;
     vertical-align: middle;
     font-weight: 700;
+    font-size: 1.15em;
     z-index: 1000000; }
     #header nav > ul {
       list-style: none;
@@ -2157,8 +2158,8 @@ body.is-touch #banner {
     color: #ffffff; }
   #footer .copyright {
     color: rgba(255, 255, 255, 0.25);
-    font-size: 0.75em;
-    margin: 5em 0 0 0;
+    font-size: 0.85em;
+    margin: 1em 0 0 0;
     padding: 0;
     text-align: center; }
     #footer .copyright li {
@@ -2743,7 +2744,7 @@ body.is-touch .poptrox-popup .closer {
   width: 582px;
   height: 350px;
   background-size: 582px 350px;
-  background-image: url(../logos/iridium-logo_582x350.png);
+  background-image: url(../../images/logos/iridium-logo_582x350.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2777,7 +2778,7 @@ body.is-touch .poptrox-popup .closer {
     width: 250px;
     height: 29px;
     background-size: 250px 29px;
-    background-image: url(../logos/iridium-logo-small_500x58.png);
+    background-image: url(../../images/logos/iridium-logo-small_250x30.png);
     background-position: center center;
     background-repeat: no-repeat;
     display: block;
@@ -2789,9 +2790,9 @@ body.is-touch .poptrox-popup .closer {
     float: right; } }
 .logo2 {
   width: 582px;
-  height: 126px;
-  background-size: 582px 126px;
-  background-image: url(../logos/iridium-logo2_582x126.png);
+  height: 127px;
+  background-size: 582px 127px;
+  background-image: url(../../images/logos/iridium-logo2_582x127.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2802,20 +2803,20 @@ body.is-touch .poptrox-popup .closer {
 @media screen and (max-width: 1680px) {
   .logo2 {
     width: 582px;
-    height: 126px;
-    background-size: 582px 126px; } }
+    height: 127px;
+    background-size: 582px 127px; } }
 /* Large */
 @media screen and (max-width: 1280px) {
   .logo2 {
     width: 500px;
-    height: 108px;
-    background-size: 500px 108px; } }
+    height: 109px;
+    background-size: 500px 109px; } }
 /* Medium */
 @media screen and (max-width: 980px) {
   .logo2 {
     width: 416px;
-    height: 90px;
-    background-size: 416px 90px; } }
+    height: 91px;
+    background-size: 416px 91px; } }
 /* Small */
 @media screen and (max-width: 736px) {
   .logo2 {
@@ -2823,9 +2824,9 @@ body.is-touch .poptrox-popup .closer {
 
   .logo-small {
     width: 250px;
-    height: 29px;
-    background-size: 250px 29px;
-    background-image: url(../logos/iridium-logo-small_500x58.png);
+    height: 30px;
+    background-size: 250px 30px;
+    background-image: url(../../images/logos/iridium-logo-small_250x30.png);
     background-position: center center;
     background-repeat: no-repeat;
     display: block;
@@ -2833,7 +2834,7 @@ body.is-touch .poptrox-popup .closer {
 /* XSmall */
 @media screen and (max-width: 480px) {
   .logo-small {
-    margin: 7px 7px;
+    margin: 7px 14px;
     float: right; } }
 /* DEVELOPER LOGOS */
 /* Text */
@@ -2845,7 +2846,7 @@ body.is-touch .poptrox-popup .closer {
   width: 200px;
   height: 81px;
   background-size: 200px 81px;
-  background-image: url(../logos/logo-osba_250x101.png);
+  background-image: url(../../images/logos/logo-osba_250x101.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2856,7 +2857,18 @@ body.is-touch .poptrox-popup .closer {
   width: 200px;
   height: 81px;
   background-size: 200px 38px;
-  background-image: url(../logos/logo-netitwork_250x48.png);
+  background-image: url(../../images/logos/logo-netitwork_250x48.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto; }
+
+/* Kopano */
+.logo-kopano {
+  width: 200px;
+  height: 81px;
+  background-size: 200px 47px;
+  background-image: url(../../images/logos/logo-kopano_250x59.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2866,8 +2878,8 @@ body.is-touch .poptrox-popup .closer {
 .logo-zarafa {
   width: 200px;
   height: 81px;
-  background-size: 170px 47px;
-  background-image: url(../logos/logo-zarafa_250x69.png);
+  background-size: 150px 41px;
+  background-image: url(../../images/logos/logo-zarafa_250x69.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2878,7 +2890,7 @@ body.is-touch .poptrox-popup .closer {
   width: 200px;
   height: 81px;
   background-size: 200px 47px;
-  background-image: url(../logos/logo-nh_250x59.png);
+  background-image: url(../../images/logos/logo-nh_250x59.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2888,8 +2900,8 @@ body.is-touch .poptrox-popup .closer {
 .logo-struktur {
   width: 200px;
   height: 81px;
-  background-size: 200px 27px;
-  background-image: url(../logos/logo-struktur_250x34.png);
+  background-size: 200px 26px;
+  background-image: url(../../images/logos/logo-struktur_250x33.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2900,7 +2912,7 @@ body.is-touch .poptrox-popup .closer {
   width: 200px;
   height: 81px;
   background-size: 200px 54px;
-  background-image: url(../logos/logo-bytemine_250x68.png);
+  background-image: url(../../images/logos/logo-bytemine_250x68.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2911,7 +2923,7 @@ body.is-touch .poptrox-popup .closer {
   width: 200px;
   height: 81px;
   background-size: 125px 51px;
-  background-image: url(../logos/logo-dg-i_250x101.png);
+  background-image: url(../../images/logos/logo-dg-i_250x101.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2922,7 +2934,7 @@ body.is-touch .poptrox-popup .closer {
   width: 200px;
   height: 81px;
   background-size: 200px 41px;
-  background-image: url(../logos/logo-iridium_supporter_250x51.png);
+  background-image: url(../../images/logos/logo-iridium_supporter_250x51.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2946,11 +2958,17 @@ body.is-touch .poptrox-popup .closer {
     height: 61px;
     background-size: 150px 29px; }
 
+  /* Kopano */
+  .logo-kopano {
+    width: 150px;
+    height: 61px;
+    background-size: 150px 35px; }
+
   /* Zarafa */
   .logo-zarafa {
     width: 125px;
     height: 61px;
-    background-size: 120px 33px; }
+    background-size: 100px 28px; }
 
   /* Neuberger &amp; Hughes */
   .logo-nh {
@@ -2999,11 +3017,17 @@ body.is-touch .poptrox-popup .closer {
     height: 51px;
     background-size: 125px 24px; }
 
+  /* Kopano */
+  .logo-kopano {
+    width: 125px;
+    height: 51px;
+    background-size: 125px 30px; }
+
   /* Zarafa */
   .logo-zarafa {
     width: 125px;
     height: 51px;
-    background-size: 95px 26px; }
+    background-size: 75px 21px; }
 
   /* Neuberger &amp; Hughes */
   .logo-nh {
@@ -3049,7 +3073,7 @@ body.is-touch .poptrox-popup .closer {
       margin-bottom: 0; } }
 
 .marquee span {
-  font-size: 1.75em;
+  font-size: 1.25em;
   color: #4499D4;
   line-height: 1em;
   display: inline-block;
