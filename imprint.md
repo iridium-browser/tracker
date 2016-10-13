@@ -28,6 +28,7 @@ web http://www.osb-alliance.com
 Peter Ganten (Vorsitzender)
 
 *Zuständiges Gericht*  
+Eingetragen im Vereinsregister    
 Registergericht: Amtsgericht Stuttgart, Registernummer: VR7217  
 Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE240931660  
 
