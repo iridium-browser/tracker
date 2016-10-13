@@ -15,7 +15,7 @@ Stay up to date and sign up to our [Mailing List](http://lists.inai.de/mailman/l
 Betreiber der Webseite
 ----------------------
 
-Open Source Business Alliance  
+Open Source Business Alliance e.V.   
 Breitscheidstr. 4  
 70174 Stuttgart | Germany  
 tel +49 711 90715-390  
