@@ -6,17 +6,28 @@ description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
 ---
 
 #### choose the right download for your operating system #
-
+<div id="windows"></div>
 <div class="icon fa-windows"></div>
 
 ### Windows ###
-Download at [https://downloads.iridiumbrowser.de/windows/](https://downloads.iridiumbrowser.de/windows/)
+<div class="row align-center">
+	<div class="12u$ align-center">Download the <b>Standard Release</b> (<em>free media codecs only - for maximum Security</em>)</div>
+	<div class="3u 2u(medium) not-small">&nbsp;</div>
+	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-x86.msi" title="download 32-bit Standard Release">32-bit Standard</a></div>
+	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-x64.msi" title="download 64-bit Standard Release">64-bit Standard</a></div>
+	<div class="3u 2u(medium) not-small">&nbsp;</div>
+</div>
 
-Release notes    
-&#8227; x86 = 32-bit | x64 = 64-bit     
-&#8227; Standard release [i.e. iridiumbrowser-51.1.0-x64.msi] includes free media codecs only.    
-&#8227; Extra release [i.e. iridiumbrowser-51.1.0-extra-x64.msi] also includes non-free media codecs.     
+<div class="row align-center">
+	<div class="12u$ align-center">Download the <b>Extra Release</b> (<em>includes non-free media codecs</em>)</div>
+	<div class="3u 2u(medium) not-small">&nbsp;</div>
+	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-extra-x86.msi" title="download 32-bit Standard Release">32-bit Extra</a></div>
+	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-extra-x64.msi" title="download 64-bit Standard Release">64-bit Extra</a></div>
+	<div class="3u 2u(medium) not-small">&nbsp;</div>
+</div>
      
+If you are looking for a previous version, please check out the [Builds Archive](https://downloads.iridiumbrowser.de/windows/){:target="_blank"}
+
 System Requirements     
 &#8226; Windows 7, 8, 8.1, 10 or later     
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
