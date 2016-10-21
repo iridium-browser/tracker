@@ -5,7 +5,7 @@ menu: main
 description: "Frequently Asked Questions"
 ---
 
-Frequently Asked Questions1
+Frequently Asked Questions
 --------------------------
      
      
