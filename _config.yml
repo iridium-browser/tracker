@@ -24,7 +24,9 @@ collections:
   - logos
   - contribute
   - footer
-  
+
+gems:
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
