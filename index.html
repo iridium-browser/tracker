@@ -42,6 +42,19 @@ layout: start-layout
 
 <hr/>
 
+<!-- NEWS -->
+<section id="news" class="wrapper style1 special">
+<div class="container">
+<header class="major">
+{% for news in site.news %}
+  <h1>{{ news.title }}</h1>
+</header>
+<p>{{ news.content }}</p>
+{% endfor %}
+</div>
+</section>
+
+<hr/>
 
 <!-- ABOUT -->
 <section id="about" class="wrapper style1 special">
