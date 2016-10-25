@@ -164,6 +164,12 @@
 		}
 	}
 
+	small {
+		font-size: .9em;
+		font-style: normal;
+		vertical-align: top;
+	}
+	
 	blockquote {
 		border-left: solid 4px _palette(border);
 		font-style: italic;
@@ -1029,7 +1035,7 @@
 /* Wrapper */
 
 	.wrapper {
-		@include padding(8em, 0);
+		@include padding(4em, 0);
 
 		&.style1 {
 			& + & {
@@ -1041,7 +1047,7 @@
 /* Header */
 
 	body {
-		padding-top: 4.5em;
+		padding-top: 2.5em;
 	}
 
 	#header {
@@ -1658,7 +1664,7 @@
 		/* Wrapper */
 
 			.wrapper {
-				@include padding(6em, 0);
+				@include padding(4em, 0);
 			}
 
 		/* Header */

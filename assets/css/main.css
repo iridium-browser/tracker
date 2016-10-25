@@ -1281,6 +1281,11 @@ hr {
   hr.major {
     margin: 5em 0; }
 
+small {
+  font-size: .9em;
+  font-style: normal;
+  vertical-align: top; }
+
 blockquote {
   border-left: solid 4px rgba(144, 144, 144, 0.25);
   font-style: italic;
@@ -1957,13 +1962,13 @@ input[type="button"],
 
 /* Wrapper */
 .wrapper {
-  padding: 8em 0 6em 0 ; }
+  padding: 4em 0 2em 0 ; }
   .wrapper.style1 + .wrapper.style1 {
     border-top: 1px solid rgba(144, 144, 144, 0.25); }
 
 /* Header */
 body {
-  padding-top: 4.5em; }
+  padding-top: 2.5em; }
 
 #header {
   background-color: #fff;
@@ -2451,7 +2456,7 @@ body.is-touch .poptrox-popup .closer {
 
   /* Wrapper */
   .wrapper {
-    padding: 6em 0 4em 0 ; }
+    padding: 4em 0 2em 0 ; }
 
   /* Header */
   #header {

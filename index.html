@@ -40,21 +40,48 @@ layout: start-layout
 </div>
 </section>
 
-<hr/>
+<hr>
 
 <!-- NEWS -->
 <section id="news" class="wrapper style1 special">
 <div class="container">
 <header class="major">
-{% for news in site.news %}
-  <h1>{{ news.title }}</h1>
+	<h1>Recent News</h1>
 </header>
-<p>{{ news.content }}</p>
-{% endfor %}
+<div class="row 200%">
+<div class="8u 12u$(medium)">
+<!-- Content -->
+	<section id="content" class="align-left">
+		{% for post in site.posts %}
+		<header class="post-header">
+			<h3 class="post-title" itemprop="name headline">{{ post.title }}</h3>
+		</header>
+		<div class="post-content" itemprop="articleBody">
+		{{ post.content }}
+		</div>
+		<footer>
+		<p class="post-meta align-right"><small>{{ post.date | date: "%-d-%b-%Y" }} {% if post.author %} • by {{ post.author }}{% endif %}</small></p>
+		</footer>
+		<hr>
+		{% endfor %}
+	</section>
+</div>
+
+<div class="4u$ 12u$(medium)">
+<!-- Sidebar -->
+	<section id="sidebar">
+		{% for news in site.news %}
+		<h3>{{ news.title }}</h3>
+		<section>
+			<p>{{ news.content }}</p>
+		{% endfor %}
+		</section>
+	</section>
+</div>
+</div>
+<p>looking for previous posts? check out the <b><a href="archive.html" title="check out the News Archive" target="_blank">NEWS ARCHIVE</a></b></p>
 </div>
 </section>
-
-<hr/>
 
 <!-- ABOUT -->
 <section id="about" class="wrapper style1 special">
@@ -79,7 +106,7 @@ layout: start-layout
 </div>
 </section>
 
-
+<hr>
 
 <!-- CONTRIBUTE -->
 <section id="contribute" class="wrapper style1 special">
