@@ -1,0 +1,22 @@
+    <!-- Footer -->
+      <div id="footer">
+        <div class="container">
+            <section class="special">
+			{% for footer-post in site.footer-post %}
+		  <h3>{{ footer-post.title }}</h3>
+			</header>
+			<p>{{ footer-post.content }}</p>
+			{% endfor %}
+            </section>
+        </div>
+        </div>
+
+    <!-- Scripts -->
+      <script src="../../../../assets/js/jquery.min.js"></script>
+      <script src="../../../../assets/js/skel.min.js"></script>
+      <script src="../../../../assets/js/jquery.dropotron.min.js"></script>
+      <script src="../../../../assets/js/jquery.onvisible.min.js"></script>
+      <script src="../../../../assets/js/jquery.poptrox.min.js"></script>
+      <script src="../../../../assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="../../../../assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="../../../../assets/js/main.js"></script>

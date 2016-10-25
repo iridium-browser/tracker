@@ -1,0 +1,18 @@
+    <!-- Header -->
+      <div id="header" class="alt">
+        <h1 id="logo"><a class="site-title" href="{{ site.baseurl }}/"><!--{{ site.title }}--><div class="logo2 logo-small"></div></a></h1>
+
+        <nav id="nav">
+          <ul>
+            <li><a href="../../../../index.html">Home</a></li>
+			<li><a href="../../../../index.html#news">News</a></li>
+            <li><a href="../../../../index.html#about">About</a></li>
+            <li><a href="../../../../index.html#contribute">Contribute</a></li>
+            {% for my_page in site.pages %}
+              {% if my_page.menu == 'main' %}
+              <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </nav>
+	</div>
