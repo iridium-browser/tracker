@@ -7,18 +7,20 @@ layout: default-layout
 <header class="major">
 	<h1>News Archive</h1>
 </header>
-  <ul class="post-list">
+		
+  <ul class="alt post-list post-container">
     {% for post in site.posts %}
       <li>
-        <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a></h3>
+        <h3>{{ post.title | escape }}</h3>
 		<p><small class="post-meta">{{ post.date | date: "%-d %b %Y" }} {% if post.author %} • by {{ post.author }} {% endif %}</small></p>
-		<div class="post-content" itemprop="articleBody">
-		{{ post.teaser }}
-		</div>
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+		<div class="post-box post-content" itemprop="articleBody">
+		{{ post.content }}
+		</div></a>
 		<br/>
 		<a href="{{ post.url | prepend: site.baseurl }}" class="button small download">read more</a>
 	  </li>
-	  <hr>
+
     {% endfor %}
   </ul>
 </div>
