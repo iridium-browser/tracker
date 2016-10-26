@@ -52,7 +52,7 @@ layout: start-layout
 <div class="8u 12u$(medium)">
 <!-- Content -->
 	<section id="content" class="align-left">
-		{% for post in site.posts %}
+		{% for post in site.posts limit:2 %}
 		<header class="post-header">
 			<h3 class="post-title" itemprop="name headline">{{ post.title }}</h3>
 		</header>
@@ -72,10 +72,10 @@ layout: start-layout
 <div class="4u$ 12u$(medium)">
 <!-- Sidebar -->
 	<section id="sidebar">
-		{% for news in site.news %}
-		<h3>{{ news.title }}</h3>
+		{% for news_sidebar in site.news_sidebar %}
+		<h3>{{ news_sidebar.title }}</h3>
 		<section>
-			<p>{{ news.content }}</p>
+			<p>{{ news_sidebar.content }}</p>
 		{% endfor %}
 		</section>
 	</section>

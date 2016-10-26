@@ -10,18 +10,17 @@
 	<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
 		<section class="wrapper style1 special">
-		<div class="container">
-		<header class="major">
-			<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-			<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d-%b-%Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-		</header>
-
-		  <div class="post-content" itemprop="articleBody">
-			{{ content }}
-		  </div>
-		  <hr>
-		  <p>looking for other posts? check out the<br/>
-		  <a class="button small download" href="../../../../archive.html" title="check out the News Archive">NEWS ARCHIVE</a></p>
+			<div class="container">
+			<header class="major">
+				<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+				<p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d-%b-%Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">by {{ page.author }}</span></span>{% endif %}</p>
+			</header>
+			<div class="post-content" itemprop="articleBody">
+				{{ content }}
+			</div>
+		<hr>
+			<p>looking for other posts? check out the<br/>
+			<a class="button small download" href="../../../../archive.html" title="check out the News Archive">NEWS ARCHIVE</a></p>
 		</section>
   
 	</article>
