@@ -49,27 +49,28 @@ layout: start-layout
 	<h1>Recent News</h1>
 </header>
 <div class="row 200%">
-<div class="8u 12u$(medium)">
-<!-- Content -->
-	<section id="content" class="align-left">
-		{% for post in site.posts limit:2 %}
-		<header class="post-header">
-			<h3 class="post-title" itemprop="name headline">{{ post.title }}</h3>
-		</header>
-		<div class="post-content" itemprop="articleBody">
-		{{ post.content }}
-		</div>
-		<footer>
-		<p class="post-meta align-right"><small>{{ post.date | date: "%-d-%b-%Y" }} {% if post.author %} • by {{ post.author }}{% endif %}</small></p>
-		</footer>
-		<hr>
-		{% endfor %}
-		<footer class="align-center">
-		<p>looking for other posts? check out the</p>
-		<a class="button small download" href="archive.html" title="check out the News Archive">NEWS ARCHIVE</a>
-		</footer>
-	</section>
-</div>
+	<div class="8u 12u$(medium)">
+	<!-- Content -->
+		<section id="content" class="align-left">
+			{% for post in site.posts limit:2 %}
+			<header class="post-header">
+				<h3 class="post-title" itemprop="name headline">{{ post.title }}</h3>
+				<p class="post-meta"><small>{{ post.date | date: "%-d-%b-%Y" }}</small></p>
+			</header>
+			<div class="post-content" itemprop="articleBody">
+			{{ post.content }}
+			</div>
+			<footer>
+			<p class="post-meta align-right"><small>{% if post.author %} {{ post.author }}{% endif %}</small></p>
+			</footer>
+			<hr>
+			{% endfor %}
+			<footer class="align-center">
+			<p>looking for other posts? go to</p>
+			<a class="button small download" href="news-archive.html" title="check out the News Archive">NEWS ARCHIVE</a>
+			</footer>
+		</section>
+	</div>
 
 <div class="4u$ 12u$(medium)">
 <!-- Sidebar -->

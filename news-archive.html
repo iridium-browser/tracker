@@ -1,0 +1,26 @@
+---
+layout: default-layout
+---
+
+<section id="news" class="wrapper style1 special">
+<div class="container">
+	<header class="major">
+		<h1>News Archive</h1>
+	</header>
+	<br/>	
+	<ul class="alt post-list post-container">
+    {% for post in site.posts %}
+      <li>
+        <h3>{{ post.title | escape }}</h3>
+			<p><small class="post-meta">{{ post.date | date: "%-d %b %Y" }} {% if post.author %} • {{ post.author }} {% endif %}</small></p>
+			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+			<div class="post-box post-content" itemprop="articleBody">
+			{{ post.content }}
+			</div></a>
+			<br/>
+			<a href="{{ post.url | prepend: site.baseurl }}" class="button small download">read more</a>
+		</li>
+    {% endfor %}
+	</ul>
+</div>
+</section>
