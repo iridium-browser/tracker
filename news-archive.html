@@ -11,8 +11,10 @@ layout: default-layout
 	<ul class="alt post-list post-container">
     {% for post in site.posts %}
       <li>
-        <h3>{{ post.title | escape }}</h3>
-			<p><small class="post-meta">{{ post.date | date: "%-d %b %Y" }} {% if post.author %} • {{ post.author }} {% endif %}</small></p>
+        <header>
+		<h3>{{ post.title | escape }}</h3>
+		<p><small class="post-meta">{{ post.date | date: "%-d %b %Y" }} {% if post.author %} • {{ post.author }} {% endif %}</small></p>
+		</header>
 			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 			<div class="post-box post-content" itemprop="articleBody">
 			{{ post.content }}
