@@ -10,34 +10,34 @@ layout: start-layout
 	License: pixelarity.com/license
 -->
 <html>
-	<body class="landing">
+<body class="landing">
 <!-- MARQUEE -->
-<section id="marquee" class="marquee"><span>
-
-{% for marquee in site.marquee %}
-{{ marquee.content }}
-{% endfor %}
-</span>
+<section id="marquee" class="marquee">
+	<span>
+	{% for marquee in site.marquee %}
+	{{ marquee.content }}
+	{% endfor %}
+	</span>
 </section>
 
 <!-- Banner / HOME -->
 <section id="banner">
-{% for home in site.home %}
-{{ home.content }}
-{% endfor %}
+	{% for home in site.home %}
+	{{ home.content }}
+	{% endfor %}
 </section>
 
 <section id="features">
-<div class="container" style="margin-top: 5em;">
-<div class="row uniform">
-{% for features in site.features %}
-<section class="4u 12u(small) special">
-<div class="icon {{ features.icon-class }}"></div>
-{{ features.content }}
-</section>
-{% endfor %}
-</div>
-</div>
+	<div class="container" style="margin-top: 5em;">
+		<div class="row uniform">
+		{% for features in site.features %}
+	<section class="4u 12u(small) special">
+		<div class="icon {{ features.icon-class }}"></div>
+		{{ features.content }}
+	</section>
+	{% endfor %}
+		</div>
+		</div>
 </section>
 
 <hr>
@@ -64,7 +64,7 @@ layout: start-layout
 		<hr>
 		{% endfor %}
 		
-		<p>looking for other posts? go to</p>
+		<p>looking for previous news?</p>
 		<a class="button small download" href="news-archive.html" title="check out the News Archive">NEWS ARCHIVE</a>
 	</section>
 
@@ -73,39 +73,39 @@ layout: start-layout
 
 <!-- ABOUT -->
 <section id="about" class="wrapper style1 special">
-<div class="container">
-<header class="major">
-{% for about in site.about %}
-  <h1>{{ about.title }}</h1>
-</header>
-<p>{{ about.content }}</p>
-{% endfor %}
-
+	<div class="container">
+	<header class="major">
+		{% for about in site.about %}
+		<h1>{{ about.title }}</h1>
+	</header>
+	<p>{{ about.content }}</p>
+	{% endfor %}
 
 <!-- Developer Logos -->
-<div class="row uniform">
-{% for logos in site.logos %}
-<section class="3u 4u(xlarge) 6u(medium) special">
-<a href="{{ logos.link }}" title="{{ logos.title }}" target="{{ logos.target }}" class="{{ logos.logo-class }}"></a>
-<div class="logo-text">{{ logos.content }}</div>
-</section>
-{% endfor %}
-</div>
-</div>
+	<div class="row uniform">
+	{% for logos in site.logos %}
+	<section class="3u 4u(xlarge) 6u(medium) special">
+		<a href="{{ logos.link }}" title="{{ logos.title }}" target="{{ logos.target }}" class="{{ logos.logo-class }}"></a>
+		<div class="logo-text">{{ logos.content }}</div>
+	</section>
+	{% endfor %}
+	</div>
+	</div>
 </section>
 
 <hr>
 
 <!-- CONTRIBUTE -->
 <section id="contribute" class="wrapper style1 special">
-<div class="container">
-<header class="major">
-{% for contribute in site.contribute %}
-  <h1>{{ contribute.title }}</h1>
-</header>
-<p>{{ contribute.content }}</p>
-{% endfor %}
-</div>
+	<div class="container">
+		<header class="major">
+	{% for contribute in site.contribute %}
+			<h1>{{ contribute.title }}</h1>
+			<p>{{ contribute.subtitle }}</p>
+		</header>
+		<p>{{ contribute.content }}</p>
+	{% endfor %}
+	</div>
 </section>
 
 </body>

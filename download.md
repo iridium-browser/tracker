@@ -1,26 +1,25 @@
 ---
 layout: pagecentered
 title: "Download"
+subtitle: "choose the right download for your operating system"
 menu: main
 description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
 ---
 
-#### choose the right download for your operating system #
-<div id="windows"></div>
 <div class="icon fa-windows"></div>
 
 ### Windows ###
 
-<div class="row align-center">
-	<div class="12u$ align-center">Download the <b>Standard Release</b> (<em>free media codecs only - for maximum Security</em>)</div>
+<div class="row">
+	<div class="12u$">Download the <b>Standard Release</b> (<em>free media codecs only - for maximum Security</em>)</div>
 	<div class="3u 2u(medium) not-small">&nbsp;</div>
 	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-x86.msi" title="download 32-bit Standard Release">32-bit Standard</a></div>
 	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-x64.msi" title="download 64-bit Standard Release">64-bit Standard</a></div>
 	<div class="3u 2u(medium) not-small">&nbsp;</div>
 </div>
 
-<div class="row align-center">
-	<div class="12u$ align-center">Download the <b>Extra Release</b> (<em>includes non-free media codecs</em>)</div>
+<div class="row">
+	<div class="12u$">Download the <b>Extra Release</b> (<em>includes non-free media codecs</em>)</div>
 	<div class="3u 2u(medium) not-small">&nbsp;</div>
 	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-extra-x86.msi" title="download 32-bit Extra Release">32-bit Extra</a></div>
 	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-extra-x64.msi" title="download 64-bit Extra Release">64-bit Extra</a></div>
@@ -34,20 +33,20 @@ system requirements
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
   
 ---  
-  
+
 <div class="icon fa-apple"></div>
   
 ### Mac OS X ###
 
-<div class="row align-center">
-	<div class="12u$ align-center">Download the <b>Standard Release</b> (<em>free media codecs only - for maximum Security</em>)</div>
+<div class="row">
+	<div class="12u$">Download the <b>Standard Release</b> (<em>free media codecs only - for maximum Security</em>)</div>
 	<div class="4u 2u(medium) not-small">&nbsp;</div>
 	<div class="4u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/macosx/51.1.0/iridium_browser_51.1.0_osx_x64.dmg" title="download Standard Release">Standard</a></div>
 	<div class="4u 2u(medium) not-small">&nbsp;</div>
 </div>
 
-<div class="row align-center">
-	<div class="12u$ align-center">Download the <b>Extra Release</b> (<em>includes non-free media codecs</em>)</div>
+<div class="row">
+	<div class="12u$">Download the <b>Extra Release</b> (<em>includes non-free media codecs</em>)</div>
 	<div class="4u 2u(medium) not-small">&nbsp;</div>
 	<div class="4u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/macosx/51.1.0/iridium_browser_extra_51.1.0_osx_x64.dmg" title="download Extra Release">Extra</a></div>
 	<div class="4u 2u(medium) not-small">&nbsp;</div>
