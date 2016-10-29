@@ -7,7 +7,7 @@ A Browser securing your privacy. That's it.
 ================================  
 
 <ul class="actions">
-<a href="download.html" class="button special">DOWNLOAD</a>
+<a href="download.html" class="button download">DOWNLOAD</a>
 </ul>
 
 The iridiumbrowser is based on the Chromium code base. All modifications enhance the privacy of the user and make sure that the latest and best secure technologies are used.

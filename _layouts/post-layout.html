@@ -11,7 +11,7 @@
 	<section class="wrapper style1 special">
 		<div class="container">
 		<header class="major">
-			<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+			<h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
 			<p class="post-meta"><small><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d-%b-%Y" }}</time></small></p>
 		</header>
 		<div class="post-content" itemprop="articleBody">
@@ -23,12 +23,12 @@
 		<hr>
 		<div class="row">
 			<div class="3u align-left">{% if page.previous.url %}
-			<a class="button small download" title="previous post" href="{{page.previous.url}}">&#10094;</a>{% endif %}&nbsp;</div>
+			<a class="button small special" title="previous post" href="{{page.previous.url}}">&#10094;</a>{% endif %}&nbsp;</div>
 
-			<div class="6u align-center"><a class="button small download" href="../../../../news-archive.html" title="News Archive">News Archive</a></div>
+			<div class="6u align-center"><a class="button small special" href="../../../../news-archive.html" title="News Archive">News Archive</a></div>
 
 			<div class="3u$ align-right">{% if page.next.url %} &nbsp;
-			<a class="button small download" title="next post" href="{{page.next.url}}">&#10095;</a>{% endif %}</div>
+			<a class="button small special" title="next post" href="{{page.next.url}}">&#10095;</a>{% endif %}</div>
 		</div>
 	</section>
 </article>

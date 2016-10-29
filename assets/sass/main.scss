@@ -869,7 +869,7 @@
 			}
 		}
 
-		&.special {
+		&.download {
 			background-color: _palette(accent1, bg);
 			color: _palette(accent1, fg-bold) !important;
 
@@ -889,7 +889,7 @@
 			cursor: default;
 			opacity: 0.25;
 		}
-		&.download {
+		&.special {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px _palette(border3);
 			color: _palette(fg-bold) !important;
@@ -911,9 +911,30 @@
 				}
 			}
 		}
+		
+		&.download1 {
+			background-color: transparent;
+			box-shadow: inset 0 0 0 2px _palette(border3);
+			color: _palette(fg-bold) !important;
 
+			&:hover {
+				background-color: lighten(_palette(accent1, bg), 7.5);
+				box-shadow: inset 0 0 0 2px lighten(_palette(accent1, bg), 7.5);
+				color: _palette(accent2, fg-bold) !important;
+			}
 
+			&:active {
+				background-color: darken(_palette(accent1, bg), 7.5);
+				box-shadow: inset 0 0 0 2px darken(_palette(accent1, bg), 7.5);
+			}
+
+			&.icon {
+				&:before {
+					font-size: 1em;
+				}
+			}
 		}
+	}
 
 /* Feature */
 
