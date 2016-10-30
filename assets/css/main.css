@@ -1257,7 +1257,7 @@ h4 {
   line-height: 1.5em; }
 
 h5 {
-  font-size: 0.9em;
+  font-size: 0.85em;
   line-height: 1.5em; }
 
 h6 {
@@ -1829,6 +1829,7 @@ input[type="button"],
   input[type="button"].download,
   .button.download {
     background-color: #4499D4;
+    box-shadow: inset 0 0 0 2px #4499D4;
     color: #ffffff !important; }
     input[type="submit"].download:hover,
     input[type="reset"].download:hover,
@@ -1869,37 +1870,11 @@ input[type="button"],
     input[type="reset"].special:active,
     input[type="button"].special:active,
     .button.special:active {
-      background-color: #2d87c5;
-      box-shadow: inset 0 0 0 2px #2d87c5; }
+      background-color: #2d87c5; }
     input[type="submit"].special.icon:before,
     input[type="reset"].special.icon:before,
     input[type="button"].special.icon:before,
     .button.special.icon:before {
-      font-size: 1em; }
-  input[type="submit"].download1,
-  input[type="reset"].download1,
-  input[type="button"].download1,
-  .button.download1 {
-    background-color: transparent;
-    box-shadow: inset 0 0 0 2px;
-    color: #414141 !important; }
-    input[type="submit"].download1:hover,
-    input[type="reset"].download1:hover,
-    input[type="button"].download1:hover,
-    .button.download1:hover {
-      background-color: #63aadb;
-      box-shadow: inset 0 0 0 2px #63aadb;
-      color: #ffffff !important; }
-    input[type="submit"].download1:active,
-    input[type="reset"].download1:active,
-    input[type="button"].download1:active,
-    .button.download1:active {
-      background-color: #2d87c5;
-      box-shadow: inset 0 0 0 2px #2d87c5; }
-    input[type="submit"].download1.icon:before,
-    input[type="reset"].download1.icon:before,
-    input[type="button"].download1.icon:before,
-    .button.download1.icon:before {
       font-size: 1em; }
 
 /* Feature */
