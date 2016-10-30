@@ -21,7 +21,6 @@ description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
 	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-x64.msi" title="download 64-bit Standard Release">64-bit Standard</a></div>
 	<div class="3u 2u(medium) not-small">&nbsp;</div>
 </div>
-
 <div class="row">
 	<div class="12u$">
 	<header>
