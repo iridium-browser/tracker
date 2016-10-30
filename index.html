@@ -49,33 +49,29 @@ layout: start-layout
 		<h1>Recent News</h1>
 	</header>
 	<!-- Content -->
-	<section id="content">
-		{% for post in site.posts limit:2 %}
-		<header class="post-header">
-			<h3 class="post-title" itemprop="name headline">{{ post.title }}</h3>
-			<p class="post-meta"><small>{{ post.date | date: "%-d-%b-%Y" }}</small></p>
+	<section style="padding-top: 2em;">
+		{% for post in site.posts limit:1 %}
+		<header>
+			<h3>{{ post.title }}</h3>
+			<p><small>{{ post.date | date: "%-d-%b-%Y" }}</small></p>
 		</header>
-		<div class="post-content" itemprop="articleBody">
-		{{ post.content }}
-		</div>
-		<footer>
-			<p class="post-meta"><small>{% if post.author %} {{ post.author }}{% endif %}</small></p>
-		</footer>
+		<p>{{ post.content }}</p>
+		<p class="post-meta"><small>{% if post.author %} {{ post.author }}{% endif %}</small></p>
 		<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-url="{{ site.url }}{{ post.url }}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<hr>
 		{% endfor %}
 		
 		<p>looking for previous posts?</p>
-		<a class="button small special" href="news-archive.html" title="check out the News Archive">NEWS ARCHIVE</a>
+		<a class="button small" href="news-archive.html" title="check out the News Archive">NEWS ARCHIVE</a>
 	</section>
 </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="wrapper style1 special">
-	<div class="container">
+<div class="container">
 	<header class="major">
-		{% for about in site.about %}
+	{% for about in site.about %}
 		<h1>{{ about.title }}</h1>
 	</header>
 	<p>{{ about.content }}</p>
@@ -90,7 +86,7 @@ layout: start-layout
 	</section>
 	{% endfor %}
 	</div>
-	</div>
+</div>
 </section>
 
 <hr>
