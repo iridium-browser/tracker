@@ -77,10 +77,11 @@ system requirements
    
 ---  
   
- <div class="icon fa-database" style="margin-top:1em;"></div>
+<div class="icon fa-database" style="margin-top:1em;"></div>
  
-### openSUSE 13.1 ###
-#### Repository ####
+### openSUSE 13.1 #
+#### Repository #
+
 	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium  
 	zypper in iridium-browser
      
@@ -93,9 +94,10 @@ system requirements
  
 ### openSUSE 13.2 ###
 #### Repository ####
+
 	zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.2/ iridium  
 	zypper in iridium-browser
-     
+    
 system requirements     
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
      
