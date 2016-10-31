@@ -4,10 +4,10 @@
 
         <nav id="nav">
           <ul>
-            <li><a href="index.html">Home</a></li>
-			<li><a href="index.html#news">News</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#contribute">Contribute</a></li>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+			<li><a href="{{ site.baseurl }}/index.html#news">News</a></li>
+            <li><a href="{{ site.baseurl }}/index.html#about">About</a></li>
+            <li><a href="{{ site.baseurl }}/index.html#contribute">Contribute</a></li>
             {% for my_page in site.pages %}
               {% if my_page.menu == 'main' %}
               <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>

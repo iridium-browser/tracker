@@ -2,6 +2,7 @@
 layout: start-layout
 title: "About"
 id: about
+menu: main
 ---
 
 #### Motivation ####
