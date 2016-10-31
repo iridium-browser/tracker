@@ -79,8 +79,7 @@ system requirements
   
 <div class="icon fa-database" style="margin-top:1em;"></div>
  
-### openSUSE 13.1 #
-#### Repository #
+### Repository for openSUSE 13.1 #
 
 	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium  
 	zypper in iridium-browser
@@ -92,8 +91,8 @@ system requirements
   
  <div class="icon fa-database" style="margin-top:1em;"></div>
  
-### openSUSE 13.2 ###
-#### Repository ####
+### Repository for openSUSE 13.2 ###
+
 
 	zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.2/ iridium  
 	zypper in iridium-browser
@@ -105,8 +104,8 @@ system requirements
   
 <div class="icon fa-linux" style="margin-top:1em;"></div> 
 
-### Ubuntu ###
-#### Repository ####
+### Repository for Ubuntu ###
+
     wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
     sudo apt-add-repository 'https://downloads.iridiumbrowser.de/ubuntu main'
     sudo apt-get update
