@@ -2,8 +2,8 @@
 layout: pagecentered
 title: "Development"
 subtitle: "How to take part in development"
-menu: main
 description: "Take part in developing IridiumBrowser"
+menu: main
 ---
 
 #### Dive In ####

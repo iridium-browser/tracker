@@ -2,8 +2,8 @@
 layout: pagecentered
 title: "Download"
 subtitle: choose the right download for your operating system
-menu: main
 description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
+menu: main
 ---
 <div class="icon fa-windows" style="margin-top:0.7em;"></div>
 

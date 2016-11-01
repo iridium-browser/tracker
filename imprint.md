@@ -1,8 +1,8 @@
 ---
 layout: pagecentered
 title: "Imprint"
-menu: no
 description: Imprint | Legal Information
+menu: no
 ---
 
 #### Bug Tracker ####
