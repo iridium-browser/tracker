@@ -11,38 +11,53 @@ layout: start-layout
 -->
 <html>
 <body class="landing">
+<!-- HOME -->
+<section id="home">
 	<div class="logo"></div>
 
-<!-- MARQUEE -->
-<section id="marquee" class="marquee">
-	<span>
-	{% for marquee in site.marquee %}
-	{{ marquee.content }}
-	{% endfor %}
-	</span>
-</section>
-
-<!-- Banner / HOME -->
-<section id="banner">
-	{% for home in site.home %}
-	{{ home.content }}
-	{% endfor %}
-</section>
-
-<section id="features">
-	<div class="container" style="margin-top: 5em;">
-		<div class="row uniform">
-		{% for features in site.features %}
-	<section class="4u 12u(small) special">
-		<div class="icon {{ features.icon-class }}"></div>
-		{{ features.content }}
+	<!-- MARQUEE -->
+	<section id="marquee" class="marquee">
+		<span>
+		{% for marquee in site.marquee %}
+		{{ marquee.content }}
+		{% endfor %}
+		</span>
 	</section>
-	{% endfor %}
+
+	<!-- BANNER -->
+	<section id="banner">
+		{% for home in site.home %}
+		{{ home.content }}
+		{% endfor %}
+	</section>
+
+	<section id="features">
+		<div class="container">
+			<div class="row uniform">
+			{% for features in site.features %}
+		<section class="4u 12u(small) special">
+			<div class="icon {{ features.icon-class }}"></div>
+			{{ features.content }}
+		</section>
+		{% endfor %}
+			</div>
 		</div>
-	</div>
+	</section>
 </section>
 
-<hr>
+<!-- MANIFEST -->
+<section id="manifest" class="wrapper style1 special">
+<div class="container">
+		<header class="major">
+	{% for manifest in site.manifest %}
+		<h1 style="margin-top:1.15em;">{{ manifest.title }}</h1>
+		<p>{{ manifest.subtitle }}</p>
+	</header>
+	<p>{{ manifest.content }}</p>
+	{% endfor %}
+</div>
+</section>
+
 
 <!-- NEWS -->
 <section id="news" class="wrapper style1 special">
@@ -90,8 +105,6 @@ layout: start-layout
 	</div>
 </div>
 </section>
-
-<hr>
 
 <!-- CONTRIBUTE -->
 <section id="contribute" class="wrapper style1 special">
