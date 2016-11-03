@@ -1991,7 +1991,7 @@ body {
   #header h1 {
     color: #414141;
     height: inherit;
-    left: 1.25em;
+    left: .25em;
     line-height: inherit;
     margin: 0;
     padding: 0;
@@ -2015,7 +2015,7 @@ body {
       #header nav > ul > li {
         border-radius: 4px;
         display: inline-block;
-        margin-left: 1.75em;
+        margin-left: 1.5em;
         padding-left: 0; }
         #header nav > ul > li a {
           -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2123,12 +2123,12 @@ body.landing .dropotron.level-0 {
 
 /* Banner */
 #banner {
-  padding: 0.5em 3em 0.1em 3em ;
+  padding: 3em 3em 0.1em 3em ;
   background-attachment: scroll, fixed;
   background-image: url("images/overlay.png"), url("../../images/banner.jpg");
   background-position: center center;
   background-size: cover;
-  line-height: 1.5;
+  line-height: 1.75;
   text-align: center; }
   #banner h1 {
     color: #ffffff; }
@@ -2139,7 +2139,7 @@ body.landing .dropotron.level-0 {
     margin-bottom: 0.7em;
     padding: 0; }
     #banner h2:after {
-      background-color: #ffffff;
+      background-color: #fff;
       background-color: rgba(255, 255, 255, 0.75);
       content: '';
       display: block;
@@ -2410,7 +2410,7 @@ body.is-touch .poptrox-popup .closer {
 
   /* Banner */
   #banner {
-    padding: 0.5em 3em 0.1em 3em ; }
+    padding: 3em 3em 0.1em 3em ; }
     #banner h1 {
       color: #ffffff; } }
 /* Large */
@@ -2471,7 +2471,7 @@ body.is-touch .poptrox-popup .closer {
 
   /* Banner */
   #banner {
-    padding: 0.5em 3em 0.1em 3em ; }
+    padding: 2.75em 3em 0.1em 3em ; }
     #banner h1 {
       color: #ffffff; }
     #banner h2 {
@@ -2512,7 +2512,7 @@ body.is-touch .poptrox-popup .closer {
 
   /* Banner */
   #banner {
-    padding: 0.5em 2em 0.1em 2em ; }
+    padding: 2.25em 2em 0.1em 2em ; }
     #banner h1 {
       color: #ffffff; }
     #banner h2 {
@@ -2853,16 +2853,7 @@ body.is-touch .poptrox-popup .closer {
 /* Small */
 @media screen and (max-width: 736px) {
   .logo {
-    width: 320px;
-    height: 200px;
-    background-size: 320px 200px;
-    margin: 1.5em auto 0 auto; } }
-/* XSmall */
-@media screen and (max-width: 480px) {
-  .logo {
-    width: 240px;
-    height: 150px;
-    background-size: 240px 150px; } }
+    display: none; } }
 /* LOGO-SMALL */
 .logo-small {
   width: 582px;

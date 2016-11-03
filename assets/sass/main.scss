@@ -1071,7 +1071,7 @@
 		h1 {
 			color: _palette(fg-bold);
 			height: inherit;
-			left: 1.25em;
+			left: .25em;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
@@ -1103,7 +1103,7 @@
 				> li {
 					border-radius: _size(border-radius);
 					display: inline-block;
-					margin-left: 1.75em;
+					margin-left: 1.5em;
 					padding-left: 0;
 
 					a {
@@ -1257,26 +1257,26 @@
 /* Banner */
 
 	#banner {
-		@include padding(0, 3em, (.5em, 0, 0, 0));
+		@include padding(2em, 3em, (1em, 0, 0, 0));
 		background-attachment: scroll, fixed;
 		background-image: url('images/overlay.png'), url('../../images/banner.jpg');
 		background-position: center center;
 		background-size: cover;
-		line-height: 1.5;
+		line-height: 1.75;
 		text-align: center;
 
 		h1 {
-			color: #ffffff;
+			color: _palette(accent1, fg-bold);
 		}
 		h2 {
-			color: #ffffff;
+			color: _palette(accent1, fg-bold);
 			font-size: 2.5em;
 			line-height: 1.4em;
 			margin-bottom: (_size(element-margin) * 0.35);
 			padding: 0;
 
 			&:after {
-				background-color: #ffffff;
+				background-color: _palette(bg);
 				background-color: rgba(255,255,255,0.75);
 				content: '';
 				display: block;
@@ -1581,7 +1581,7 @@
 		/* Banner */
 
 			#banner {
-				@include padding(0, 3em, (.5em, 0, 0, 0));
+				@include padding(2em, 3em, (1em, 0, 0, 0));
 			
 			h1 {
 				color: #ffffff;
@@ -1698,7 +1698,7 @@
 		/* Banner */
 
 			#banner {
-				@include padding(0, 3em, (.5em, 0, 0, 0));
+				@include padding(1.75em, 3em, (1em, 0, 0, 0));
 
 				h1 {
 					color: #ffffff;
@@ -1766,7 +1766,7 @@
 		/* Banner */
 
 			#banner {
-				@include padding(0, 2em, (.5em, 0, 0, 0));
+				@include padding(1.5em, 2em, (.75em, 0, 0, 0));
 
 				h1 {
 					color: #ffffff;
@@ -2135,7 +2135,7 @@
 		height: 76px;
 		background-size: 515px 60px; 
 		background-image: url(../../images/logos/iridium-header_686x80.png);
-		background-position: center center;
+		background-position: center center;	
 		background-repeat: no-repeat;
 		display: block;
 		margin: 0 auto;
@@ -2222,20 +2222,10 @@
 	/* Small */
 	@include breakpoint(small) {
 		.logo {
-			width: 320px;
-			height: 200px;
-			background-size: 320px 200px;
-			margin: 1.5em auto 0 auto;
+			display: none;
 		}
 	}
-	/* XSmall */
-	@include breakpoint(xsmall) {
-		.logo {
-			width: 240px;
-			height: 150px;
-			background-size: 240px 150px;
-		}
-	}
+
 
 /* LOGO-SMALL */
 	.logo-small {
