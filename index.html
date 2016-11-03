@@ -15,15 +15,6 @@ layout: start-layout
 <section id="home">
 	<div class="logo"></div>
 
-	<!-- MARQUEE -->
-	<section id="marquee" class="marquee">
-		<span>
-		{% for marquee in site.marquee %}
-		{{ marquee.content }}
-		{% endfor %}
-		</span>
-	</section>
-
 	<!-- BANNER -->
 	<section id="banner">
 		{% for home in site.home %}

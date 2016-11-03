@@ -16,7 +16,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iridiumbrowser.de" # the base hostname & protocol for your site
 
 collections:
-  - marquee
   - home
   - features
   - manifest
