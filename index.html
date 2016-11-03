@@ -11,6 +11,8 @@ layout: start-layout
 -->
 <html>
 <body class="landing">
+	<div class="logo"></div>
+
 <!-- MARQUEE -->
 <section id="marquee" class="marquee">
 	<span>
@@ -46,7 +48,7 @@ layout: start-layout
 <section id="news" class="wrapper style1 special">
 <div class="container">
 	<header class="major">
-		<h1 style="margin-top:1em;">Recent News</h1>
+		<h1 style="margin-top:1.15em;">Recent News</h1>
 	</header>
 	<!-- Content -->
 	<section style="padding-top: 2em;">
@@ -72,7 +74,7 @@ layout: start-layout
 <div class="container">
 	<header class="major">
 	{% for about in site.about %}
-		<h1 style="margin-top:1em;">{{ about.title }}</h1>
+		<h1 style="margin-top:1.15em;">{{ about.title }}</h1>
 	</header>
 	<p>{{ about.content }}</p>
 	{% endfor %}
@@ -96,7 +98,7 @@ layout: start-layout
 	<div class="container">
 		<header class="major">
 	{% for contribute in site.contribute %}
-			<h1 style="margin-top:1em;">{{ contribute.title }}</h1>
+			<h1 style="margin-top:1.15em;">{{ contribute.title }}</h1>
 			<p>{{ contribute.subtitle }}</p>
 		</header>
 		<p>{{ contribute.content }}</p>

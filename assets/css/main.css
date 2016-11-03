@@ -2820,41 +2820,49 @@ body.is-touch .poptrox-popup .closer {
     float: right; } }
 /* LOGO-LARGE */
 .logo {
-  width: 582px;
+  width: 561px;
   height: 350px;
-  background-size: 582px 350px;
-  background-image: url(../../images/logos/iridium-logo_582x350.png);
+  background-size: 561px 350px;
+  background-image: url(../../images/logos/iridium-logo_561x350.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
-  margin: 0 auto;
+  margin: 4.5em auto 0 auto;
   outline: none; }
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
   .logo {
-    width: 582px;
+    width: 561px;
     height: 350px;
-    background-size: 582px 350px; } }
+    background-size: 561px 350px; } }
 /* Large */
 @media screen and (max-width: 1280px) {
   .logo {
-    width: 499px;
+    width: 480px;
     height: 300px;
-    background-size: 499px 300px; } }
+    background-size: 480px 300px;
+    margin: 3.5em auto 0 auto; } }
 /* Medium */
 @media screen and (max-width: 980px) {
   .logo {
-    width: 416px;
+    width: 400px;
     height: 250px;
-    background-size: 416px 250px; } }
+    background-size: 400px 250px;
+    margin: 2.5em auto 0 auto; } }
 /* Small */
 @media screen and (max-width: 736px) {
   .logo {
-    width: 250px;
-    height: 29px;
-    background-size: 250px 29px; } }
+    width: 320px;
+    height: 200px;
+    background-size: 320px 200px;
+    margin: 1.5em auto 0 auto; } }
 /* XSmall */
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 240px;
+    height: 150px;
+    background-size: 240px 150px; } }
 /* LOGO-SMALL */
 .logo-small {
   width: 582px;
@@ -2891,6 +2899,43 @@ body.is-touch .poptrox-popup .closer {
     width: 250px;
     height: 30px;
     background-size: 250px 30px; } }
+/* XSmall */
+/* IRIDIUM ICON */
+.iridium-icon {
+  width: 364px;
+  height: 300px;
+  background-size: 364px 300px;
+  background-image: url(../../images/logos/iridium-icon_364x300.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  outline: none; }
+
+/* XLarge */
+@media screen and (max-width: 1680px) {
+  .iridium-icon {
+    width: 303px;
+    height: 250px;
+    background-size: 303px 250px; } }
+/* Large */
+@media screen and (max-width: 1280px) {
+  .iridium-icon {
+    width: 242px;
+    height: 200px;
+    background-size: 242px 200px; } }
+/* Medium */
+@media screen and (max-width: 980px) {
+  .iridium-icon {
+    width: 182px;
+    height: 150px;
+    background-size: 182px 150px; } }
+/* Small */
+@media screen and (max-width: 736px) {
+  .iridium-icon {
+    width: 121px;
+    height: 100px;
+    background-size: 121px 100px; } }
 /* XSmall */
 /* DEVELOPER LOGOS */
 /* Text */
@@ -3116,24 +3161,24 @@ body.is-touch .poptrox-popup .closer {
     background-size: 123px 25px; } }
 /* MARQUEE */
 .marquee {
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
-  margin-top: 4em;
+  margin-top: 3em;
   margin-bottom: 1em; }
   @media screen and (max-width: 1280px) {
     .marquee {
-      margin-top: 3em;
+      margin-top: 2.5em;
       margin-bottom: .75em; } }
   @media screen and (max-width: 980px) {
     .marquee {
-      margin-top: 1.5em;
+      margin-top: 1.65em;
       margin-bottom: 0; } }
   @media screen and (max-width: 736px) {
     .marquee {
-      margin-top: 1em;
+      margin-top: 1.15em;
       margin-bottom: 0; } }
 
 .marquee span {
