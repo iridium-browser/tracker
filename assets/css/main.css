@@ -1205,7 +1205,7 @@ body {
 body, input, select, textarea {
   color: #505050;
   font-family: "Roboto", Helvetica, sans-serif;
-  font-size: 16pt;
+  font-size: 13pt;
   font-weight: 400;
   line-height: 2em; }
 
@@ -1975,7 +1975,7 @@ body {
   padding-top: 2.5em; }
 
 #header {
-  background-color: #fff;
+  background-color: #ececec;
   border-bottom: solid 1px rgba(144, 144, 144, 0.25);
   box-shadow: 0px 0.0375em 0.125em 0px rgba(0, 0, 0, 0.05);
   color: #fff;
@@ -2002,16 +2002,12 @@ body {
   #header p {
     display: none; }
   #header nav {
-    background-color: #fff;
     height: inherit;
     line-height: inherit;
     position: fixed;
     right: 1.25em;
     top: 0;
-    vertical-align: middle;
-    font-weight: 700;
-    font-size: 1.15em;
-    z-index: 1000000; }
+    vertical-align: middle; }
     #header nav > ul {
       list-style: none;
       margin: 0;
@@ -2491,6 +2487,9 @@ body.is-touch .poptrox-popup .closer {
   #footer {
     padding: 3em 0 1em 0 ; } }
 /* Medium */
+#navPanel, #titleBar {
+  display: none; }
+
 @media screen and (max-width: 980px) {
   /* Feature */
   .feature {
@@ -2504,6 +2503,13 @@ body.is-touch .poptrox-popup .closer {
   .icon {
     font-size: 4.75em; }
 
+  /* Header */
+  body {
+    padding-top: 44px; }
+
+  #header {
+    display: none; }
+
   /* Banner */
   #banner {
     padding: 0.5em 2em 0.1em 2em ; }
@@ -2516,11 +2522,135 @@ body.is-touch .poptrox-popup .closer {
 
   /* Main */
   #main {
-    padding: 4em 0 4em 0 ; } }
-/* Small */
-#navPanel, #titleBar {
-  display: none; }
+    padding: 4em 0 4em 0 ; }
 
+  /* Off-Canvas Navigation */
+  #titleBar {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transition: -moz-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    display: block;
+    height: 44px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10001;
+    background-color: #ececec;
+    border-bottom: solid 1px rgba(144, 144, 144, 0.25);
+    box-shadow: 0 0.0375em 0.125em 0 rgba(0, 0, 0, 0.05);
+    line-height: 44px; }
+    #titleBar .toggle {
+      text-decoration: none;
+      height: 4em;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 6em;
+      z-index: 1;
+      color: inherit;
+      text-decoration: none;
+      outline: 0;
+      border: 0; }
+      #titleBar .toggle:before {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important; }
+      #titleBar .toggle:before {
+        border-right: solid 1px rgba(144, 144, 144, 0.25);
+        content: '\f0c9';
+        display: block;
+        height: 44px;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 44px; }
+    #titleBar .title {
+      color: #414141;
+      font-weight: 700;
+      left: 0;
+      letter-spacing: 0.11em;
+      line-height: inherit;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+      top: 0;
+      width: 100%; }
+      #titleBar .title a {
+        color: inherit;
+        text-decoration: none; }
+
+  #navPanel {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transform: translateX(-275px);
+    -webkit-transform: translateX(-275px);
+    -ms-transform: translateX(-275px);
+    transform: translateX(-275px);
+    -moz-transition: -moz-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 275px;
+    z-index: 10002;
+    background-color: rgba(236, 236, 236, 0.975);
+    border-right: solid 1px rgba(144, 144, 144, 0.25);
+    box-shadow: 0.0375em 0 0.5em 0px rgba(0, 0, 0, 0.075);
+    padding: 0.5em 1.5em; }
+    #navPanel .link {
+      border: 0;
+      border-top: solid 1px rgba(144, 144, 144, 0.2);
+      color: #414141 !important;
+      display: block;
+      font-size: 0.8em;
+      height: 4em;
+      letter-spacing: 0.11em;
+      line-height: 4em;
+      text-decoration: none;
+      text-transform: uppercase; }
+      #navPanel .link:first-child {
+        border-top: 0; }
+      #navPanel .link.depth-0 {
+        font-weight: 700; }
+      #navPanel .link .indent-1 {
+        display: inline-block;
+        width: 1.25em; }
+      #navPanel .link .indent-2 {
+        display: inline-block;
+        width: 2.5em; }
+      #navPanel .link .indent-3 {
+        display: inline-block;
+        width: 3.75em; }
+      #navPanel .link .indent-4 {
+        display: inline-block;
+        width: 5em; }
+      #navPanel .link .indent-5 {
+        display: inline-block;
+        width: 6.25em; }
+
+  body.navPanel-visible #navPanel {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); } }
+/* Small */
 @media screen and (max-width: 736px) {
   /* Basic */
   html, body {
@@ -2591,133 +2721,6 @@ body.is-touch .poptrox-popup .closer {
       margin-left: 0;
       padding-left: 0; }
 
-  /* Off-Canvas Navigation */
-  #titleBar {
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-transition: -moz-transform 0.5s ease;
-    -webkit-transition: -webkit-transform 0.5s ease;
-    -ms-transition: -ms-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    display: block;
-    height: 44px;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10001;
-    background-color: #fff;
-    border-bottom: solid 1px rgba(144, 144, 144, 0.25);
-    box-shadow: 0 0.0375em 0.125em 0 rgba(0, 0, 0, 0.05);
-    line-height: 44px; }
-    #titleBar .toggle {
-      text-decoration: none;
-      height: 4em;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 6em;
-      z-index: 1;
-      color: inherit;
-      text-decoration: none;
-      outline: 0;
-      border: 0; }
-      #titleBar .toggle:before {
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        font-family: FontAwesome;
-        font-style: normal;
-        font-weight: normal;
-        text-transform: none !important; }
-      #titleBar .toggle:before {
-        border-right: solid 1px rgba(144, 144, 144, 0.25);
-        content: '\f0c9';
-        display: block;
-        height: 44px;
-        left: 0;
-        position: absolute;
-        text-align: center;
-        top: 0;
-        width: 44px; }
-    #titleBar .title {
-      color: #414141;
-      font-weight: 700;
-      left: 0;
-      letter-spacing: 0.11em;
-      line-height: inherit;
-      position: absolute;
-      text-align: center;
-      text-transform: uppercase;
-      top: 0;
-      width: 100%; }
-      #titleBar .title a {
-        color: inherit;
-        text-decoration: none; }
-
-  #navPanel {
-    -moz-backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-transform: translateX(-275px);
-    -webkit-transform: translateX(-275px);
-    -ms-transform: translateX(-275px);
-    transform: translateX(-275px);
-    -moz-transition: -moz-transform 0.5s ease;
-    -webkit-transition: -webkit-transform 0.5s ease;
-    -ms-transition: -ms-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    display: block;
-    height: 100%;
-    left: 0;
-    overflow-y: auto;
-    position: fixed;
-    top: 0;
-    width: 275px;
-    z-index: 10002;
-    background-color: rgba(255, 255, 255, 0.975);
-    border-right: solid 1px rgba(144, 144, 144, 0.25);
-    box-shadow: 0.0375em 0 0.5em 0px rgba(0, 0, 0, 0.075);
-    padding: 0.5em 1.5em; }
-    #navPanel .link {
-      border: 0;
-      border-top: solid 1px rgba(144, 144, 144, 0.2);
-      color: #414141 !important;
-      display: block;
-      font-size: 0.8em;
-      height: 4em;
-      letter-spacing: 0.11em;
-      line-height: 4em;
-      text-decoration: none;
-      text-transform: uppercase; }
-      #navPanel .link:first-child {
-        border-top: 0; }
-      #navPanel .link.depth-0 {
-        font-weight: 700; }
-      #navPanel .link .indent-1 {
-        display: inline-block;
-        width: 1.25em; }
-      #navPanel .link .indent-2 {
-        display: inline-block;
-        width: 2.5em; }
-      #navPanel .link .indent-3 {
-        display: inline-block;
-        width: 3.75em; }
-      #navPanel .link .indent-4 {
-        display: inline-block;
-        width: 5em; }
-      #navPanel .link .indent-5 {
-        display: inline-block;
-        width: 6.25em; }
-
-  body.navPanel-visible #navPanel {
-    -moz-transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0); }
-
   /* Poptrox */
   .poptrox-popup {
     box-shadow: 0 0.75em 2.5em 0 rgba(0, 0, 0, 0.5);
@@ -2774,6 +2777,48 @@ body.is-touch .poptrox-popup .closer {
   .carousel article img {
     width: 10em; } }
 /* IRIDIUM LOGOS */
+/* HEADER */
+.logo-header {
+  width: 515px;
+  height: 76px;
+  background-size: 515px 60px;
+  background-image: url(../../images/logos/iridium-header_686x80.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto;
+  outline: none; }
+
+/* XLarge */
+@media screen and (max-width: 1680px) {
+  .logo-header {
+    width: 446px;
+    height: 64px;
+    background-size: 446px 52px; } }
+/* Large */
+@media screen and (max-width: 1280px) {
+  .logo-header {
+    width: 360px;
+    height: 54px;
+    background-size: 360px 42px; } }
+/* Medium */
+@media screen and (max-width: 980px) {
+  .logo-header {
+    width: 257px;
+    height: 44px;
+    background-size: 257px 30px; } }
+/* Small */
+@media screen and (max-width: 736px) {
+  .logo-header {
+    width: 257px;
+    height: 44px;
+    background-size: 257px 30px; } }
+/* XSmall */
+@media screen and (max-width: 480px) {
+  .logo-header {
+    margin: 0 10px 0 0;
+    float: right; } }
+/* LOGO-LARGE */
 .logo {
   width: 582px;
   height: 350px;
@@ -2806,27 +2851,16 @@ body.is-touch .poptrox-popup .closer {
 /* Small */
 @media screen and (max-width: 736px) {
   .logo {
-    display: none; }
-
-  .logo-small {
     width: 250px;
     height: 29px;
-    background-size: 250px 29px;
-    background-image: url(../../images/logos/iridium-logo-small_250x30.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: block;
-    margin: 7px auto; } }
+    background-size: 250px 29px; } }
 /* XSmall */
-@media screen and (max-width: 480px) {
-  .logo-small {
-    margin: 7px 7px;
-    float: right; } }
-.logo2 {
+/* LOGO-SMALL */
+.logo-small {
   width: 582px;
   height: 127px;
   background-size: 582px 127px;
-  background-image: url(../../images/logos/iridium-logo2_582x127.png);
+  background-image: url(../../images/logos/iridium-small_582x127.png);
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -2835,41 +2869,29 @@ body.is-touch .poptrox-popup .closer {
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
-  .logo2 {
+  .logo-small {
     width: 582px;
     height: 127px;
     background-size: 582px 127px; } }
 /* Large */
 @media screen and (max-width: 1280px) {
-  .logo2 {
+  .logo-small {
     width: 500px;
     height: 109px;
     background-size: 500px 109px; } }
 /* Medium */
 @media screen and (max-width: 980px) {
-  .logo2 {
+  .logo-small {
     width: 416px;
     height: 91px;
     background-size: 416px 91px; } }
 /* Small */
 @media screen and (max-width: 736px) {
-  .logo2 {
-    display: none; }
-
   .logo-small {
     width: 250px;
     height: 30px;
-    background-size: 250px 30px;
-    background-image: url(../../images/logos/iridium-logo-small_250x30.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: block;
-    margin: 7px auto; } }
+    background-size: 250px 30px; } }
 /* XSmall */
-@media screen and (max-width: 480px) {
-  .logo-small {
-    margin: 7px 14px;
-    float: right; } }
 /* DEVELOPER LOGOS */
 /* Text */
 .logo-text {
@@ -3094,15 +3116,23 @@ body.is-touch .poptrox-popup .closer {
     background-size: 123px 25px; } }
 /* MARQUEE */
 .marquee {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
+  margin-top: 4em;
   margin-bottom: 1em; }
+  @media screen and (max-width: 1280px) {
+    .marquee {
+      margin-top: 3em;
+      margin-bottom: .75em; } }
+  @media screen and (max-width: 980px) {
+    .marquee {
+      margin-top: 1.5em;
+      margin-bottom: 0; } }
   @media screen and (max-width: 736px) {
     .marquee {
-      width: 90%;
       margin-top: 1em;
       margin-bottom: 0; } }
 

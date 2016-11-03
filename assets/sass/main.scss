@@ -64,7 +64,7 @@
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(family);
-		font-size: 16pt;
+		font-size: 13pt;
 		font-weight: _font(weight);
 		line-height: 2em;
 	}
@@ -1054,7 +1054,7 @@
 	}
 
 	#header {
-		background-color: _palette(bg);
+		background-color: _palette(bg-header);
 		border-bottom: solid 1px _palette(border);
 		box-shadow: 0px 0.0375em 0.125em 0px rgba(0,0,0,0.05);
 		color: #fff;
@@ -1088,16 +1088,12 @@
 		}
 
 		nav {
-			background-color: _palette(bg);
 			height: inherit;
 			line-height: inherit;
 			position: fixed;
 			right: 1.25em;
 			top: 0;
 			vertical-align: middle;
-			font-weight: _font(weight-bold);
-			font-size: 1.15em;
-			z-index: 1000000;
 
 			> ul {
 				list-style: none;
@@ -1733,6 +1729,10 @@
 
 /* Medium */
 
+	#navPanel, #titleBar {
+		display: none;
+	}
+	
 	@include breakpoint(medium) {
 
 		/* Feature */
@@ -1751,7 +1751,18 @@
 			.icon {
 				font-size: 4.75em;
 			}
-		
+
+		/* Header */
+
+			body {
+				padding-top: 44px;
+			}
+
+			#header {
+				display: none;
+			}
+
+			
 		/* Banner */
 
 			#banner {
@@ -1774,14 +1785,126 @@
 
 			#main {
 				@include padding(6em, 0, (-2em, 0, 0, 0));
-			}		
+			}	
+
+
+		/* Off-Canvas Navigation */
+
+			#titleBar {
+				@include vendor('backface-visibility', 'hidden');
+				@include vendor('transition', 'transform #{_duration(navPanel)} ease');
+				display: block;
+				height: 44px;
+				left: 0;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: _misc(z-index-base) + 1;
+				background-color: _palette(bg-header);
+				border-bottom: solid 1px _palette(border);
+				box-shadow: 0 0.0375em 0.125em 0 rgba(0,0,0,0.05);
+				line-height: 44px;
+
+				.toggle {
+					@include icon;
+					height: 4em;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 6em;
+					z-index: 1;
+					color: inherit;
+					text-decoration: none;
+					outline: 0;
+					border: 0;
+
+					&:before {
+						border-right: solid 1px _palette(border);
+						content: '\f0c9';
+						display: block;
+						height: 44px;
+						left: 0;
+						position: absolute;
+						text-align: center;
+						top: 0;
+						width: 44px;
+					}
+				}
+
+				.title {
+					color: _palette(fg-bold);
+					font-weight: _font(weight-bold);
+					left: 0;
+					letter-spacing: _font(letter-spacing);
+					line-height: inherit;
+					position: absolute;
+					text-align: center;
+					text-transform: uppercase;
+					top: 0;
+					width: 100%;
+
+					a {
+						color: inherit;
+						text-decoration: none;
+					}
+				}
+			}
+
+			#navPanel {
+				@include vendor('backface-visibility', 'hidden');
+				@include vendor('transform', 'translateX(#{_size(navPanel) * -1})');
+				@include vendor('transition', ('transform #{_duration(navPanel)} ease'));
+				display: block;
+				height: 100%;
+				left: 0;
+				overflow-y: auto;
+				position: fixed;
+				top: 0;
+				width: _size(navPanel);
+				z-index: _misc(z-index-base) + 2;
+				background-color: transparentize(_palette(bg-header),0.025);
+				border-right: solid 1px _palette(border);
+				box-shadow: 0.0375em 0 0.5em 0px rgba(0,0,0,0.075);
+				padding: 0.5em 1.5em;
+
+				.link {
+					border: 0;
+					border-top: solid 1px _palette(border2-bg);
+					color: _palette(fg-bold) !important;
+					display: block;
+					font-size: 0.8em;
+					height: 4em;
+					letter-spacing: _font(letter-spacing);
+					line-height: 4em;
+					text-decoration: none;
+					text-transform: uppercase;
+
+					&:first-child {
+						border-top: 0;
+					}
+
+					&.depth-0 {
+						font-weight: _font(weight-bold);
+					}
+
+					.indent-1 { display: inline-block; width: 1.25em; }
+					.indent-2 { display: inline-block; width: 2.5em; }
+					.indent-3 { display: inline-block; width: 3.75em; }
+					.indent-4 { display: inline-block; width: 5em; }
+					.indent-5 { display: inline-block; width: 6.25em; }
+				}
+			}
+
+			body {
+				&.navPanel-visible {
+					#navPanel {
+						@include vendor('transform', 'translateX(0)');
+					}
+				}
+			}
 	}
 
 /* Small */
-
-	#navPanel, #titleBar {
-		display: none;
-	}
 
 	@include breakpoint(small) {
 
@@ -1898,121 +2021,6 @@
 				}
 			}
 
-		/* Off-Canvas Navigation */
-
-			#titleBar {
-				@include vendor('backface-visibility', 'hidden');
-				@include vendor('transition', 'transform #{_duration(navPanel)} ease');
-				display: block;
-				height: 44px;
-				left: 0;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				z-index: _misc(z-index-base) + 1;
-				background-color: _palette(bg);
-				border-bottom: solid 1px _palette(border);
-				box-shadow: 0 0.0375em 0.125em 0 rgba(0,0,0,0.05);
-				line-height: 44px;
-
-				.toggle {
-					@include icon;
-					height: 4em;
-					left: 0;
-					position: absolute;
-					top: 0;
-					width: 6em;
-					z-index: 1;
-					color: inherit;
-					text-decoration: none;
-					outline: 0;
-					border: 0;
-
-					&:before {
-						border-right: solid 1px _palette(border);
-						content: '\f0c9';
-						display: block;
-						height: 44px;
-						left: 0;
-						position: absolute;
-						text-align: center;
-						top: 0;
-						width: 44px;
-					}
-				}
-
-				.title {
-					color: _palette(fg-bold);
-					font-weight: _font(weight-bold);
-					left: 0;
-					letter-spacing: _font(letter-spacing);
-					line-height: inherit;
-					position: absolute;
-					text-align: center;
-					text-transform: uppercase;
-					top: 0;
-					width: 100%;
-
-					a {
-						color: inherit;
-						text-decoration: none;
-					}
-				}
-			}
-
-			#navPanel {
-				@include vendor('backface-visibility', 'hidden');
-				@include vendor('transform', 'translateX(#{_size(navPanel) * -1})');
-				@include vendor('transition', ('transform #{_duration(navPanel)} ease'));
-				display: block;
-				height: 100%;
-				left: 0;
-				overflow-y: auto;
-				position: fixed;
-				top: 0;
-				width: _size(navPanel);
-				z-index: _misc(z-index-base) + 2;
-				background-color: transparentize(_palette(bg),0.025);
-				border-right: solid 1px _palette(border);
-				box-shadow: 0.0375em 0 0.5em 0px rgba(0,0,0,0.075);
-				padding: 0.5em 1.5em;
-
-				.link {
-					border: 0;
-					border-top: solid 1px _palette(border2-bg);
-					color: _palette(fg-bold) !important;
-					display: block;
-					font-size: 0.8em;
-					height: 4em;
-					letter-spacing: _font(letter-spacing);
-					line-height: 4em;
-					text-decoration: none;
-					text-transform: uppercase;
-
-					&:first-child {
-						border-top: 0;
-					}
-
-					&.depth-0 {
-						font-weight: _font(weight-bold);
-					}
-
-					.indent-1 { display: inline-block; width: 1.25em; }
-					.indent-2 { display: inline-block; width: 2.5em; }
-					.indent-3 { display: inline-block; width: 3.75em; }
-					.indent-4 { display: inline-block; width: 5em; }
-					.indent-5 { display: inline-block; width: 6.25em; }
-				}
-			}
-
-			body {
-				&.navPanel-visible {
-					#navPanel {
-						@include vendor('transform', 'translateX(0)');
-					}
-				}
-			}
-
 		/* Poptrox */
 
 			.poptrox-popup {
@@ -2121,6 +2129,59 @@
 	
 	
 /* IRIDIUM LOGOS */
+	/* HEADER */
+	.logo-header {
+		width: 515px;
+		height: 76px;
+		background-size: 515px 60px; 
+		background-image: url(../../images/logos/iridium-header_686x80.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		display: block;
+		margin: 0 auto;
+		outline: none;
+	}
+	/* XLarge */
+	@include breakpoint(xlarge) {
+		.logo-header {
+			width: 446px;
+			height: 64px;
+			background-size: 446px 52px; 
+		}
+	}
+	/* Large */
+	@include breakpoint(large) {
+		.logo-header {
+			width: 360px;
+			height: 54px;
+			background-size: 360px 42px; 
+		}
+	}
+	/* Medium */
+	@include breakpoint(medium) {
+		.logo-header {
+			width: 257px;
+			height: 44px;
+			background-size: 257px 30px;
+		}
+	}
+	/* Small */
+	@include breakpoint(small) {
+		.logo-header {
+			width: 257px;
+			height: 44px;
+			background-size: 257px 30px;
+		}	
+	}
+	/* XSmall */
+	@include breakpoint(xsmall) {
+		.logo-header {
+			margin: 0 10px 0 0;
+			float: right;
+		}	
+	}
+	
+	/* LOGO-LARGE */
 	.logo {
 		width: 582px;
 		height: 350px;
@@ -2134,57 +2195,48 @@
 	}
 	/* XLarge */
 	@include breakpoint(xlarge) {
-	.logo {
-		width: 582px;
-		height: 350px;
-		background-size: 582px 350px; 
+		.logo {
+			width: 582px;
+			height: 350px;
+			background-size: 582px 350px; 
+		}
 	}
-}
 	/* Large */
 	@include breakpoint(large) {
-	.logo {
-		width: 499px;
-		height: 300px;
-		background-size: 499px 300px; 
+		.logo {
+			width: 499px;
+			height: 300px;
+			background-size: 499px 300px; 
+		}
 	}
-}
 	/* Medium */
 	@include breakpoint(medium) {
-	.logo {
-		width: 416px;
-		height: 250px;
-		background-size: 416px 250px;
+		.logo {
+			width: 416px;
+			height: 250px;
+			background-size: 416px 250px;
+		}
 	}
-}
 	/* Small */
 	@include breakpoint(small) {
-	.logo {
-		display: none;
+		.logo {
+			width: 250px;
+			height: 29px;
+			background-size: 250px 29px;
+		}	
 	}
-	.logo-small {
-		width: 250px;
-		height: 29px;
-		background-size: 250px 29px;
-		background-image: url(../../images/logos/iridium-logo-small_250x30.png);
-		background-position: center center; 
-		background-repeat: no-repeat;
-		display:block;
-		margin: 7px auto;
-	}	
-}
 	/* XSmall */
 	@include breakpoint(xsmall) {
-	.logo-small {
-		margin: 7px 7px;
-		float: right;
-	}	
-}
+		.logo {
+		}	
+	}
 
-	.logo2 {
+	/* LOGO-SMALL */
+	.logo-small {
 		width: 582px;
 		height: 127px;
 		background-size: 582px 127px; 
-		background-image: url(../../images/logos/iridium-logo2_582x127.png);
+		background-image: url(../../images/logos/iridium-small_582x127.png);
 		background-position: center center;
 		background-repeat: no-repeat;
 		display:block;
@@ -2193,51 +2245,43 @@
 	}
 	/* XLarge */
 	@include breakpoint(xlarge) {
-	.logo2 {
-		width: 582px;
-		height: 127px;
-		background-size: 582px 127px; 
+		.logo-small {
+			width: 582px;
+			height: 127px;
+			background-size: 582px 127px; 
+		}
 	}
-}
 	/* Large */
 	@include breakpoint(large) {
-	.logo2 {
-		width: 500px;
-		height: 109px;
-		background-size: 500px 109px; 
+		.logo-small {
+			width: 500px;
+			height: 109px;
+			background-size: 500px 109px; 
+		}
 	}
-}
 	/* Medium */
 	@include breakpoint(medium) {
-	.logo2 {
-		width: 416px;
-		height: 91px;
-		background-size: 416px 91px;
+		.logo-small {
+			width: 416px;
+			height: 91px;
+			background-size: 416px 91px;
+		}
 	}
-}
 	/* Small */
 	@include breakpoint(small) {
-	.logo2 {
-		display: none;
+		.logo-small {
+			width: 250px;
+			height: 30px;
+			background-size: 250px 30px;
+		}	
 	}
-	.logo-small {
-		width: 250px;
-		height: 30px;
-		background-size: 250px 30px;
-		background-image: url(../../images/logos/iridium-logo-small_250x30.png);
-		background-position: center center; 
-		background-repeat: no-repeat;
-		display:block;
-		margin: 7px auto;
-	}	
-}
 	/* XSmall */
 	@include breakpoint(xsmall) {
-	.logo-small {
-		margin: 7px 14px;
-		float: right;
-	}	
-}
+		.logo-small {
+		}	
+	}
+
+
 
 /* DEVELOPER LOGOS */
 	/* Text */
@@ -2472,15 +2516,23 @@
 /* MARQUEE */
 
 	.marquee {
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
 		white-space: nowrap;
 		overflow: hidden;
 		box-sizing: border-box;
+		margin-top: 4em;
 		margin-bottom: 1em;
 			
+		@include breakpoint(large) {
+			margin-top: 3em;
+			margin-bottom: .75em;
+		}
+		@include breakpoint(medium) {
+			margin-top: 1.5em;
+			margin-bottom: 0;
+		}
 		@include breakpoint(small) {
-			width: 90%;
 			margin-top: 1em;
 			margin-bottom: 0;
 		}
