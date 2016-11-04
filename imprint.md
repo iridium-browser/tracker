@@ -6,8 +6,8 @@ menu: no
 ---
 
 #### Bug Tracker ####
-Please report any  issues and address any questions to our [Bug tracker @ GitHub](https://github.com/iridium-browser/iridium-browser/issues)     
-Stay up to date and sign up to our [Mailing List](http://lists.inai.de/mailman/listinfo/iridium)
+Please report any  issues and address any questions to our Bug Tracker @ GitHub     
+<a class="button small" href="https://github.com/iridium-browser/iridium-browser/issues" title="Bug Tracker">Bug Tracker</a>     
 
 ----
    
