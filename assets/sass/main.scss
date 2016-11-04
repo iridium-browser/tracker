@@ -2128,13 +2128,12 @@
 	}
 	
 	
-/* IRIDIUM LOGOS */
-	/* HEADER */
+/* IRIDIUM LOGO HEADER */
 	.logo-header {
-		width: 463px;
+		width: 475px;
 		height: 76px;
-		background-size: 463px 54px; 
-		background-image: url(../../images/logos/iridium-header_686x80.png);
+		background-size: 475px 54px; 
+		background-image: url(../../images/logos/iridium-header_686x78.png);
 		background-position: center center;	
 		background-repeat: no-repeat;
 		display: block;
@@ -2144,36 +2143,50 @@
 	/* XLarge */
 	@include breakpoint(xlarge) {
 		.logo-header {
-			width: 377px;
+			width: 387px;
 			height: 64px;
-			background-size: 377px 44px; 
+			background-size: 387px 44px; 
 		}
 	}
 	/* Large */
 	@include breakpoint(large) {
 		.logo-header {
-			width: 292px;
+			width: 299px;
 			height: 54px;
-			background-size: 292px 34px; 
+			background-size: 299px 34px; 
 		}
 	}
 	/* Medium */
 	@include breakpoint(medium) {
 		.logo-header {
-			width: 223px;
-			height: 44px;
-			background-size: 223px 26px;
+			display: none;
 		}
+		.logo-header-sm {
+			width: 230px;
+			height: 44px;
+			background-size: 229px 26px;
+			background-image: url(../../images/logos/iridium-header-sm_457x52.png);
+			background-position: center center;	
+			background-repeat: no-repeat;
+			display: block;
+			margin: 0 auto;
+			outline: none;
+		}
+	}
+	/* Small */
+	@include breakpoint(small) {
+		.logo-header-sm {
+		}	
 	}
 	/* XSmall */
 	@include breakpoint(xsmall) {
-		.logo-header {
+		.logo-header-sm {
 			margin: 0 10px 0 0;
 			float: right;
 		}	
 	}
 	
-/* LOGO-LARGE */
+/* IRIDIUM LOGO-LARGE */
 	.logo {
 		width: 561px;
 		height: 350px;
@@ -2182,7 +2195,7 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		display:block;
-		margin: 4.5em auto 0 auto;
+		margin: 4.5em auto 3em auto;
 		outline: none;
 	}
 	/* XLarge */
@@ -2199,7 +2212,7 @@
 			width: 480px;
 			height: 300px;
 			background-size: 480px 300px;
-			margin: 3.5em auto 0 auto;
+			margin: 3.5em auto 2.5em auto;
 		}
 	}
 	/* Medium */
@@ -2208,7 +2221,7 @@
 			width: 400px;
 			height: 250px;
 			background-size: 400px 250px;
-			margin: 2.5em auto 0 auto;
+			margin: 2.5em auto 2em auto;
 		}
 	}
 	/* Small */
@@ -2219,7 +2232,7 @@
 	}
 
 
-/* LOGO-SMALL */
+/* IRIDIUM LOGO-SMALL */
 	.logo-small {
 		width: 582px;
 		height: 127px;
