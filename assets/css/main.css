@@ -1541,11 +1541,7 @@ input[type="radio"] + label:before {
 .icon {
   text-decoration: none;
   border-bottom: none;
-  position: relative;
-  color: #4499D4 !important;
-  font-size: 5em;
-  margin: 1.5em 0 .5em 0;
-  display: block; }
+  position: relative; }
   .icon:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -3198,12 +3194,16 @@ body.is-touch .poptrox-popup .closer {
 /* FEATURES */
 #features {
   background-color: #ececec;
-  padding-top: 5em;
-  padding-bottom: 2em; }
+  padding-top: 4em;
+  padding-bottom: 1em; }
+  #features .icon {
+    font-size: 5em !important;
+    color: #4499D4 !important; }
 
 /* NEWS */
 #news {
-  background-color: #ececec; }
+  background-color: #ececec;
+  padding-bottom: 3em; }
 
 #news-archive {
   background-color: #ececec; }

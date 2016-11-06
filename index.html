@@ -26,9 +26,9 @@ layout: start-layout
 		<div class="container">
 			<div class="row uniform">
 			{% for features in site.features %}
-		<section class="4u 12u(small) special">
+		<section class="4u 12u(small) align-center">
 			<div class="icon {{ features.icon-class }}"></div>
-			{{ features.content }}
+			<p>{{ features.content }}</p>
 		</section>
 		{% endfor %}
 			</div>

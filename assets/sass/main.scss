@@ -472,11 +472,6 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
-		color: _palette(accent1, bg) !important;
-		font-size: 5em;
-		margin: 1.5em 0 .5em 0;
-		display: block;
-		
 
 		> .label {
 			display: none;
@@ -2334,8 +2329,6 @@
 	}
 
 
-
-
 /* DEVELOPER LOGOS */
 	/* Text */
 	.logo-text {
@@ -2614,15 +2607,20 @@
 
 	#features {
 		background-color: #ececec;
-		padding-top: 5em;
-		padding-bottom: 2em;
-	}	
-		
+		padding-top: 4em;
+		padding-bottom: 1em;
+
+		.icon {
+			font-size: 5em !important;
+			color: _palette(accent1, bg) !important;
+		}
+	}
 	
 /* NEWS */	
 
 	#news {
 		background-color: #ececec;
+		padding-bottom: 3em;
 	}
 
 	#news-archive {
@@ -2693,10 +2691,6 @@
 		}		
 	}
 
-	
-	
-	
-	
 	#contribute {
 		background-color: #ececec;
 	}
