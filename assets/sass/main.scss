@@ -2638,6 +2638,7 @@
 		}
 		.post-container {
 			margin: 0 auto;
+			width: 60%;
 		}
 		.post-box {
 			margin: 0 auto;
@@ -2646,15 +2647,16 @@
 			position: relative; 
 			line-height: 1.2em;
 			max-height: 1.2em; 
-			text-align: justify;
+			text-align: center;
 			margin-right: -1em;
 			padding-right: 1em;
 		}
 		.post-box:before {
 			content: '...';
 			position: absolute;
-			right: 0;
+			right: 1em;
 			bottom: 0;
+			background-color: #ececec;
 		}
 		.post-box:after {
 			content: '';
@@ -2665,7 +2667,35 @@
 			margin-top: 0.2em;
 			background-color: #ececec;
 		}
+		
+		@include breakpoint(xlarge) {
+			.post-container {
+				width: 60%;
+			}
+		}
+		@include breakpoint(large) {
+			.post-container {
+				width: 70%;
+			}
+		}
+		@include breakpoint(medium) {
+			.post-container {
+				width: 75%;
+			}
+		}
+		@include breakpoint(small) {
+			.post-container {
+				width: 100%;
+			}
+			.post-box {
+				max-height: 2.4em; 
+			}
+		}		
 	}
+
+	
+	
+	
 	
 	#contribute {
 		background-color: #ececec;

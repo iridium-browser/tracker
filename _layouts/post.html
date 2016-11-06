@@ -4,16 +4,13 @@ layout: default-layout
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<section id="news" class="wrapper style1 special">
 		<div class="container">
-		<header class="major">
-			<h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
-			<p class="post-meta"><small><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d-%b-%Y" }}</time></small></p>
+		<header>
+			<h3 class="post-title" itemprop="name headline"><h2>{{ page.title }}</h2></h3>
+			<p class="post-meta"><small><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d-%b-%Y" }}</time>{% if page.author %} • {{ page.author }} {% endif %}</small></p>
 		</header>
 		<div class="post-content" itemprop="articleBody">
 			{{ content }}
 		</div>
-		<footer>
-			<p class="post-meta"><small>{% if page.author %} {{ page.author }}{% endif %}</small></p>
-		</footer>
 
 		<a href="https://twitter.com/intent/tweet?text=News: {{ page.title }}" data-size="large" class="twitter-share-button" >Tweet</a>
 		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

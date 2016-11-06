@@ -1,6 +1,7 @@
 ---
 layout: start-layout
 title: "About"
+subtitle: About us
 id: about
 menu: main
 ---
