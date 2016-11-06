@@ -3,6 +3,7 @@ layout: pagecentered
 title: "Imprint"
 description: Imprint | Legal Information
 menu: no
+id: imprint
 ---
 
 #### Bug Tracker ####

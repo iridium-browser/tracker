@@ -4,16 +4,17 @@ title: "Download"
 subtitle: choose your operating system
 description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
 menu: main
+id: downloads
 ---
-     
-<div class="icon fa-windows" style="margin-top:0.7em;"></div>
+ 
+<div class="icon dl fa-windows"></div>
 
 ### Windows ###
 
 <div class="row">
 	<div class="12u$">
 	<header>
-		<h4 style="margin-top:1.5em;">Standard Release</h4>
+		<h4>Standard Release</h4>
 		<p>(<em>free media codecs only - for maximum Security</em>)</p>
 	</header>
 	</div>
@@ -25,7 +26,7 @@ menu: main
 <div class="row">
 	<div class="12u$">
 	<header>
-		<h4 style="margin-top:1.5em;">Extra Release</h4>
+		<h4>Extra Release</h4>
 		<p>(<em>includes non-free media codecs</em>)</p>
 	</header>
 	</div>
@@ -43,7 +44,7 @@ system requirements
   
 ---  
 
-<div class="icon fa-apple" style="margin-top:1em;"></div>
+<div class="icon dl fa-apple"></div>
   
 ### Mac OS X ###
 
@@ -78,7 +79,7 @@ system requirements
    
 ---  
   
-<div class="icon fa-database" style="margin-top:1em;"></div>
+<div class="icon dl fa-database"></div>
  
 ### Repository for openSUSE 13.1 #
 
@@ -90,7 +91,7 @@ system requirements
      
 ---  
   
- <div class="icon fa-database" style="margin-top:1em;"></div>
+ <div class="icon dl fa-database"></div>
  
 ### Repository for openSUSE 13.2 ###
 
@@ -103,7 +104,7 @@ system requirements
      
 ---  
   
-<div class="icon fa-linux" style="margin-top:1em;"></div> 
+<div class="icon dl fa-linux"></div> 
 
 ### Repository for Ubuntu ###
 
@@ -118,7 +119,7 @@ System Requirements
      
 ---  
   
-<div class="icon fa-github" style="margin-top:1em;"></div>
+<div class="icon dl fa-github"></div>
 
 ### Git Repository ###
 Clone the source code with Git.
@@ -130,7 +131,7 @@ Git web view [https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/](https://g
   
 ---  
   
-<div class="icon fa-code" style="margin-top:1em;"></div>
+<div class="icon dl fa-code"></div>
   
 ### Source Code ###
 Download at [https://downloads.iridiumbrowser.de/source/](https://downloads.iridiumbrowser.de/source/)

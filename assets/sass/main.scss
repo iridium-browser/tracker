@@ -77,6 +77,10 @@
 			color: _palette(accent1, bg);
 			text-decoration: none;
 		}
+		&:active {
+			color: _palette(accent1, bg);
+			text-decoration: none;
+		}
 	}
 	
 	strong, b {
@@ -2615,6 +2619,21 @@
 			color: _palette(accent1, bg) !important;
 		}
 	}
+
+/* ABOUT */	
+
+	#about {
+		background-color: #ececec;
+		padding-top: 4em;
+		padding-bottom: 1em;
+
+		.icon {
+			font-size: 2em !important;
+			color: _palette(accent1, bg) !important;
+			margin-bottom: .5em;
+		}
+	}
+
 	
 /* NEWS */	
 
@@ -2691,6 +2710,38 @@
 		}		
 	}
 
+	
+/* CONTRIBUTE */	
+	
 	#contribute {
 		background-color: #ececec;
+		
+		.icon {
+			font-size: 1.25em !important;
+			color: _palette(fg-bold);
+		}
+		h4 {
+			color: _palette(accent1, bg) !important;
+		}
+	}
+
+
+/* DOWNLOADS */
+	
+	#downloads {
+		background-color: #ececec;
+		
+		.icon {
+		
+			&.dl {
+				font-size: 5em !important;
+				color: _palette(accent1, bg) !important;
+				position: relative;
+				display: block;
+				line-height: 1.25em;
+			}
+		}
+		h4 {
+			margin-top: 1.5em;
+		}
 	}

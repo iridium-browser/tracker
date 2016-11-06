@@ -68,7 +68,6 @@ layout: start-layout
 		<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-url="{{ site.url }}{{ post.url }}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<hr>
 		{% endfor %}
-		
 		<p>looking for previous posts?</p>
 		<a class="button small" href="news-archive.html" title="check out the News Archive">NEWS ARCHIVE</a>
 	</section>
@@ -83,7 +82,8 @@ layout: start-layout
 		<h1 style="margin-top:1.15em;">{{ about.title }}</h1>
 		<p>{{ about.subtitle }}</p>
 	</header>
-	<p>{{ about.content }}</p>
+	<p><div class="icon {{ about.icon-class }}"></div>
+	{{ about.content }}</p>
 	{% endfor %}
 
 <!-- Developer Logos -->
@@ -106,7 +106,7 @@ layout: start-layout
 			<h1 style="margin-top:1.15em;">{{ contribute.title }}</h1>
 			<p>{{ contribute.subtitle }}</p>
 		</header>
-		<p>{{ contribute.content }}</p>
+		{{ contribute.content }}
 	{% endfor %}
 	</div>
 </section>

@@ -4,6 +4,7 @@ title: "Development"
 subtitle: "How to take part in development"
 description: "Take part in developing IridiumBrowser"
 menu: main
+id: development
 ---
 
 #### Dive In ####

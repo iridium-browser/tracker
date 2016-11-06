@@ -4,6 +4,7 @@ title: "FAQ"
 subtitle: "Frequently Asked Questions"
 description: "Frequently Asked Questions"
 menu: main
+id: faq
 ---
 
 ##### What are the differences between Iridium and Chromium? #    
