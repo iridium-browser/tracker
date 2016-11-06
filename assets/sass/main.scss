@@ -2623,7 +2623,6 @@
 /* ABOUT */	
 
 	#about {
-		background-color: #ececec;
 		padding-top: 4em;
 		padding-bottom: 1em;
 
@@ -2715,13 +2714,58 @@
 	
 	#contribute {
 		background-color: #ececec;
+
+		.icon-container {
+			position: relative;
+			display: block;
+		}
 		
 		.icon {
-			font-size: 1.25em !important;
 			color: _palette(fg-bold);
+			margin: 0;
+
+			&.major {
+				@include vendor('transform', 'rotate(-45deg)');
+				background-color: _palette(fg-bold);
+				color: _palette(fg-blue);
+				border-radius: 3px;
+				border: solid 2px _palette(border);
+				display: inline-block;
+				font-size: 1.25em;
+				height: calc(3em + 2px);
+				line-height: 3em;
+				text-align: center;
+				width: calc(3em + 2px);
+				position: relative;
+				top: .85em;
+
+				&:before {
+					@include vendor('transform', 'rotate(45deg)');
+					display: inline-block;
+					font-size: 1.5em;
+				}
+
+				@include breakpoint(medium) {
+					font-size: 1.25em;
+				}
+				@include breakpoint(small) {
+					font-size: 1.15em;
+					margin-bottom: 2em;
+					top: 0;
+					
+				}
+			}
 		}
 		h4 {
 			color: _palette(accent1, bg) !important;
+			margin: 0;
+		}
+		.content {
+			text-align: left;
+			
+			@include breakpoint(small) {
+				text-align: center;
+			}
 		}
 	}
 

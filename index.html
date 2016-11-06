@@ -102,12 +102,20 @@ layout: start-layout
 <section id="contribute" class="wrapper style1 special">
 	<div class="container">
 		<header class="major">
-	{% for contribute in site.contribute %}
+		{% for contribute in site.contribute %}
 			<h1 style="margin-top:1.15em;">{{ contribute.title }}</h1>
 			<p>{{ contribute.subtitle }}</p>
 		</header>
-		{{ contribute.content }}
-	{% endfor %}
+		<div class="row">
+			<div class="2u 2u(xlarge) 3u(large) 12u$(small)">
+				<div class="icon major {{ contribute.icon-class }}"></div>
+			</div>
+			<div class="10u$ 10u$(xlarge) 9u$(large) 12u$(small) content">
+				<h4>{{ contribute.heading }}</h4>
+				{{ contribute.content }}
+			</div>
+		</div>
+		{% endfor %}
 	</div>
 </section>
 
