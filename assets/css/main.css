@@ -3211,6 +3211,35 @@ body.is-touch .poptrox-popup .closer {
     font-size: 2em !important;
     color: #4499D4 !important;
     margin-bottom: .5em; }
+    #about .icon.round {
+      -moz-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      background-color: rgba(144, 144, 144, 0.075);
+      color: #4499D4;
+      border-radius: 60px;
+      border: solid 2px rgba(144, 144, 144, 0.25);
+      display: inline-block;
+      font-size: 1em;
+      height: calc(2em + 2px);
+      line-height: 2em;
+      text-align: center;
+      width: calc(2em + 2px);
+      position: relative; }
+      #about .icon.round:before {
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        display: inline-block;
+        font-size: 1em; }
+      @media screen and (max-width: 980px) {
+        #about .icon.round {
+          font-size: 1.25em; } }
+      @media screen and (max-width: 736px) {
+        #about .icon.round {
+          font-size: 1.15em; } }
 
 /* NEWS */
 #news {
@@ -3275,7 +3304,7 @@ body.is-touch .poptrox-popup .closer {
   #contribute .icon {
     color: #414141;
     margin: 0; }
-    #contribute .icon.major {
+    #contribute .icon.square {
       -moz-transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
@@ -3292,7 +3321,7 @@ body.is-touch .poptrox-popup .closer {
       width: calc(3em + 2px);
       position: relative;
       top: .85em; }
-      #contribute .icon.major:before {
+      #contribute .icon.square:before {
         -moz-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -3300,10 +3329,10 @@ body.is-touch .poptrox-popup .closer {
         display: inline-block;
         font-size: 1.5em; }
       @media screen and (max-width: 980px) {
-        #contribute .icon.major {
+        #contribute .icon.square {
           font-size: 1.25em; } }
       @media screen and (max-width: 736px) {
-        #contribute .icon.major {
+        #contribute .icon.square {
           font-size: 1.15em;
           margin-bottom: 2em;
           top: 0; } }

@@ -4,7 +4,7 @@ title: "About"
 subtitle: About the Project
 id: about
 menu: main
-icon-class: fa-trophy
+icon-class: round fa-trophy
 ---
 
 #### Motivation #

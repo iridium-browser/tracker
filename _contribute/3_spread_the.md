@@ -1,7 +1,7 @@
 ---
 layout: start-layout
 title: ""
-icon-class: fa-bullhorn
+icon-class: square fa-bullhorn
 heading: Spread the Word
 ---
 

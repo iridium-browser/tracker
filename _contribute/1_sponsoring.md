@@ -3,7 +3,7 @@ layout: start-layout
 title: "Contribute"
 subtitle: "Help to make people's privacy not an option but normal"
 id: contribute
-icon-class: fa-handshake-o
+icon-class: square fa-handshake-o
 heading: Sponsoring
 ---
 

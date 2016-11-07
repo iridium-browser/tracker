@@ -1,7 +1,7 @@
 ---
 layout: start-layout
 title: ""
-icon-class: fa-code
+icon-class: square fa-code
 heading: Development
 ---
 

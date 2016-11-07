@@ -2630,6 +2630,35 @@
 			font-size: 2em !important;
 			color: _palette(accent1, bg) !important;
 			margin-bottom: .5em;
+
+			&.round {
+				@include vendor('transform', 'rotate(-45deg)');
+				background-color: _palette(border-bg);
+				color: _palette(fg-blue);
+				border-radius: 60px;
+				border: solid 2px _palette(border);
+				display: inline-block;
+				font-size: 1em;
+				height: calc(2em + 2px);
+				line-height: 2em;
+				text-align: center;
+				width: calc(2em + 2px);
+				position: relative;
+				
+				&:before {
+					@include vendor('transform', 'rotate(45deg)');
+					display: inline-block;
+					font-size: 1em;
+				}
+
+				@include breakpoint(medium) {
+					font-size: 1.25em;
+				}
+				@include breakpoint(small) {
+					font-size: 1.15em;
+
+				}
+			}
 		}
 	}
 
@@ -2724,7 +2753,7 @@
 			color: _palette(fg-bold);
 			margin: 0;
 
-			&.major {
+			&.square {
 				@include vendor('transform', 'rotate(-45deg)');
 				background-color: _palette(fg-bold);
 				color: _palette(fg-blue);

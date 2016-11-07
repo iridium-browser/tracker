@@ -1,7 +1,7 @@
 ---
 layout: start-layout
 title: ""
-icon-class: fa-lock
+icon-class: round fa-lock
 ---
 
 #### Privacy #

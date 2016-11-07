@@ -1,7 +1,7 @@
 ---
 layout: start-layout
 title: ""
-icon-class: fa-server
+icon-class: round fa-server
 ---
 
 #### Deployability #

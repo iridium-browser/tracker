@@ -1,7 +1,7 @@
 ---
 layout: start-layout
 title: ""
-icon-class: fa-eye
+icon-class: round fa-eye
 ---
 
 #### Transparency #
