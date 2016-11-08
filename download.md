@@ -35,7 +35,7 @@ id: downloads
 	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-extra-x64.msi" title="download 64-bit Extra Release">64-bit Extra</a></div>
 	<div class="3u 2u(medium) not-small">&nbsp;</div>
 </div>
-     
+<br>
 If you are looking for previous versions, please check out the [Builds Archive](https://downloads.iridiumbrowser.de/windows/){:target="_blank"}
 
 system requirements     
@@ -71,7 +71,7 @@ system requirements
 	<div class="4u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/macosx/51.1.0/iridium_browser_extra_51.1.0_osx_x64.dmg" title="download Extra Release">Extra</a></div>
 	<div class="4u 2u(medium) not-small">&nbsp;</div>
 </div>
-     
+<br>
 If you are looking for previous versions, please check out the [Builds Archive](https://downloads.iridiumbrowser.de/macosx/){:target="_blank"}
   
 system requirements     
