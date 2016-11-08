@@ -49,31 +49,6 @@ layout: start-layout
 </div>
 </section>
 
-
-<!-- NEWS -->
-<section id="news" class="wrapper style1 special">
-<div class="container">
-	<header class="major">
-		<h1 style="margin-top:1.15em;">Recent News</h1>
-		<p>The Latest</p>
-	</header>
-	<!-- Content -->
-	<section style="padding-top: 2em;">
-		{% for post in site.posts limit:1 %}
-		<header>
-			<h3>{{ post.title }}</h3>
-			<p><small>{{ post.date | date: "%-d %b %Y" }} {% if post.author %} • {{ post.author }} {% endif %}</small></p>
-		</header>
-		<p>{{ post.content }}</p>
-		<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-url="{{ site.url }}{{ post.url }}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-		<hr>
-		{% endfor %}
-		<p>looking for previous posts?</p>
-		<a class="button small" href="news-archive.html" title="check out the News Archive">NEWS ARCHIVE</a>
-	</section>
-</div>
-</section>
-
 <!-- ABOUT -->
 <section id="about" class="wrapper style1 special">
 <div class="container">

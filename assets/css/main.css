@@ -3236,10 +3236,10 @@ body.is-touch .poptrox-popup .closer {
         font-size: 1em; }
       @media screen and (max-width: 980px) {
         #about .icon.round {
-          font-size: 1.25em; } }
+          font-size: 1em; } }
       @media screen and (max-width: 736px) {
         #about .icon.round {
-          font-size: 1.15em; } }
+          font-size: 1em; } }
 
 /* NEWS */
 #news {
