@@ -1,12 +1,11 @@
 ---
 layout: pagecentered
 title: "Development"
-menu: main
+subtitle: "How to take part in development"
 description: "Take part in developing IridiumBrowser"
+menu: main
+id: development
 ---
-
-How to take part in development
--------------------------------
 
 #### Dive In ####
 Sources may be obtained [as a tarball or via Git transport](download.html "download") as a tarball or via Git transport. When working with the plain tarball and without git, using a utility like quilt to track file changes and produce patches is recommended. (See below for submission.)
@@ -57,4 +56,3 @@ This currently features *an import* of the openSUSE chromium source RPM, which h
 
 #### Locating transmissions ####
 To observe whether the browser sends unwanted requests, a local HTTP proxy such as Squid is highly useful to catch such attempts at the application level, as these requests will directly appear in the proxy logs. For TLS, at least the server name can still be recovered this way. For cases when requests are being made before the proxy settings are loaded and respected, network interface packet capture mechanisms and frontends such as Wireshark/tcpdump may be used, however, they only reveal network addresses on a packet level, and need correlation with DNS queries occurring concurrently.
-

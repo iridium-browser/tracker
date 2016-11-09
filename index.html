@@ -10,74 +10,122 @@ layout: start-layout
 	License: pixelarity.com/license
 -->
 <html>
-	<body class="landing">
-<!-- MARQUEE -->
-<section id="marquee" class="marquee"><span>
+<body class="landing">
+<!-- HOME -->
+<section id="home">
+	<div class="logo"></div>
 
-{% for marquee in site.marquee %}
-{{ marquee.content }}
-{% endfor %}
-</span>
+	<!-- MARQUEE -->
+	<section id="marquee" class="marquee">
+		<span>
+		{% for marquee in site.marquee %}
+		{{ marquee.content }}
+		{% endfor %}
+		</span>
+	</section>
+	
+	<!-- BANNER -->
+	<section id="banner">
+		{% for home in site.home %}
+		{{ home.content }}
+		{% endfor %}
+	</section>
+
+	<section id="features">
+		<div class="container">
+			<div class="row uniform">
+			{% for features in site.features %}
+		<section class="4u 12u(small) align-center">
+			<div class="icon {{ features.icon-class }}"></div>
+			<p>{{ features.content }}</p>
+		</section>
+		{% endfor %}
+			</div>
+		</div>
+	</section>
 </section>
 
-<!-- Banner / HOME -->
-<section id="banner">
-{% for home in site.home %}
-{{ home.content }}
-{% endfor %}
-</section>
-
-<section id="features">
-<div class="container" style="margin-top: 5em;">
-<div class="row uniform">
-{% for features in site.features %}
-<section class="4u 12u(small) special">
-<div class="icon {{ features.icon-class }}"></div>
-{{ features.content }}
-</section>
-{% endfor %}
+<!-- MANIFEST -->
+<section id="manifest" class="wrapper style1 special">
+<div class="container">
+		<header class="major">
+	{% for manifest in site.manifest %}
+		<h1 style="margin-top:1.15em;">{{ manifest.title }}</h1>
+		<p>{{ manifest.subtitle }}</p>
+	</header>
+	<p>{{ manifest.content }}</p>
+	{% endfor %}
 </div>
-</div>
 </section>
 
-<hr/>
-
+<!-- NEWS -->
+<section id="news" class="wrapper style1 special">
+<div class="container">
+	<header class="major">
+		<h1 style="margin-top:1.15em;">Recent News</h1>
+	</header>
+	<!-- Content -->
+	<section style="padding-top: 2em;">
+		{% for post in site.posts limit:1 %}
+		<header>
+			<h3>{{ post.title }}</h3>
+			<p><small>{{ post.date | date: "%-d-%b-%Y" }}</small></p>
+		</header>
+		<p>{{ post.content }}</p>
+		<p class="post-meta"><small>{% if post.author %} {{ post.author }}{% endif %}</small></p>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-url="{{ site.url }}{{ post.url }}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<hr>
+		{% endfor %}
+		
+		<p>looking for previous posts?</p>
+		<a class="button small" href="news-archive.html" title="check out the News Archive">NEWS ARCHIVE</a>
+	</section>
+</div>
+</section>
 
 <!-- ABOUT -->
 <section id="about" class="wrapper style1 special">
 <div class="container">
-<header class="major">
-{% for about in site.about %}
-  <h1>{{ about.title }}</h1>
-</header>
-<p>{{ about.content }}</p>
-{% endfor %}
-
+	<header class="major">
+	{% for about in site.about %}
+		<h1 style="margin-top:1.15em;">{{ about.title }}</h1>
+		<p>{{ about.subtitle }}</p>
+	</header>
+	<p><div class="icon {{ about.icon-class }}"></div>
+	{{ about.content }}</p>
+	{% endfor %}
 
 <!-- Developer Logos -->
-<div class="row uniform">
-{% for logos in site.logos %}
-<section class="3u 4u(xlarge) 6u(medium) special">
-<a href="{{ logos.link }}" title="{{ logos.title }}" target="{{ logos.target }}" class="{{ logos.logo-class }}"></a>
-<div class="logo-text">{{ logos.content }}</div>
-</section>
-{% endfor %}
+	<div class="row uniform">
+	{% for logos in site.logos %}
+	<section class="3u 4u(xlarge) 6u(medium) special">
+		<a href="{{ logos.link }}" title="{{ logos.title }}" target="{{ logos.target }}" class="{{ logos.logo-class }}"></a>
+		<div class="logo-text">{{ logos.content }}</div>
+	</section>
+	{% endfor %}
+	</div>
 </div>
-</div>
 </section>
-
-
 
 <!-- CONTRIBUTE -->
 <section id="contribute" class="wrapper style1 special">
-<div class="container">
-<header class="major">
-{% for contribute in site.contribute %}
-  <h1>{{ contribute.title }}</h1>
-</header>
-<p>{{ contribute.content }}</p>
-{% endfor %}
-</div>
+	<div class="container">
+		<header class="major">
+		{% for contribute in site.contribute %}
+			<h1 style="margin-top:1.15em;">{{ contribute.title }}</h1>
+			<p>{{ contribute.subtitle }}</p>
+		</header>
+		<div class="row">
+			<div class="2u 2u(xlarge) 3u(large) 12u$(small)">
+				<div class="icon {{ contribute.icon-class }}"></div>
+			</div>
+			<div class="10u$ 10u$(xlarge) 9u$(large) 12u$(small) content">
+				<h4>{{ contribute.heading }}</h4>
+				{{ contribute.content }}
+			</div>
+		</div>
+		{% endfor %}
+	</div>
 </section>
 
 </body>

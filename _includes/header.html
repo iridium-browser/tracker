@@ -1,0 +1,20 @@
+<!-- Header -->
+<div id="header">
+	<h1 id="logo"><a href="{{ site.baseurl }}/"><div class="logo-header logo-header-sm"></div></a></h1>
+	<nav id="nav">
+		<ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+			<li><a href="{{ site.baseurl }}/index.html#news">News</a></li>
+			<li><a href="{{ site.baseurl }}/index.html#about">About</a></li>
+            <li><a href="{{ site.baseurl }}/index.html#contribute">Contribute</a></li>
+			{% for my_page in site.pages %}
+				{% if my_page.menu == 'main' %}
+				<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+				{% endif %}
+            {% endfor %}
+		</ul>
+	</nav>
+</div>
+
+
+

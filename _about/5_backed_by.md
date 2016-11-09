@@ -1,6 +1,7 @@
 ---
 layout: start-layout
 title: ""
+icon-class:
 ---
 
 Backed by Serious People

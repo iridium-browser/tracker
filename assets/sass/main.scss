@@ -64,7 +64,7 @@
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: _font(family);
-		font-size: 16pt;
+		font-size: 13pt;
 		font-weight: _font(weight);
 		line-height: 2em;
 	}
@@ -74,6 +74,10 @@
 		text-decoration: underline;
 
 		&:hover {
+			color: _palette(accent1, bg);
+			text-decoration: none;
+		}
+		&:active {
 			color: _palette(accent1, bg);
 			text-decoration: none;
 		}
@@ -131,7 +135,7 @@
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: 0.85em;
 		line-height: 1.5em;
 	}
 
@@ -164,6 +168,12 @@
 		}
 	}
 
+	small {
+		font-size: .9em;
+		font-style: normal;
+		vertical-align: top;
+	}
+	
 	blockquote {
 		border-left: solid 4px _palette(border);
 		font-style: italic;
@@ -466,11 +476,6 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
-		color: _palette(accent1, bg) !important;
-		font-size: 5em;
-		margin: 1.5em 0 .5em 0;
-		display: block;
-		
 
 		> .label {
 			display: none;
@@ -554,8 +559,8 @@
 			padding-left: 0;
 
 			li {
-				border-top: solid 1px _palette(border);
-				padding: 0.5em 0;
+				border-top: solid 1px _palette(border2);
+				padding: 2.5em 0;
 
 				&:first-child {
 					border-top: 0;
@@ -797,10 +802,11 @@
 	.button {
 		@include vendor('appearance', 'none');
 		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
-		background-color: _palette(accent2, bg);
+		background-color: transparent;
+		box-shadow: inset 0 0 0 2px _palette(border3);
+		color: _palette(fg-bold) !important;
 		border-radius: _size(border-radius);
 		border: 0;
-		color: _palette(accent2, fg-bold) !important;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: _font(weight-bold);
@@ -816,11 +822,14 @@
 		white-space: nowrap;
 
 		&:hover {
-			background-color: lighten(_palette(accent2, bg), 5);
+			background-color: _palette(accent2, bg);
+			box-shadow: inset 0 0 0 2px _palette(accent2, bg);
+			color: _palette(accent1, fg-bold) !important;
 		}
 
 		&:active {
-			background-color: darken(_palette(accent2, bg), 5);
+			background-color: lighten(_palette(accent2, bg), 15);
+			box-shadow: inset 0 0 0 2px lighten(_palette(accent2, bg), 15);
 		}
 
 		&.icon {
@@ -863,8 +872,9 @@
 			}
 		}
 
-		&.special {
+		&.download {
 			background-color: _palette(accent1, bg);
+			box-shadow: inset 0 0 0 2px _palette(accent1, bg);
 			color: _palette(accent1, fg-bold) !important;
 
 			&:hover {
@@ -882,6 +892,28 @@
 			color: _palette(bg) !important;
 			cursor: default;
 			opacity: 0.25;
+		}
+
+		&.special {
+			background-color: transparent;
+			box-shadow: inset 0 0 0 2px _palette(border3);
+			color: _palette(fg-bold) !important;
+
+			&:hover {
+				background-color: lighten(_palette(accent1, bg), 7.5);
+				box-shadow: inset 0 0 0 2px lighten(_palette(accent1, bg), 7.5);
+				color: _palette(accent2, fg-bold) !important;
+			}
+
+			&:active {
+				background-color: darken(_palette(accent1, bg), 7.5);
+			}
+
+			&.icon {
+				&:before {
+					font-size: 1em;
+				}
+			}
 		}
 	}
 
@@ -1005,7 +1037,7 @@
 /* Wrapper */
 
 	.wrapper {
-		@include padding(8em, 0);
+		@include padding(4em, 0);
 
 		&.style1 {
 			& + & {
@@ -1017,11 +1049,11 @@
 /* Header */
 
 	body {
-		padding-top: 4.5em;
+		padding-top: 2.5em;
 	}
 
 	#header {
-		background-color: _palette(bg);
+		background-color: _palette(bg-header);
 		border-bottom: solid 1px _palette(border);
 		box-shadow: 0px 0.0375em 0.125em 0px rgba(0,0,0,0.05);
 		color: #fff;
@@ -1038,7 +1070,7 @@
 		h1 {
 			color: _palette(fg-bold);
 			height: inherit;
-			left: 1.25em;
+			left: .25em;
 			line-height: inherit;
 			margin: 0;
 			padding: 0;
@@ -1055,16 +1087,12 @@
 		}
 
 		nav {
-			background-color: _palette(bg);
 			height: inherit;
 			line-height: inherit;
 			position: fixed;
 			right: 1.25em;
 			top: 0;
 			vertical-align: middle;
-			font-weight: _font(weight-bold);
-			font-size: 1.15em;
-			z-index: 1000000;
 
 			> ul {
 				list-style: none;
@@ -1228,26 +1256,26 @@
 /* Banner */
 
 	#banner {
-		@include padding(0, 3em, (.5em, 0, 0, 0));
+		@include padding(2em, 3em, (1em, 0, 0, 0));
 		background-attachment: scroll, fixed;
 		background-image: url('images/overlay.png'), url('../../images/banner.jpg');
 		background-position: center center;
 		background-size: cover;
-		line-height: 1.5;
+		line-height: 1.75;
 		text-align: center;
-
+		
 		h1 {
-			color: #ffffff;
+			color: _palette(accent1, fg-bold);
 		}
 		h2 {
-			color: #ffffff;
+			color: _palette(accent1, fg-bold);
 			font-size: 2.5em;
 			line-height: 1.4em;
 			margin-bottom: (_size(element-margin) * 0.35);
 			padding: 0;
 
 			&:after {
-				background-color: #ffffff;
+				background-color: _palette(bg);
 				background-color: rgba(255,255,255,0.75);
 				content: '';
 				display: block;
@@ -1552,7 +1580,7 @@
 		/* Banner */
 
 			#banner {
-				@include padding(0, 3em, (.5em, 0, 0, 0));
+				@include padding(2em, 3em, (1em, 0, 0, 0));
 			
 			h1 {
 				color: #ffffff;
@@ -1634,7 +1662,7 @@
 		/* Wrapper */
 
 			.wrapper {
-				@include padding(6em, 0);
+				@include padding(4em, 0);
 			}
 
 		/* Header */
@@ -1669,7 +1697,7 @@
 		/* Banner */
 
 			#banner {
-				@include padding(0, 3em, (.5em, 0, 0, 0));
+				@include padding(1.75em, 3em, (1em, 0, 0, 0));
 
 				h1 {
 					color: #ffffff;
@@ -1700,6 +1728,10 @@
 
 /* Medium */
 
+	#navPanel, #titleBar {
+		display: none;
+	}
+	
 	@include breakpoint(medium) {
 
 		/* Feature */
@@ -1718,11 +1750,22 @@
 			.icon {
 				font-size: 4.75em;
 			}
-		
+
+		/* Header */
+
+			body {
+				padding-top: 44px;
+			}
+
+			#header {
+				display: none;
+			}
+
+			
 		/* Banner */
 
 			#banner {
-				@include padding(0, 2em, (.5em, 0, 0, 0));
+				@include padding(1.5em, 2em, (.75em, 0, 0, 0));
 
 				h1 {
 					color: #ffffff;
@@ -1741,14 +1784,126 @@
 
 			#main {
 				@include padding(6em, 0, (-2em, 0, 0, 0));
-			}		
+			}	
+
+
+		/* Off-Canvas Navigation */
+
+			#titleBar {
+				@include vendor('backface-visibility', 'hidden');
+				@include vendor('transition', 'transform #{_duration(navPanel)} ease');
+				display: block;
+				height: 44px;
+				left: 0;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: _misc(z-index-base) + 1;
+				background-color: _palette(bg-header);
+				border-bottom: solid 1px _palette(border);
+				box-shadow: 0 0.0375em 0.125em 0 rgba(0,0,0,0.05);
+				line-height: 44px;
+
+				.toggle {
+					@include icon;
+					height: 4em;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 6em;
+					z-index: 1;
+					color: inherit;
+					text-decoration: none;
+					outline: 0;
+					border: 0;
+
+					&:before {
+						border-right: solid 1px _palette(border);
+						content: '\f0c9';
+						display: block;
+						height: 44px;
+						left: 0;
+						position: absolute;
+						text-align: center;
+						top: 0;
+						width: 44px;
+					}
+				}
+
+				.title {
+					color: _palette(fg-bold);
+					font-weight: _font(weight-bold);
+					left: 0;
+					letter-spacing: _font(letter-spacing);
+					line-height: inherit;
+					position: absolute;
+					text-align: center;
+					text-transform: uppercase;
+					top: 0;
+					width: 100%;
+
+					a {
+						color: inherit;
+						text-decoration: none;
+					}
+				}
+			}
+
+			#navPanel {
+				@include vendor('backface-visibility', 'hidden');
+				@include vendor('transform', 'translateX(#{_size(navPanel) * -1})');
+				@include vendor('transition', ('transform #{_duration(navPanel)} ease'));
+				display: block;
+				height: 100%;
+				left: 0;
+				overflow-y: auto;
+				position: fixed;
+				top: 0;
+				width: _size(navPanel);
+				z-index: _misc(z-index-base) + 2;
+				background-color: transparentize(_palette(bg-header),0.025);
+				border-right: solid 1px _palette(border);
+				box-shadow: 0.0375em 0 0.5em 0px rgba(0,0,0,0.075);
+				padding: 0.5em 1.5em;
+
+				.link {
+					border: 0;
+					border-top: solid 1px _palette(border2-bg);
+					color: _palette(fg-bold) !important;
+					display: block;
+					font-size: 0.8em;
+					height: 4em;
+					letter-spacing: _font(letter-spacing);
+					line-height: 4em;
+					text-decoration: none;
+					text-transform: uppercase;
+
+					&:first-child {
+						border-top: 0;
+					}
+
+					&.depth-0 {
+						font-weight: _font(weight-bold);
+					}
+
+					.indent-1 { display: inline-block; width: 1.25em; }
+					.indent-2 { display: inline-block; width: 2.5em; }
+					.indent-3 { display: inline-block; width: 3.75em; }
+					.indent-4 { display: inline-block; width: 5em; }
+					.indent-5 { display: inline-block; width: 6.25em; }
+				}
+			}
+
+			body {
+				&.navPanel-visible {
+					#navPanel {
+						@include vendor('transform', 'translateX(0)');
+					}
+				}
+			}
 	}
 
 /* Small */
-
-	#navPanel, #titleBar {
-		display: none;
-	}
 
 	@include breakpoint(small) {
 
@@ -1865,121 +2020,6 @@
 				}
 			}
 
-		/* Off-Canvas Navigation */
-
-			#titleBar {
-				@include vendor('backface-visibility', 'hidden');
-				@include vendor('transition', 'transform #{_duration(navPanel)} ease');
-				display: block;
-				height: 44px;
-				left: 0;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				z-index: _misc(z-index-base) + 1;
-				background-color: _palette(bg);
-				border-bottom: solid 1px _palette(border);
-				box-shadow: 0 0.0375em 0.125em 0 rgba(0,0,0,0.05);
-				line-height: 44px;
-
-				.toggle {
-					@include icon;
-					height: 4em;
-					left: 0;
-					position: absolute;
-					top: 0;
-					width: 6em;
-					z-index: 1;
-					color: inherit;
-					text-decoration: none;
-					outline: 0;
-					border: 0;
-
-					&:before {
-						border-right: solid 1px _palette(border);
-						content: '\f0c9';
-						display: block;
-						height: 44px;
-						left: 0;
-						position: absolute;
-						text-align: center;
-						top: 0;
-						width: 44px;
-					}
-				}
-
-				.title {
-					color: _palette(fg-bold);
-					font-weight: _font(weight-bold);
-					left: 0;
-					letter-spacing: _font(letter-spacing);
-					line-height: inherit;
-					position: absolute;
-					text-align: center;
-					text-transform: uppercase;
-					top: 0;
-					width: 100%;
-
-					a {
-						color: inherit;
-						text-decoration: none;
-					}
-				}
-			}
-
-			#navPanel {
-				@include vendor('backface-visibility', 'hidden');
-				@include vendor('transform', 'translateX(#{_size(navPanel) * -1})');
-				@include vendor('transition', ('transform #{_duration(navPanel)} ease'));
-				display: block;
-				height: 100%;
-				left: 0;
-				overflow-y: auto;
-				position: fixed;
-				top: 0;
-				width: _size(navPanel);
-				z-index: _misc(z-index-base) + 2;
-				background-color: transparentize(_palette(bg),0.025);
-				border-right: solid 1px _palette(border);
-				box-shadow: 0.0375em 0 0.5em 0px rgba(0,0,0,0.075);
-				padding: 0.5em 1.5em;
-
-				.link {
-					border: 0;
-					border-top: solid 1px _palette(border2-bg);
-					color: _palette(fg-bold) !important;
-					display: block;
-					font-size: 0.8em;
-					height: 4em;
-					letter-spacing: _font(letter-spacing);
-					line-height: 4em;
-					text-decoration: none;
-					text-transform: uppercase;
-
-					&:first-child {
-						border-top: 0;
-					}
-
-					&.depth-0 {
-						font-weight: _font(weight-bold);
-					}
-
-					.indent-1 { display: inline-block; width: 1.25em; }
-					.indent-2 { display: inline-block; width: 2.5em; }
-					.indent-3 { display: inline-block; width: 3.75em; }
-					.indent-4 { display: inline-block; width: 5em; }
-					.indent-5 { display: inline-block; width: 6.25em; }
-				}
-			}
-
-			body {
-				&.navPanel-visible {
-					#navPanel {
-						@include vendor('transform', 'translateX(0)');
-					}
-				}
-			}
-
 		/* Poptrox */
 
 			.poptrox-popup {
@@ -2087,71 +2127,116 @@
 	}
 	
 	
-/* IRIDIUM LOGOS */
-	.logo {
-		width: 582px;
-		height: 350px;
-		background-size: 582px 350px; 
-		background-image: url(../../images/logos/iridium-logo_582x350.png);
-		background-position: center center;
+/* IRIDIUM LOGO HEADER */
+	.logo-header {
+		width: 475px;
+		height: 76px;
+		background-size: 475px 54px; 
+		background-image: url(../../images/logos/iridium-header_686x78.png);
+		background-position: center center;	
 		background-repeat: no-repeat;
-		display:block;
+		display: block;
 		margin: 0 auto;
 		outline: none;
 	}
 	/* XLarge */
 	@include breakpoint(xlarge) {
-	.logo {
-		width: 582px;
-		height: 350px;
-		background-size: 582px 350px; 
+		.logo-header {
+			width: 387px;
+			height: 64px;
+			background-size: 387px 44px; 
+		}
 	}
-}
 	/* Large */
 	@include breakpoint(large) {
-	.logo {
-		width: 499px;
-		height: 300px;
-		background-size: 499px 300px; 
+		.logo-header {
+			width: 299px;
+			height: 54px;
+			background-size: 299px 34px; 
+		}
 	}
-}
 	/* Medium */
 	@include breakpoint(medium) {
-	.logo {
-		width: 416px;
-		height: 250px;
-		background-size: 416px 250px;
+		.logo-header {
+			display: none;
+		}
+		.logo-header-sm {
+			width: 233px;
+			height: 44px;
+			background-size: 229px 26px;
+			background-image: url(../../images/logos/iridium-header-sm_457x52.png);
+			background-position: center center;	
+			background-repeat: no-repeat;
+			display: block;
+			margin: 0 auto;
+			outline: none;
+		}
 	}
-}
 	/* Small */
 	@include breakpoint(small) {
-	.logo {
-		display: none;
+		.logo-header-sm {
+		}	
 	}
-	.logo-small {
-		width: 250px;
-		height: 29px;
-		background-size: 250px 29px;
-		background-image: url(../../images/logos/iridium-logo-small_250x30.png);
-		background-position: center center; 
-		background-repeat: no-repeat;
-		display:block;
-		margin: 7px auto;
-	}	
-}
 	/* XSmall */
 	@include breakpoint(xsmall) {
-	.logo-small {
-		margin: 7px 7px;
-		float: right;
-	}	
-}
+		.logo-header-sm {
+			margin: 0 10px 0 0;
+			float: right;
+		}	
+	}
+	
+/* IRIDIUM LOGO-LARGE */
+	.logo {
+		width: 561px;
+		height: 350px;
+		background-size: 561px 350px; 
+		background-image: url(../../images/logos/iridium-logo_561x350.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		display:block;
+		margin: 4.5em auto 3em auto;
+		outline: none;
+	}
+	/* XLarge */
+	@include breakpoint(xlarge) {
+		.logo {
+			width: 561px;
+			height: 350px;
+			background-size: 561px 350px; 
+		}
+	}
+	/* Large */
+	@include breakpoint(large) {
+		.logo {
+			width: 480px;
+			height: 300px;
+			background-size: 480px 300px;
+			margin: 3.5em auto 2.5em auto;
+		}
+	}
+	/* Medium */
+	@include breakpoint(medium) {
+		.logo {
+			width: 400px;
+			height: 250px;
+			background-size: 400px 250px;
+			margin: 2.5em auto 2em auto;
+		}
+	}
+	/* Small */
+	@include breakpoint(small) {
+		.logo {
+			display: none;
+		}
+	}
 
-	.logo2 {
+
+/* IRIDIUM LOGO-SMALL */
+	.logo-small {
 		width: 582px;
 		height: 127px;
 		background-size: 582px 127px; 
-		background-image: url(../../images/logos/iridium-logo2_582x127.png);
+		background-image: url(../../images/logos/iridium-small_582x127.png);
 		background-position: center center;
 		background-repeat: no-repeat;
 		display:block;
@@ -2160,51 +2245,93 @@
 	}
 	/* XLarge */
 	@include breakpoint(xlarge) {
-	.logo2 {
-		width: 582px;
-		height: 127px;
-		background-size: 582px 127px; 
+		.logo-small {
+			width: 582px;
+			height: 127px;
+			background-size: 582px 127px; 
+		}
 	}
-}
 	/* Large */
 	@include breakpoint(large) {
-	.logo2 {
-		width: 500px;
-		height: 109px;
-		background-size: 500px 109px; 
+		.logo-small {
+			width: 500px;
+			height: 109px;
+			background-size: 500px 109px; 
+		}
 	}
-}
 	/* Medium */
 	@include breakpoint(medium) {
-	.logo2 {
-		width: 416px;
-		height: 91px;
-		background-size: 416px 91px;
+		.logo-small {
+			width: 416px;
+			height: 91px;
+			background-size: 416px 91px;
+		}
 	}
-}
 	/* Small */
 	@include breakpoint(small) {
-	.logo2 {
-		display: none;
+		.logo-small {
+			width: 250px;
+			height: 30px;
+			background-size: 250px 30px;
+		}	
 	}
-	.logo-small {
-		width: 250px;
-		height: 30px;
-		background-size: 250px 30px;
-		background-image: url(../../images/logos/iridium-logo-small_250x30.png);
-		background-position: center center; 
-		background-repeat: no-repeat;
-		display:block;
-		margin: 7px auto;
-	}	
-}
 	/* XSmall */
 	@include breakpoint(xsmall) {
-	.logo-small {
-		margin: 7px 14px;
-		float: right;
-	}	
-}
+		.logo-small {
+		}	
+	}
+
+	
+/* IRIDIUM ICON */
+	.iridium-icon {
+		width: 364px;
+		height: 300px;
+		background-size: 364px 300px; 
+		background-image: url(../../images/logos/iridium-icon_364x300.png);
+		background-position: center center;
+		background-repeat: no-repeat;
+		display:block;
+		margin: 0 auto;
+		outline: none;
+	}
+	/* XLarge */
+	@include breakpoint(xlarge) {
+		.iridium-icon {
+			width: 303px;
+			height: 250px;
+			background-size: 303px 250px; 
+		}
+	}
+	/* Large */
+	@include breakpoint(large) {
+		.iridium-icon {
+			width: 242px;
+			height: 200px;
+			background-size: 242px 200px; 
+		}
+	}
+	/* Medium */
+	@include breakpoint(medium) {
+		.iridium-icon {
+			width: 182px;
+			height: 150px;
+			background-size: 182px 150px;
+		}
+	}
+	/* Small */
+	@include breakpoint(small) {
+		.iridium-icon {
+			width: 121px;
+			height: 100px;
+			background-size: 121px 100px;
+		}	
+	}
+	/* XSmall */
+	@include breakpoint(xsmall) {
+		.iridium-icon {
+		}	
+	}
+
 
 /* DEVELOPER LOGOS */
 	/* Text */
@@ -2439,16 +2566,24 @@
 /* MARQUEE */
 
 	.marquee {
-		width: 80%;
+		width: 96%;
 		margin: 0 auto;
 		white-space: nowrap;
 		overflow: hidden;
 		box-sizing: border-box;
+		margin-top: 3em;
 		margin-bottom: 1em;
 			
+		@include breakpoint(large) {
+			margin-top: 2.5em;
+			margin-bottom: .75em;
+		}
+		@include breakpoint(medium) {
+			margin-top: 1.65em;
+			margin-bottom: 0;
+		}
 		@include breakpoint(small) {
-			width: 90%;
-			margin-top: 1em;
+			margin-top: 1.15em;
 			margin-bottom: 0;
 		}
 	}
@@ -2467,8 +2602,219 @@
 	.marquee span:hover {
 		animation-play-state: paused;
 	}
-	/* Make it move */
 	@keyframes marquee {
 		0%   { transform: translate(0, 0); }
 		100% { transform: translate(-100%, 0); }
+	}
+	
+/* FEATURES */	
+
+	#features {
+		background-color: #ececec;
+		padding-top: 4em;
+		padding-bottom: 1em;
+
+		.icon {
+			font-size: 5em !important;
+			color: _palette(accent1, bg) !important;
+		}
+	}
+
+/* ABOUT */	
+
+	#about {
+		padding-top: 4em;
+		padding-bottom: 1em;
+
+		.icon {
+			font-size: 2em !important;
+			color: _palette(accent1, bg) !important;
+			margin-bottom: .5em;
+
+			&.round {
+				@include vendor('transform', 'rotate(-45deg)');
+				background-color: _palette(border-bg);
+				color: _palette(fg-blue);
+				border-radius: 60px;
+				border: solid 2px _palette(border);
+				display: inline-block;
+				font-size: 1em;
+				height: calc(2em + 2px);
+				line-height: 2em;
+				text-align: center;
+				width: calc(2em + 2px);
+				position: relative;
+				
+				&:before {
+					@include vendor('transform', 'rotate(45deg)');
+					display: inline-block;
+					font-size: 1em;
+				}
+
+				@include breakpoint(medium) {
+					font-size: 1em;
+				}
+				@include breakpoint(small) {
+					font-size: 1em;
+
+				}
+			}
+		}
+	}
+
+	
+/* NEWS */	
+
+	#news {
+		background-color: #ececec;
+		padding-bottom: 3em;
+	}
+
+	#news-archive {
+		background-color: #ececec;
+	
+		a {
+			text-decoration: none;
+
+			&:hover {
+				color: _palette(accent1, bg);
+				text-decoration: none;
+			}
+		}
+		.post-container {
+			margin: 0 auto;
+			width: 60%;
+		}
+		.post-box {
+			margin: 0 auto;
+			text-decoration: none;	
+			overflow: hidden;
+			position: relative; 
+			line-height: 1.2em;
+			max-height: 1.2em; 
+			text-align: center;
+			margin-right: -1em;
+			padding-right: 1em;
+		}
+		.post-box:before {
+			content: '...';
+			position: absolute;
+			right: 1em;
+			bottom: 0;
+			background-color: #ececec;
+		}
+		.post-box:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			width: 2em;
+			height: 1em;
+			margin-top: 0.2em;
+			background-color: #ececec;
+		}
+		
+		@include breakpoint(xlarge) {
+			.post-container {
+				width: 60%;
+			}
+		}
+		@include breakpoint(large) {
+			.post-container {
+				width: 70%;
+			}
+		}
+		@include breakpoint(medium) {
+			.post-container {
+				width: 75%;
+			}
+		}
+		@include breakpoint(small) {
+			.post-container {
+				width: 100%;
+			}
+			.post-box {
+				max-height: 2.4em; 
+			}
+		}		
+	}
+
+	
+/* CONTRIBUTE */	
+	
+	#contribute {
+		background-color: #ececec;
+
+		.icon-container {
+			position: relative;
+			display: block;
+		}
+		
+		.icon {
+			color: _palette(fg-bold);
+			margin: 0;
+
+			&.square {
+				@include vendor('transform', 'rotate(-45deg)');
+				background-color: _palette(fg-bold);
+				color: _palette(fg-blue);
+				border-radius: 3px;
+				border: solid 2px _palette(border);
+				display: inline-block;
+				font-size: 1.25em;
+				height: calc(3em + 2px);
+				line-height: 3em;
+				text-align: center;
+				width: calc(3em + 2px);
+				position: relative;
+				top: .85em;
+
+				&:before {
+					@include vendor('transform', 'rotate(45deg)');
+					display: inline-block;
+					font-size: 1.5em;
+				}
+
+				@include breakpoint(medium) {
+					font-size: 1.25em;
+				}
+				@include breakpoint(small) {
+					font-size: 1.15em;
+					margin-bottom: 2em;
+					top: 0;
+					
+				}
+			}
+		}
+		h4 {
+			color: _palette(accent1, bg) !important;
+			margin: 0;
+		}
+		.content {
+			text-align: left;
+			
+			@include breakpoint(small) {
+				text-align: center;
+			}
+		}
+	}
+
+
+/* DOWNLOADS */
+	
+	#downloads {
+		background-color: #ececec;
+		
+		.icon {
+		
+			&.dl {
+				font-size: 5em !important;
+				color: _palette(accent1, bg) !important;
+				position: relative;
+				display: block;
+				line-height: 1.25em;
+			}
+		}
+		h4 {
+			margin-top: 1.5em;
+		}
 	}

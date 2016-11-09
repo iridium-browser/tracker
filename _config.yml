@@ -16,14 +16,17 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://iridiumbrowser.de" # the base hostname & protocol for your site
 
 collections:
-  - marquee
   - home
+  - marquee
   - features
+  - manifest
   - about
   - logos
   - contribute
   - footer
   
-
+gems:
+  - jekyll-sitemap
+  
 # Build settings
 markdown: kramdown
