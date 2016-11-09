@@ -13,17 +13,10 @@ id: downloads
 	<p>current version 54.0</p>
 </header>
 <div class="row">
-<<<<<<< HEAD
 	<div class="3u 2u(large) 1u(medium) not-small">&nbsp;</div>
 	<div class="3u 4u(large) 5u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x86.msi" title="download 32-bit Version">32-bit Download</a></div>
 	<div class="3u 4u(large) 5u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi" title="download 64-bit Version">64-bit Download</a></div>
 	<div class="3u 2u(large) 1u(medium) not-small">&nbsp;</div>
-=======
-	<div class="3u 2u(medium) not-small">&nbsp;</div>
-	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x86.msi" title="download 32-bit Version">32-bit Download</a></div>
-	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi" title="download 64-bit Version">64-bit Download</a></div>
-	<div class="3u 2u(medium) not-small">&nbsp;</div>
->>>>>>> origin/website-test
 </div>
 <br>
 If you are looking for previous versions, please check out the [Builds Archive](https://downloads.iridiumbrowser.de/windows/){:target="_blank"}
