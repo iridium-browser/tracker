@@ -17,6 +17,7 @@ url: "https://iridiumbrowser.de" # the base hostname & protocol for your site
 
 collections:
   - home
+  - marquee
   - features
   - manifest
   - about
