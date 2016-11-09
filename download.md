@@ -8,31 +8,14 @@ id: downloads
 ---
  
 <div class="icon dl fa-windows"></div>
-
-### Windows ###
-
+<header>
+	<h3>Windows</h3>
+	<p>current version 54.0</p>
+</header>
 <div class="row">
-	<div class="12u$">
-	<header>
-		<h4>Standard Release</h4>
-		<p>(<em>free media codecs only - for maximum Security</em>)</p>
-	</header>
-	</div>
 	<div class="3u 2u(medium) not-small">&nbsp;</div>
-	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-x86.msi" title="download 32-bit Standard Release">32-bit Standard</a></div>
-	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-x64.msi" title="download 64-bit Standard Release">64-bit Standard</a></div>
-	<div class="3u 2u(medium) not-small">&nbsp;</div>
-</div>
-<div class="row">
-	<div class="12u$">
-	<header>
-		<h4>Extra Release</h4>
-		<p>(<em>includes non-free media codecs</em>)</p>
-	</header>
-	</div>
-	<div class="3u 2u(medium) not-small">&nbsp;</div>
-	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-extra-x86.msi" title="download 32-bit Extra Release">32-bit Extra</a></div>
-	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/51.1.0/iridiumbrowser-51.1.0-extra-x64.msi" title="download 64-bit Extra Release">64-bit Extra</a></div>
+	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x86.msi" title="download 32-bit Version">32-bit Download</a></div>
+	<div class="3u 4u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi" title="download 64-bit Version">64-bit Download</a></div>
 	<div class="3u 2u(medium) not-small">&nbsp;</div>
 </div>
 <br>
