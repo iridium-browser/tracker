@@ -3370,7 +3370,7 @@ body.is-touch .poptrox-popup .closer {
       padding: 0 .5em 0 .5em;
       margin-top: 0;
       margin-bottom: 0; }
-    @media screen and (max-width: 736px) {
+    @media screen and (max-width: 980px) {
       #downloads #os-detection {
         display: none; } }
   #downloads .ua-os-name {
@@ -3378,7 +3378,7 @@ body.is-touch .poptrox-popup .closer {
     margin: .5em 0 .5em 0; }
   #downloads .mobile {
     display: none; }
-    @media screen and (max-width: 736px) {
+    @media screen and (max-width: 980px) {
       #downloads .mobile {
         display: block; } }
   #downloads #select select {
@@ -3386,11 +3386,5 @@ body.is-touch .poptrox-popup .closer {
     width: 100%;
     height: 3.5em;
     line-height: 1em; }
-  @media only screen and (max-width: 600px) {
-    #downloads #select select {
-      margin-bottom: 8px; } }
-  @media only screen and (max-width: 800px) {
-    #downloads #os-detection {
-      margin-bottom: 60px; } }
 
 /*# sourceMappingURL=main.css.map */

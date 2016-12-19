@@ -2836,7 +2836,7 @@
 				margin-bottom: 0;
 			}
 
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				display: none;
 			}
 		}
@@ -2849,11 +2849,10 @@
 		.mobile {
 			display: none;
 			
-			@include breakpoint(small) {
+			@include breakpoint(medium) {
 				display: block;
 			}
 		}
-		
 		
 		#select select {
 			border: 1px solid _palette(border);
@@ -2861,15 +2860,5 @@
 			height: 3.5em;
 			line-height: 1em;
 		}
-
-			@media only screen and (max-width:600px){
-				#select select{margin-bottom:8px;
-				}
-			}
-			@media only screen and (max-width:800px){
-				#os-detection {
-					margin-bottom:60px;
-				}
-			}
 	
 	}
