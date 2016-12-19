@@ -3381,6 +3381,12 @@ body.is-touch .poptrox-popup .closer {
     @media screen and (max-width: 980px) {
       #downloads .mobile {
         display: block; } }
+    @media screen and (max-width: 736px) {
+      #downloads .mobile {
+        display: block; } }
+    @media screen and (max-width: 480px) {
+      #downloads .mobile {
+        display: block; } }
   #downloads #select select {
     border: 1px solid rgba(144, 144, 144, 0.25);
     width: 100%;

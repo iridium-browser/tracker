@@ -2852,6 +2852,12 @@
 			@include breakpoint(medium) {
 				display: block;
 			}
+			@include breakpoint(small) {
+				display: block;
+			}
+			@include breakpoint(xsmall) {
+				display: block;
+			}
 		}
 		
 		#select select {
