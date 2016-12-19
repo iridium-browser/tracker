@@ -13,12 +13,11 @@ id: downloads
 
 	<p class="mobile">IridiumBrowser is currently NOT available for mobile!</p>
 
-	<div id="os-detection" class="not-small">
+	<div id="os-detection">
 			<p data-translation="os_detection_text"></p>
-		<div>
 		
 		<div class="row">
-			<div class="6u">
+			<div class="6u" >
 				<div id="select">
 					<select>
 					<optgroup label="Windows">
@@ -42,6 +41,13 @@ id: downloads
 		</div>
 	</div>
 </div>
+
+<script>(function($){$(function(){$('[data-translation]').each(function(index,node){var $node=$(node);var translation_key=$node.attr("data-translation");var translation=download_translations[translation_key];if(translation){$node.html(translation);}});var os_maps={"CentOS":"Linux","Fedora":"Linux","Debian":"Linux","DragonFly":"Linux","Gentoo":"Linux","Linux":"Linux","Mandriva":"Linux","Mint":"Linux","RedHat":"Linux","Slackware":"Linux","SUSE":"Linux","Ubuntu":"Linux","VectorLinux":"Linux",};for(var map_key in os_maps){if(os_maps.hasOwnProperty(map_key)){var map_value=os_maps[map_key];delete os_maps[map_key];var map_key_clean=map_key.toLowerCase().replace(/ /g,"");os_maps[map_key_clean]=map_value;}}
+var $detection=$("#os-detection");var parser=new UAParser();var result=parser.getResult();var is_64_bit=(function(){if(result.cpu&&result.cpu.architecture&&result.cpu.architecture.indexOf("64")!==-1){return true;}
+return false;})();var os_name=result.os.name;if(os_name){var os_name_clean=os_name.toLowerCase().replace(/ /g,"");var found_in_maps=os_maps[os_name_clean];if(found_in_maps){os_name=found_in_maps;os_name_clean=os_name.toLowerCase().replace(/ /g,"");}
+var $select=$detection.find("#select select");$detection.find("#select").append($select);if($select.find('option[value="'+os_name_clean+'"]').length>0){$(".button-do-download").click(function(e){var $this=$(this);var $option=$select.find('option:selected');var value=$option.attr("value");var url=downloads.urls[value];if(!url){e.preventDefault();return;}
+$this.attr("href",url);});if(is_64_bit&&$select.find('option[value="'+os_name_clean+'_64bit"]').length>0){os_name+=" | 64-bit";os_name_clean+="_64bit";}
+$detection.find(".ua-os-name").text(os_name);$select.val(os_name_clean);$detection.show();}}});})(jQuery);</script>
 
 <hr>
  
@@ -155,15 +161,4 @@ Git web view <a href="https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/" t
 <h3>Source Code</h3>
 </header>
 <p>Download at <a href="https://downloads.iridiumbrowser.de/source/" target="_blank">https://downloads.iridiumbrowser.de/source/</a></p>
-
-
-
-
-<script>(function($){$(function(){$('[data-translation]').each(function(index,node){var $node=$(node);var translation_key=$node.attr("data-translation");var translation=download_translations[translation_key];if(translation){$node.html(translation);}});var os_maps={"CentOS":"Linux","Fedora":"Linux","Debian":"Linux","DragonFly":"Linux","Gentoo":"Linux","Linux":"Linux","Mandriva":"Linux","Mint":"Linux","RedHat":"Linux","Slackware":"Linux","SUSE":"Linux","Ubuntu":"Linux","VectorLinux":"Linux",};for(var map_key in os_maps){if(os_maps.hasOwnProperty(map_key)){var map_value=os_maps[map_key];delete os_maps[map_key];var map_key_clean=map_key.toLowerCase().replace(/ /g,"");os_maps[map_key_clean]=map_value;}}
-var $detection=$("#os-detection");var parser=new UAParser();var result=parser.getResult();var is_64_bit=(function(){if(result.cpu&&result.cpu.architecture&&result.cpu.architecture.indexOf("64")!==-1){return true;}
-return false;})();var os_name=result.os.name;if(os_name){var os_name_clean=os_name.toLowerCase().replace(/ /g,"");var found_in_maps=os_maps[os_name_clean];if(found_in_maps){os_name=found_in_maps;os_name_clean=os_name.toLowerCase().replace(/ /g,"");}
-var $select=$detection.find("#select select");$detection.find("#select").append($select);if($select.find('option[value="'+os_name_clean+'"]').length>0){$(".button-do-download").click(function(e){var $this=$(this);var $option=$select.find('option:selected');var value=$option.attr("value");var url=downloads.urls[value];if(!url){e.preventDefault();return;}
-$this.attr("href",url);});if(is_64_bit&&$select.find('option[value="'+os_name_clean+'_64bit"]').length>0){os_name+=" (64 bit)";os_name_clean+="_64bit";}
-$detection.find(".ua-os-name").text(os_name);$select.val(os_name_clean);$detection.show();}}});})(jQuery);</script>
-
 
