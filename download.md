@@ -6,6 +6,44 @@ description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
 menu: main
 id: downloads
 ---
+
+<div class="post-content">
+	<p><script>var download_translations={'os_detection_text':'You are running <h3 class="ua-os-name"></h3> If that is not correct or if you want to use IridiumBrowser on another platform, select the version to download below.','download_now_text':'Download now'};</script></p>
+	<script>var downloads={"urls":{"macosx":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_osx_latest.dmg","macosx_extra":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_extra_osx_latest.dmg","windows":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x86.msi","windows_64bit":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi","linux":"https://spreed.me/download/spreedme-desktop-latest-linux-ia32.tar.gz","linux_64bit":"https://spreed.me/download/spreedme-desktop-latest-linux-x64.tar.gz"}};</script>
+
+	<p class="mobile">IridiumBrowser is currently NOT available for mobile!</p>
+
+	<div id="os-detection" class="not-small">
+			<p data-translation="os_detection_text"></p>
+		<div>
+		
+		<div class="row">
+			<div class="6u">
+				<div id="select">
+					<select>
+					<optgroup label="Windows">
+					<option value="windows">Windows | 32-bit</option>
+					<option value="windows_64bit">Windows | 64-bit</option>
+					</optgroup>
+					<optgroup label="Apple">
+					<option value="macosx">Mac OS X | Standard</option>
+					<option value="macosx_extra">Mac OS X | Extra</option>
+					</optgroup>
+					<optgroup label="Linux">
+					<option value="linux">Linux | 32-bit</option>
+					<option value="linux_64bit">Linux | 64-bit</option>
+					</optgroup>
+					</select>
+				</div>
+			</div>
+			<div class="6u">
+				<div><a href="#" target="_blank" class="button-do-download button fit download"><span data-translation="download_now_text"></span></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr>
  
 <div class="icon dl fa-windows"></div>
 <header>
@@ -19,13 +57,13 @@ id: downloads
 	<div class="3u 2u(large) 1u(medium) not-small">&nbsp;</div>
 </div>
 <br>
-If you are looking for previous versions, please check out the [Builds Archive](https://downloads.iridiumbrowser.de/windows/){:target="_blank"}
+If you are looking for previous versions, please check out the <a href="https://downloads.iridiumbrowser.de/windows/" target="_blank">Builds Archive</a><br/>
 
-system requirements     
-&#8226; Windows 7, 8, 8.1, 10 or later     
-&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
+<p>system requirements<br/>
+&#8226; Windows 7, 8, 8.1, 10 or later<br/>
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
   
----  
+<hr>
 
 <div class="icon dl fa-apple"></div>
 <header>
@@ -47,12 +85,12 @@ system requirements
 	<div class="3u 2u(large) 1u(medium) not-small">&nbsp;</div>
 </div>
 <br>
-If you are looking for previous versions, please check out the [Builds Archive](https://downloads.iridiumbrowser.de/macosx/){:target="_blank"}
+If you are looking for previous versions, please check out the <a href="https://downloads.iridiumbrowser.de/macosx/" target="_blank">Builds Archive</a><br/>
   
-system requirements     
-&#8226; OS X Mavericks 10.9 or later     
+<p>system requirements<br/>
+&#8226; OS X Mavericks 10.9 or later</p>
    
----  
+<hr>
   
 <div class="icon dl fa-database"></div>
 <header>
@@ -60,13 +98,13 @@ system requirements
 	<p>current version 51.1</p>
 </header>
 
-	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium  
-	zypper in iridium-browser
+	<pre><code>zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium
+	zypper in iridium-browser</code></pre>
      
-system requirements     
-&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
+<p>system requirements<br/>
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
      
----  
+<hr> 
   
 <div class="icon dl fa-database"></div>
 <header>
@@ -74,13 +112,13 @@ system requirements
 	<p>current version 51.1</p>
 </header>
 
-	zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.2/ iridium  
-	zypper in iridium-browser
+	<pre><code>zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.2/ iridium  
+	zypper in iridium-browser</code></pre>
     
-system requirements     
-&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
+<p>system requirements<br/>
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
      
----  
+<hr>
   
 <div class="icon dl fa-linux"></div> 
 <header>
@@ -88,30 +126,44 @@ system requirements
 	<p>current version 51.1</p>
 </header>
 
-    wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
+    <pre><code>wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
     sudo apt-add-repository 'https://downloads.iridiumbrowser.de/ubuntu main'
     sudo apt-get update
-    sudo apt-get install iridium-browser
+    sudo apt-get install iridium-browser</code></pre>
      
-System Requirements     
-&#8226; 64-bit Ubuntu 14.04+     
-&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
+<p>System Requirements<br/>
+&#8226; 64-bit Ubuntu 14.04+<br/>
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
      
----  
+<hr>
   
 <div class="icon dl fa-github"></div>
+<header>
+	<h3>Git Repository</h3>
+	<p>Clone the source code with Git</p>
+</header>
 
-### Git Repository ###
-Clone the source code with Git.
+    <pre><code>git clone https://git.iridiumbrowser.de/git/iridium-browser</code></pre>
 
-    git clone https://git.iridiumbrowser.de/git/iridium-browser  
-
-Browse the source code with your browser  
-Git web view [https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/](https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/)
+<p>Browse the source code with your browser<br/>
+Git web view <a href="https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/" target="_blank">https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/</a></p>
   
----  
+<hr>
   
 <div class="icon dl fa-code"></div>
-  
-### Source Code ###
-Download at [https://downloads.iridiumbrowser.de/source/](https://downloads.iridiumbrowser.de/source/)
+<header>
+<h3>Source Code</h3>
+</header>
+<p>Download at <a href="https://downloads.iridiumbrowser.de/source/" target="_blank">https://downloads.iridiumbrowser.de/source/</a></p>
+
+
+
+
+<script>(function($){$(function(){$('[data-translation]').each(function(index,node){var $node=$(node);var translation_key=$node.attr("data-translation");var translation=download_translations[translation_key];if(translation){$node.html(translation);}});var os_maps={"CentOS":"Linux","Fedora":"Linux","Debian":"Linux","DragonFly":"Linux","Gentoo":"Linux","Linux":"Linux","Mandriva":"Linux","Mint":"Linux","RedHat":"Linux","Slackware":"Linux","SUSE":"Linux","Ubuntu":"Linux","VectorLinux":"Linux",};for(var map_key in os_maps){if(os_maps.hasOwnProperty(map_key)){var map_value=os_maps[map_key];delete os_maps[map_key];var map_key_clean=map_key.toLowerCase().replace(/ /g,"");os_maps[map_key_clean]=map_value;}}
+var $detection=$("#os-detection");var parser=new UAParser();var result=parser.getResult();var is_64_bit=(function(){if(result.cpu&&result.cpu.architecture&&result.cpu.architecture.indexOf("64")!==-1){return true;}
+return false;})();var os_name=result.os.name;if(os_name){var os_name_clean=os_name.toLowerCase().replace(/ /g,"");var found_in_maps=os_maps[os_name_clean];if(found_in_maps){os_name=found_in_maps;os_name_clean=os_name.toLowerCase().replace(/ /g,"");}
+var $select=$detection.find("#select select");$detection.find("#select").append($select);if($select.find('option[value="'+os_name_clean+'"]').length>0){$(".button-do-download").click(function(e){var $this=$(this);var $option=$select.find('option:selected');var value=$option.attr("value");var url=downloads.urls[value];if(!url){e.preventDefault();return;}
+$this.attr("href",url);});if(is_64_bit&&$select.find('option[value="'+os_name_clean+'_64bit"]').length>0){os_name+=" (64 bit)";os_name_clean+="_64bit";}
+$detection.find(".ua-os-name").text(os_name);$select.val(os_name_clean);$detection.show();}}});})(jQuery);</script>
+
+
