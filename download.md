@@ -8,8 +8,8 @@ id: downloads
 ---
 
 <div class="post-content">
-	<p><script>var download_translations={'os_detection_text':'You are running <h3 class="ua-os-name"></h3> If you are looking for a different version or if you are on another platform, please choose from the list below.','download_now_text':'Download now'};</script></p>
-	<script>var downloads={"urls":{"macosx":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_osx_latest.dmg","macosx_extra":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_extra_osx_latest.dmg","windows":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x86.msi","windows_64bit":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi","linux":"https://spreed.me/download/spreedme-desktop-latest-linux-ia32.tar.gz","linux_64bit":"https://spreed.me/download/spreedme-desktop-latest-linux-x64.tar.gz"}};</script>
+	<p><script>var download_translations={'os_detection_text':'You are using <h3 class="ua-os-name"></h3> If you are looking for a different version or if you are on another platform, please choose from the list below.','download_now_text':'Download now', 'mobile_apps_headline':'Mobile apps','desktop_apps_headline':'Desktop apps','ios_not_available_text':"IridiumBrowser is currently available for Desktop only!",'android_not_available_text':"IridiumBrowser is currently available for Desktop only!",};</script></p>
+	<script>var downloads={"urls":{"ios":"https://itunes.apple.com/app/spreed.me/id1058498417","macosx":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_osx_latest.dmg","macosx_extra":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_extra_osx_latest.dmg","windows":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x86.msi","windows_64bit":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi","linux":"https://spreed.me/download/spreedme-desktop-latest-linux-ia32.tar.gz","linux_64bit":"https://spreed.me/download/spreedme-desktop-latest-linux-x64.tar.gz"}};</script>
 
 	<div id="os-detection">
 			<p data-translation="os_detection_text"></p>
