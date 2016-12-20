@@ -2826,7 +2826,7 @@
 			display: none;
 			background-color: _palette(bg);
 			border-radius: _size(border-radius);
-			padding: 2em 2em 0 2em;
+			padding: 2em 2em 1em 2em;
 			margin-bottom: 0;
 		
 			> div > div {
@@ -2847,12 +2847,10 @@
 		}
 
 		.mobile {
-			display: block;
+			display: none;
+			margin: 1.5em 0;
 			
-			@include breakpoint(xlarge) {
-				display: none;
-			}
-			@include breakpoint(medium) {
+			@include breakpoint(large) {
 				display: block;
 			}
 		}

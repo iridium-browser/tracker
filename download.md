@@ -11,8 +11,6 @@ id: downloads
 	<p><script>var download_translations={'os_detection_text':'You are running <h3 class="ua-os-name"></h3> If you are looking for a different version or if you are on another platform, please choose from the list below.','download_now_text':'Download now'};</script></p>
 	<script>var downloads={"urls":{"macosx":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_osx_latest.dmg","macosx_extra":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_extra_osx_latest.dmg","windows":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x86.msi","windows_64bit":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi","linux":"https://spreed.me/download/spreedme-desktop-latest-linux-ia32.tar.gz","linux_64bit":"https://spreed.me/download/spreedme-desktop-latest-linux-x64.tar.gz"}};</script>
 
-	<p class="mobile">IridiumBrowser is currently NOT available for mobile!</p>
-
 	<div id="os-detection">
 			<p data-translation="os_detection_text"></p>
 
@@ -46,6 +44,9 @@ id: downloads
 		</div>
 		
 	</div>
+	
+	<p class="mobile"><span class="fa fa-warning"></span> IridiumBrowser is <u>not</u> available for iOS, Android, Windows Phone or any other mobile OS!</p>
+	
 </div>
 
 <script>(function($){$(function(){$('[data-translation]').each(function(index,node){var $node=$(node);var translation_key=$node.attr("data-translation");var translation=download_translations[translation_key];if(translation){$node.html(translation);}});var os_maps={"CentOS":"Linux","Fedora":"Linux","Debian":"Linux","DragonFly":"Linux","Gentoo":"Linux","Linux":"Linux","Mandriva":"Linux","Mint":"Linux","RedHat":"Linux","Slackware":"Linux","SUSE":"Linux","Ubuntu":"Linux","VectorLinux":"Linux",};for(var map_key in os_maps){if(os_maps.hasOwnProperty(map_key)){var map_value=os_maps[map_key];delete os_maps[map_key];var map_key_clean=map_key.toLowerCase().replace(/ /g,"");os_maps[map_key_clean]=map_value;}}

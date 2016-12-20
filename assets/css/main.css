@@ -3363,7 +3363,7 @@ body.is-touch .poptrox-popup .closer {
     display: none;
     background-color: #fff;
     border-radius: 4px;
-    padding: 2em 2em 0 2em;
+    padding: 2em 2em 1em 2em;
     margin-bottom: 0; }
     #downloads #os-detection > div > div {
       display: inline;
@@ -3376,11 +3376,9 @@ body.is-touch .poptrox-popup .closer {
     color: #4499D4;
     margin: .5em 0 .5em 0; }
   #downloads .mobile {
-    display: block; }
-    @media screen and (max-width: 1680px) {
-      #downloads .mobile {
-        display: none; } }
-    @media screen and (max-width: 980px) {
+    display: none;
+    margin: 1.5em 0; }
+    @media screen and (max-width: 1280px) {
       #downloads .mobile {
         display: block; } }
   #downloads #select select {
