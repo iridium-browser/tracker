@@ -8,37 +8,43 @@ id: downloads
 ---
 
 <div class="post-content">
-	<p><script>var download_translations={'os_detection_text':'You are running <h3 class="ua-os-name"></h3> If that is not correct or if you want to use IridiumBrowser on another platform, select the version to download below.','download_now_text':'Download now'};</script></p>
+	<p><script>var download_translations={'os_detection_text':'You are running <h3 class="ua-os-name"></h3> If you are looking for a different version or if you are on another platform, please choose from the list below.','download_now_text':'Download now'};</script></p>
 	<script>var downloads={"urls":{"macosx":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_osx_latest.dmg","macosx_extra":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_extra_osx_latest.dmg","windows":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x86.msi","windows_64bit":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi","linux":"https://spreed.me/download/spreedme-desktop-latest-linux-ia32.tar.gz","linux_64bit":"https://spreed.me/download/spreedme-desktop-latest-linux-x64.tar.gz"}};</script>
 
 	<p class="mobile">IridiumBrowser is currently NOT available for mobile!</p>
 
 	<div id="os-detection">
 			<p data-translation="os_detection_text"></p>
-		
+
 		<div class="row">
-			<div class="6u" >
-				<div id="select">
-					<select>
-					<optgroup label="Windows">
-					<option value="windows">Windows | 32-bit</option>
-					<option value="windows_64bit">Windows | 64-bit</option>
-					</optgroup>
-					<optgroup label="Apple">
-					<option value="macosx">Mac OS X | Standard</option>
-					<option value="macosx_extra">Mac OS X | Extra</option>
-					</optgroup>
-					<optgroup label="Linux">
-					<option value="linux">Linux | 32-bit</option>
-					<option value="linux_64bit">Linux | 64-bit</option>
-					</optgroup>
-					</select>
+			<div class="3u 1u(medium) not-small">&nbsp;</div>
+			<div class="3u 5u(medium) 12u$(small)">
+				<div class="select-wrapper">
+					<div id="select">
+						<select>
+						<optgroup label="Windows">
+						<option value="windows">Windows | 32-bit</option>
+						<option value="windows_64bit">Windows | 64-bit</option>
+						</optgroup>
+						<optgroup label="Apple">
+						<option value="macosx">Mac OS X | Standard</option>
+						<option value="macosx_extra">Mac OS X | Extra</option>
+						</optgroup>
+						<optgroup label="Linux">
+						<option value="linux">Linux | 32-bit</option>
+						<option value="linux_64bit">Linux | 64-bit</option>
+						</optgroup>
+						</select>
+					</div>
 				</div>
 			</div>
-			<div class="6u">
+			
+			<div class="3u 5u(medium) 12u$(small)">
 				<div><a href="#" target="_blank" class="button-do-download button fit download"><span data-translation="download_now_text"></span></a></div>
 			</div>
+			<div class="3u 1u(medium) not-small">&nbsp;</div>
 		</div>
+		
 	</div>
 </div>
 
@@ -62,7 +68,7 @@ $detection.find(".ua-os-name").text(os_name);$select.val(os_name_clean);$detecti
 	<div class="3u 4u(large) 5u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi" title="download 64-bit Version">64-bit Download</a></div>
 	<div class="3u 2u(large) 1u(medium) not-small">&nbsp;</div>
 </div>
-<br>
+<br/>
 If you are looking for previous versions, please check out the <a href="https://downloads.iridiumbrowser.de/windows/" target="_blank">Builds Archive</a><br/>
 
 <p>system requirements<br/>
@@ -104,8 +110,8 @@ If you are looking for previous versions, please check out the <a href="https://
 	<p>current version 51.1</p>
 </header>
 
-	<pre><code>zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium
-	zypper in iridium-browser</code></pre>
+	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium
+	zypper in iridium-browser
      
 <p>system requirements<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
@@ -118,8 +124,8 @@ If you are looking for previous versions, please check out the <a href="https://
 	<p>current version 51.1</p>
 </header>
 
-	<pre><code>zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.2/ iridium  
-	zypper in iridium-browser</code></pre>
+	zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.2/ iridium  
+	zypper in iridium-browser
     
 <p>system requirements<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
@@ -132,10 +138,10 @@ If you are looking for previous versions, please check out the <a href="https://
 	<p>current version 51.1</p>
 </header>
 
-    <pre><code>wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
+    wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
     sudo apt-add-repository 'https://downloads.iridiumbrowser.de/ubuntu main'
     sudo apt-get update
-    sudo apt-get install iridium-browser</code></pre>
+    sudo apt-get install iridium-browser
      
 <p>System Requirements<br/>
 &#8226; 64-bit Ubuntu 14.04+<br/>
@@ -149,7 +155,7 @@ If you are looking for previous versions, please check out the <a href="https://
 	<p>Clone the source code with Git</p>
 </header>
 
-    <pre><code>git clone https://git.iridiumbrowser.de/git/iridium-browser</code></pre>
+    git clone https://git.iridiumbrowser.de/git/iridium-browser
 
 <p>Browse the source code with your browser<br/>
 Git web view <a href="https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/" target="_blank">https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/</a></p>

@@ -2829,15 +2829,15 @@
 			padding: 2em 2em 0 2em;
 			margin-bottom: 0;
 		
-			div > div {
+			> div > div {
 				display: inline;
 				padding: 0 .5em 0 .5em;
 				margin-top: 0;
 				margin-bottom: 0;
 			}
-
-			@include breakpoint(medium) {
-				display: none;
+			
+			.row {
+				 margin-left: .25em;
 			}
 		}
 
@@ -2847,20 +2847,46 @@
 		}
 
 		.mobile {
-			display: none;
+			display: block;
 			
+			@include breakpoint(xlarge) {
+				display: none;
+			}
 			@include breakpoint(medium) {
 				display: block;
 			}
 		}
 		
 		#select select {
-			width: 100%;
 			height: 3.5em;
-			line-height: 1em;
-			border: 1px solid _palette(border);
 			cursor: pointer;
+			
+			@include breakpoint(medium) {
+				margin-bottom: 1em;
+			}
 		}
-
+		
+		.select-wrapper {
+			@include icon;
+			display: block;
+			position: relative;
+			
+			&:before {
+				content: '\f078';
+				color: _palette(border);
+				display: block;
+				height: _size(element-height);
+				line-height: _size(element-height);
+				pointer-events: none;
+				position: absolute;
+				right: 1em;
+				text-align: right;
+				top: .35em;
+				width: _size(element-height);
+			}
+			select::-ms-expand {
+				display: none;
+			}
+		}
 	
 	}
