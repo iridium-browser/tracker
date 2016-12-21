@@ -114,8 +114,10 @@ If you are looking for previous versions, please check out the <a href="https://
 	<p>current version 51.1</p>
 </header>
 
+	<pre><code>
 	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium
 	zypper in iridium-browser
+	</code></pre>
      
 <p>system requirements<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
@@ -128,8 +130,10 @@ If you are looking for previous versions, please check out the <a href="https://
 	<p>current version 51.1</p>
 </header>
 
+	<pre><code>
 	zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.2/ iridium  
 	zypper in iridium-browser
+	</code></pre>
     
 <p>system requirements<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
@@ -142,10 +146,12 @@ If you are looking for previous versions, please check out the <a href="https://
 	<p>current version 51.1</p>
 </header>
 
-    wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
+    <pre><code>
+	wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
     sudo apt-add-repository 'https://downloads.iridiumbrowser.de/ubuntu main'
     sudo apt-get update
     sudo apt-get install iridium-browser
+	</code></pre>
      
 <p>System Requirements<br/>
 &#8226; 64-bit Ubuntu 14.04+<br/>
@@ -159,7 +165,9 @@ If you are looking for previous versions, please check out the <a href="https://
 	<p>Clone the source code with Git</p>
 </header>
 
-    git clone https://git.iridiumbrowser.de/git/iridium-browser
+    <pre><code>
+	git clone https://git.iridiumbrowser.de/git/iridium-browser
+	</code></pre>
 
 <p>Browse the source code with your browser<br/>
 Git web view <a href="https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/" target="_blank">https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/</a></p>
