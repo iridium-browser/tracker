@@ -9,7 +9,7 @@ id: downloads
 
 <div class="post-content">
 	<p><script>var download_translations={'os_detection_text':'You are using <h3 class="ua-os-name"></h3> If you are looking for a different version or if you are on another platform, please choose from the list below.','download_now_text':'Download now','mobile_apps_headline':'Mobile apps','desktop_apps_headline':'Desktop apps','ios_open_in_appstore_link_text':'Open in App Store','android_not_available_text':"Currently, the Spreed.ME app is only available for iOS. Android users can use Spreed.ME in their Chrome browser.",};</script></p>
-	<script>var downloads={"urls":{"ios":"https://itunes.apple.com/app/spreed.me/id1058498417","macosx":"https://spreed.me/download/spreedme-desktop-latest-osx-x64.zip","windows":"https://spreed.me/download/spreedme-desktop-latest-win-ia32.zip","windows_64bit":"https://spreed.me/download/spreedme-desktop-latest-win-x64.zip","linux":"https://spreed.me/download/spreedme-desktop-latest-linux-ia32.tar.gz","linux_64bit":"https://spreed.me/download/spreedme-desktop-latest-linux-x64.tar.gz"}};</script>
+	<script>var downloads={"urls":{"ios":"xxx","macosx":"https://downloads.iridiumbrowser.de/macosx/iridium_browser_osx_latest.dmg","windows":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x86.msi","windows_64bit":"https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi","linux":"xxx","linux_64bit":"xxx"}};</script>
 	<div class="download-container">
 		
 		<div id="os-detection">
