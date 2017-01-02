@@ -6,6 +6,8 @@ description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
 menu: main
 id: downloads
 ---
+
+<p class="mobile"><span class="fa fa-warning"></span> IridiumBrowser is <u>not</u> available for iOS, Android, Windows Phone or any other mobile OS!</p>
  
 <div class="icon dl fa-windows"></div>
 <header>
@@ -18,14 +20,14 @@ id: downloads
 	<div class="3u 4u(large) 5u(medium) 12u$(small) align-center"><a class="button small fit download icon fa-download" href="https://downloads.iridiumbrowser.de/windows/iridiumbrowser-latest-x64.msi" title="download 64-bit Version">64-bit Download</a></div>
 	<div class="3u 2u(large) 1u(medium) not-small">&nbsp;</div>
 </div>
-<br>
-If you are looking for previous versions, please check out the [Builds Archive](https://downloads.iridiumbrowser.de/windows/){:target="_blank"}
+<br/>
+If you are looking for previous versions, please check out the <a href="https://downloads.iridiumbrowser.de/windows/" target="_blank">Builds Archive</a><br/>
 
-system requirements     
-&#8226; Windows 7, 8, 8.1, 10 or later     
-&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
+<p>system requirements<br/>
+&#8226; Windows 7 or later<br/>
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
   
----  
+<hr>
 
 <div class="icon dl fa-apple"></div>
 <header>
@@ -47,71 +49,78 @@ system requirements
 	<div class="3u 2u(large) 1u(medium) not-small">&nbsp;</div>
 </div>
 <br>
-If you are looking for previous versions, please check out the [Builds Archive](https://downloads.iridiumbrowser.de/macosx/){:target="_blank"}
+If you are looking for previous versions, please check out the <a href="https://downloads.iridiumbrowser.de/macosx/" target="_blank">Builds Archive</a><br/>
   
-system requirements     
-&#8226; OS X Mavericks 10.9 or later     
-   
----  
-  
-<div class="icon dl fa-database"></div>
-<header>
-	<h3>Repository for openSUSE 13.1</h3>
-	<p>current version 51.1</p>
-</header>
-
-	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium  
-	zypper in iridium-browser
-     
-system requirements     
-&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
-     
----  
-  
-<div class="icon dl fa-database"></div>
-<header>
-	<h3>Repository for openSUSE 13.2</h3>
-	<p>current version 51.1</p>
-</header>
-
-	zypper ar http://build.netitwork.net:82/iridium/openSUSE_13.2/ iridium  
-	zypper in iridium-browser
+<p>system requirements<br/>
+&#8226; OS X Mavericks 10.9 or later</p>
     
-system requirements     
-&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
-     
----  
-  
+<hr>
+   
 <div class="icon dl fa-linux"></div> 
 <header>
 	<h3>Repository for Ubuntu</h3>
-	<p>current version 51.1</p>
+	<p>current version 54.0</p>
 </header>
 
-    wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
+	wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
     sudo apt-add-repository 'https://downloads.iridiumbrowser.de/ubuntu main'
     sudo apt-get update
     sudo apt-get install iridium-browser
      
-System Requirements     
-&#8226; 64-bit Ubuntu 14.04+     
-&#8226; An Intel Pentium 4 processor or later that's SSE2 capable     
+<p>System Requirements<br/>
+&#8226; 64-bit Ubuntu 14.04+<br/>
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
+   
+<hr>
+  
+<div class="icon dl fa-database"></div>
+<header>
+	<h3>Repositories for openSUSE</h3>
+	<p>current version 54.0</p>
+</header>
+
+<h3>Leap 42.1</h3>
+	
+	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.1/ iridium
+	zypper in iridium-browser
      
----  
+<h3>Leap 42.2</h3>
+	
+	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Leap_42.2/ iridium
+	zypper in iridium-browser
+     
+
+<h3>13.2</h3>
+
+	zypper ar https://downloads.iridiumbrowser.de/openSUSE_13.2/ iridium  
+	zypper in iridium-browser
+
+<h3>Tumbleweed</h3>
+
+	zypper ar https://downloads.iridiumbrowser.de/openSUSE_Tumbleweed/ iridium  
+	zypper in iridium-browser
+    
+<p>system requirements<br/>
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
+     
+<hr>
   
 <div class="icon dl fa-github"></div>
+<header>
+	<h3>Git Repository</h3>
+	<p>Clone the source code with Git</p>
+</header>
 
-### Git Repository ###
-Clone the source code with Git.
+	git clone https://git.iridiumbrowser.de/git/iridium-browser
 
-    git clone https://git.iridiumbrowser.de/git/iridium-browser  
-
-Browse the source code with your browser  
-Git web view [https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/](https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/)
+<p>Browse the source code with your browser<br/>
+Git web view <a href="https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/" target="_blank">https://git.iridiumbrowser.de/cgit.cgi/iridium-browser/</a></p>
   
----  
+<hr>
   
 <div class="icon dl fa-code"></div>
-  
-### Source Code ###
-Download at [https://downloads.iridiumbrowser.de/source/](https://downloads.iridiumbrowser.de/source/)
+<header>
+<h3>Source Code</h3>
+</header>
+<p>Download at <a href="https://downloads.iridiumbrowser.de/source/" target="_blank">https://downloads.iridiumbrowser.de/source/</a></p>
+

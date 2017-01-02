@@ -333,7 +333,7 @@
 			pointer-events: none;
 			position: absolute;
 			right: 0;
-			text-align: center;
+			text-align: right;
 			top: 0;
 			width: _size(element-height);
 		}
@@ -2781,7 +2781,6 @@
 					font-size: 1.15em;
 					margin-bottom: 2em;
 					top: 0;
-					
 				}
 			}
 		}
@@ -2817,4 +2816,75 @@
 		h4 {
 			margin-top: 1.5em;
 		}
+
+		.post-content {
+			margin: 0;
+			padding: 0;
+		}
+		
+		#os-detection{
+			display: none;
+			background-color: _palette(bg);
+			border-radius: _size(border-radius);
+			padding: 2em 2em 1em 2em;
+			margin-bottom: 0;
+		
+			> div > div {
+				display: inline;
+				padding: 0 .5em 0 .5em;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			
+			.row {
+				 margin-left: .25em;
+			}
+		}
+
+		.ua-os-name {
+			color: _palette(accent1, bg);
+			margin: .5em 0 .5em 0;
+		}
+
+		.mobile {
+			display: none;
+			margin: 1.5em 0;
+			
+			@include breakpoint(large) {
+				display: block;
+			}
+		}
+		
+		#select select {
+			height: 3.5em;
+			cursor: pointer;
+			
+			@include breakpoint(medium) {
+				margin-bottom: 1em;
+			}
+		}
+		
+		.select-wrapper {
+			@include icon;
+			display: block;
+			position: relative;
+			
+			&:before {
+				content: '\f078';
+				color: _palette(border);
+				display: block;
+				height: _size(element-height);
+				line-height: _size(element-height);
+				pointer-events: none;
+				position: absolute;
+				right: 1em;
+				text-align: right;
+				top: .35em;
+				width: _size(element-height);
+			}
+			select::-ms-expand {
+				display: none;
+			}
+		}
+	
 	}
