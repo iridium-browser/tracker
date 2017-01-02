@@ -24,7 +24,7 @@ id: downloads
 If you are looking for previous versions, please check out the <a href="https://downloads.iridiumbrowser.de/windows/" target="_blank">Builds Archive</a><br/>
 
 <p>system requirements<br/>
-&#8226; Windows 7, 8, 8.1, 10 or later<br/>
+&#8226; Windows 7 or later<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
   
 <hr>
@@ -53,8 +53,25 @@ If you are looking for previous versions, please check out the <a href="https://
   
 <p>system requirements<br/>
 &#8226; OS X Mavericks 10.9 or later</p>
+    
+<hr>
    
-<hr id="suse">
+<div class="icon dl fa-linux"></div> 
+<header>
+	<h3>Repository for Ubuntu</h3>
+	<p>current version 54.0</p>
+</header>
+
+	wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
+    sudo apt-add-repository 'https://downloads.iridiumbrowser.de/ubuntu main'
+    sudo apt-get update
+    sudo apt-get install iridium-browser
+     
+<p>System Requirements<br/>
+&#8226; 64-bit Ubuntu 14.04+<br/>
+&#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
+   
+<hr>
   
 <div class="icon dl fa-database"></div>
 <header>
@@ -84,24 +101,6 @@ If you are looking for previous versions, please check out the <a href="https://
 	zypper in iridium-browser
     
 <p>system requirements<br/>
-&#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
-     
-<hr>
-
-
-<div class="icon dl fa-linux"></div> 
-<header>
-	<h3>Repository for Ubuntu</h3>
-	<p>current version 51.1</p>
-</header>
-
-	wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
-    sudo apt-add-repository 'https://downloads.iridiumbrowser.de/ubuntu main'
-    sudo apt-get update
-    sudo apt-get install iridium-browser
-     
-<p>System Requirements<br/>
-&#8226; 64-bit Ubuntu 14.04+<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
      
 <hr>
