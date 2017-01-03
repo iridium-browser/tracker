@@ -63,7 +63,7 @@ If you are looking for previous versions, please check out the <a href="https://
 </header>
 
 	wget -qO - https://downloads.iridiumbrowser.de/ubuntu/iridium-release-sign-01.pub|sudo apt-key add -
-    sudo apt-add-repository 'https://downloads.iridiumbrowser.de/ubuntu main'
+    sudo apt-add-repository 'https://downloads.iridiumbrowser.de/ubuntu stable main'
     sudo apt-get update
     sudo apt-get install iridium-browser
      

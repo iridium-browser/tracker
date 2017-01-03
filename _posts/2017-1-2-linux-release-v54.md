@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "IridiumBrowser releases version 54.0 for openSUSE"
-description: IridiumBrowser releases version 54.0 for OpenSUSE. Now available for Download.
+title:  "IridiumBrowser releases version 54.0 for Linux"
+description: IridiumBrowser releases version 54.0 for Linux. Now available for Download.
 date:   2017-1-2 16:00:00 +0200
 author:	by admin
 categories: news
