@@ -58,7 +58,7 @@ If you are looking for previous versions, please check out the <a href="https://
    
 <div class="icon dl fa-linux"></div> 
 <header>
-	<h3>Repository for Ubuntu | Debian</h3>
+	<h3>Repository for Ubuntu / Debian</h3>
 	<p>current version 54.0</p>
 </header>
 
@@ -70,13 +70,13 @@ If you are looking for previous versions, please check out the <a href="https://
 	sudo apt-get update
 	sudo apt-get install iridium-browser
      
-<p>System Requirements<br/>
-&#8226; 64-bit Ubuntu 14.04+ | Debian 8+<br/>
+<p>system requirements<br/>
+&#8226; 64-bit Ubuntu 14.04+ / Debian 8+<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
    
 <hr>
   
-<div class="icon dl fa-database"></div>
+<div class="dlinux fl-opensuse"></div>
 <header>
 	<h3>Repositories for openSUSE</h3>
 	<p>current version 54.0</p>

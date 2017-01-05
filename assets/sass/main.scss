@@ -2,6 +2,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import url("font-awesome.min.css");
+@import url("font-linux.css");
 @import url("fonts.css");
 
 /*
@@ -2813,6 +2814,14 @@
 				line-height: 1.25em;
 			}
 		}
+		.dlinux {
+			font-size: 6em !important;
+			color: _palette(accent1, bg) !important;
+			position: relative;
+			display: block;
+			line-height: 1.25em;
+		}
+		
 		h4 {
 			margin-top: 1.5em;
 		}
