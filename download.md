@@ -2,7 +2,7 @@
 layout: pagecentered
 title: "Download"
 subtitle: choose your operating system
-description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
+description: Download IridiumBrowser for Windows, Mac OS, Ubuntu/Debian or OpenSUSE
 menu: main
 id: downloads
 ---
@@ -26,7 +26,9 @@ If you are looking for previous versions, please check out the <a href="https://
 <p>system requirements<br/>
 &#8226; Windows 7 or later<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
-  
+     
+<p>Windows Installer provided by <a href="http://www.advancedinstaller.com/" target="_blank">Advanced Installer</a></p>
+	 
 <hr>
 
 <div class="icon dl fa-apple"></div>
@@ -36,7 +38,8 @@ If you are looking for previous versions, please check out the <a href="https://
 </header>
 <div class="row" style="margin-top: -1.5em;">
 	<div class="3u 2u(large) 1u(medium) not-small">&nbsp;</div>
-	<div class="3u 4u(large) 5u(medium) 12u$(small) align-center"><header>
+	<div class="3u 4u(large) 5u(medium) 12u$(small) align-center">
+	<header>
 		<h4>Standard Release</h4>
 		<p>(<em>free media codecs only</em>)</p>
 	</header>
