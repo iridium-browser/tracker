@@ -1,4 +1,5 @@
 @import url("font-awesome.min.css");
+@import url("font-linux.css");
 @import url("fonts.css");
 /*
 	Gravity by Pixelarity
@@ -3350,6 +3351,12 @@ body.is-touch .poptrox-popup .closer {
   background-color: #ececec; }
   #downloads .icon.dl {
     font-size: 5em !important;
+    color: #4499D4 !important;
+    position: relative;
+    display: block;
+    line-height: 1.25em; }
+  #downloads .dlinux {
+    font-size: 6em !important;
     color: #4499D4 !important;
     position: relative;
     display: block;

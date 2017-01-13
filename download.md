@@ -2,7 +2,7 @@
 layout: pagecentered
 title: "Download"
 subtitle: choose your operating system
-description: Download IridiumBrowser for Windows, Mac OS, OpenSUSE or Ubuntu
+description: Download IridiumBrowser for Windows, Mac OS, Ubuntu/Debian or OpenSUSE
 menu: main
 id: downloads
 ---
@@ -26,7 +26,9 @@ If you are looking for previous versions, please check out the <a href="https://
 <p>system requirements<br/>
 &#8226; Windows 7 or later<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
-  
+     
+<p>Windows Installer provided by <a href="http://www.advancedinstaller.com/" target="_blank">Advanced Installer</a></p>
+	 
 <hr>
 
 <div class="icon dl fa-apple"></div>
@@ -36,7 +38,8 @@ If you are looking for previous versions, please check out the <a href="https://
 </header>
 <div class="row" style="margin-top: -1.5em;">
 	<div class="3u 2u(large) 1u(medium) not-small">&nbsp;</div>
-	<div class="3u 4u(large) 5u(medium) 12u$(small) align-center"><header>
+	<div class="3u 4u(large) 5u(medium) 12u$(small) align-center">
+	<header>
 		<h4>Standard Release</h4>
 		<p>(<em>free media codecs only</em>)</p>
 	</header>
@@ -52,13 +55,13 @@ If you are looking for previous versions, please check out the <a href="https://
 If you are looking for previous versions, please check out the <a href="https://downloads.iridiumbrowser.de/macosx/" target="_blank">Builds Archive</a><br/>
   
 <p>system requirements<br/>
-&#8226; OS X Mavericks 10.9 or later</p>
+&#8226; OS X Mavericks 10.9+</p>
     
 <hr>
    
 <div class="icon dl fa-linux"></div> 
 <header>
-	<h3>Repository for Ubuntu</h3>
+	<h3>Repository for Ubuntu / Debian</h3>
 	<p>current version 54.0</p>
 </header>
 
@@ -68,15 +71,15 @@ If you are looking for previous versions, please check out the <a href="https://
 	#deb-src https://downloads.iridiumbrowser.de/deb/ stable main
 	EOF
 	sudo apt-get update
-    sudo apt-get install iridium-browser
+	sudo apt-get install iridium-browser
      
-<p>System Requirements<br/>
-&#8226; 64-bit Ubuntu 14.04+<br/>
+<p>system requirements<br/>
+&#8226; 64-bit Ubuntu 14.04+ / Debian 8+<br/>
 &#8226; An Intel Pentium 4 processor or later that's SSE2 capable</p>
    
 <hr>
   
-<div class="icon dl fa-database"></div>
+<div class="dlinux fl-opensuse"></div>
 <header>
 	<h3>Repositories for openSUSE</h3>
 	<p>current version 54.0</p>
