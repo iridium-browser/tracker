@@ -5,7 +5,7 @@ Iridium is a free, open, and libre browser modification of the Chromium code bas
 
 ## Download
 
-More information and binary downloads can be found at [https://iridiumbrowser.de](https://iridiumbrowser.de).
+More information and binary downloads can be found at [https://iridiumbrowser.de](https://iridiumbrowser.de). 
 
 ## Reporting bugs and issues
 
